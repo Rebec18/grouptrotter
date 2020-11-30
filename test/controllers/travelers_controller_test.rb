@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TravellerTest < ActiveSupport::TestCase
+class TravelersControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

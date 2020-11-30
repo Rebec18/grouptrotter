@@ -1,9 +1,9 @@
-class CreateTravellers < ActiveRecord::Migration[6.0]
+class CreateTravelers < ActiveRecord::Migration[6.0]
   def change
-    create_table :travellers do |t|
+    create_table :travelers do |t|
       t.string :name
       t.string :fly_from
-      t.integer :price_from
+      t.integer :price_from, default: 0
       t.integer :price_to
       t.references :group, null: false, foreign_key: true
 
