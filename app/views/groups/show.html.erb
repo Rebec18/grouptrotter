@@ -1,0 +1,21 @@
+<h1>Mon groupe</h1>
+
+<h2><%= @group.fly_to %></h2>
+
+<div class="list-group">
+ <% @group.travelers.each do |traveler| %>
+          <li class="list-group-item">
+            <p>Nom: <%= traveler.name %></p>
+            <p>Depart: <%= traveler.fly_from %></p>
+            <p>Budget max: <%= traveler.price_to %></p>
+          </li>
+        <% end %>
+</div>
+<%= simple_form_for [@group, @traveler]  do |f| %>
+  <%= f.input :name %>
+  <%= f.input :fly_from %>
+  <%= f.input :price_to %>
+  <%= f.submit "Ajouter un participant", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Retour", :root %>
