@@ -1,0 +1,27 @@
+<% require 'date' %>
+
+<h1>Ma recherche </h1>
+<% i = 1 %>
+ <% @search.each do |result| %>
+  <h2>VOL n°<%= i %></h2>
+  <ul><h3>Départ</h3>
+    <li> Ville de départ : <%= result["cityFrom"] %></li>
+    <li> Pays de départ : <%= result["countryFrom"]["name"] %></li>
+    <li> Date de départ : <%= Time.at(result["dTime"]).strftime("%d/%m/%Y") %> </li>
+    <li> Heure de départ : <%= Time.at(result["dTime"]).strftime("%H:%M")%></li>
+</ul>
+<ul><h3>Arrivée</h3>
+    <li> Ville d'arrivée : <%= result["cityTo"] %></li>
+    <li> Pays d'arrivée : <%= result["countryTo"]["name"] %></li>
+    <li> Date d'arrivée : <%= Time.at(result["aTime"]).strftime("%d/%m/%Y") %></li>
+    <li> Heure d'arrivée : <%= Time.at(result["aTime"]).strftime("%H:%M")%></li>
+    </ul>
+<ul><h3>Détails</h3>
+    <li> Prix sa mèèèère : <%= result["price"] %></li>
+    <li> Code de la compagnie aérienne : <%= result["airlines"] %></li>
+    <li> Coordonnées de départ  : <%= result["route"].first["latFrom"] %> / <%= result["route"].first["lngFrom"] %></li>
+    <li> Coordonnées d'arrivée  : <%= result["route"].first["latTo"] %> / <%= result["route"].first["lngTo"] %></li>
+    </ul>
+  <% i += 1 %>
+<% end %>
+
