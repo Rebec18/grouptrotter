@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
-  
+require 'rest-client'
+require 'json'
+
   def new
     @group = Group.new
   end
@@ -13,10 +15,15 @@ class GroupsController < ApplicationController
     @group = Group.new(group_params)
     if @group.save
       redirect_to group_path(@group)
-      # on ne sait pas vers où rediriger, on pense qu'il faut en fabriquer une
     else
       render "new"
     end
+  end
+
+  def search
+    @group = Group.find(params[:id])
+    response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.date_from.strftime("%d/%m/%Y")}&date_to=#{@group.date_to.strftime("%d/%m/%Y")}&partner=grouptrottergrouptrotter&v=3&price_from=1&price_to=#{@group.travelers.first.price_to}&curr=EUR"
+    @search = JSON.parse(response)["data"]
   end
 
   private
