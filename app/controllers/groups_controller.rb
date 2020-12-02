@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
-require 'rest-client'
-require 'json'
+  require 'rest-client'
+  require 'json'
 
   def new
     @group = Group.new
@@ -23,9 +23,11 @@ require 'json'
 #méthode de recherche de vol
   def search
     @group = Group.find(params[:id])
+
     #recherche du vol
 
     response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.date_from.strftime("%d/%m/%Y")}&date_to=#{@group.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{@group.date_to.strftime("%d/%m/%Y")}&return_to=#{@group.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{@group.travelers.first.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+
     @search = JSON.parse(response)["data"]
 
 
@@ -36,6 +38,6 @@ require 'json'
   private
 
   def group_params
-    params.require(:group).permit(:date_from, :date_to, :fly_to)
+    params.require(:group).permit(:fly_to)
   end
 end

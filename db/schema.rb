@@ -10,14 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_183146) do
+ActiveRecord::Schema.define(version: 2020_12_02_102432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "groups", force: :cascade do |t|
-    t.datetime "date_from"
-    t.datetime "date_to"
     t.string "fly_to"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -31,6 +29,8 @@ ActiveRecord::Schema.define(version: 2020_11_30_183146) do
     t.bigint "group_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.datetime "date_from"
+    t.datetime "date_to"
     t.index ["group_id"], name: "index_travelers_on_group_id"
   end
 

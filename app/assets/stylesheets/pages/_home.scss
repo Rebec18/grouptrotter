@@ -1,1 +1,20 @@
 // Specific CSS for your home-page
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.proposition {
+  border: 1px solid black;
+  width: 400px;
+  height: 30px;
+}
+
+.proposition:hover {
+  background-color: yellow;
+}
+
+.partout {
+  background-color: rgb(209, 207, 207);
+}
