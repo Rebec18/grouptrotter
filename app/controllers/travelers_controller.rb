@@ -13,6 +13,6 @@ class TravelersController < ApplicationController
   private
 
   def traveler_params
-    params.require(:traveler).permit(:name, :fly_from, :price_from, :price_to)
+    params.require(:traveler).permit(:name, :fly_from, :price_from, :price_to, :date_from, :date_to)
   end
 end
