@@ -15,8 +15,10 @@
   <%= f.input :name %>
   <%= f.input :fly_from %>
   <%= f.input :price_to %>
+    <%= f.input :date_from %>
+    <%= f.input :date_to %>
   <%= f.submit "Ajouter un participant", class: "btn btn-primary" %>
 <% end %>
 
-<%= link_to "Recherche", :group_search %>
+<%# <%= link_to "Recherche", :group_search %>
 <%= link_to "Retour", :root %>
