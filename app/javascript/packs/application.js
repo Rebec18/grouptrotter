@@ -27,8 +27,20 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { initAutocomplete } from '../channels/autocomplete'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initAutocomplete();
 });
+
+
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
+
+flatpickr(".datepicker", {
+  // altInput: true,
+  enableTime: true
+});
+

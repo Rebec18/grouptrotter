@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
-require 'rest-client'
-require 'json'
+  require 'rest-client'
+  require 'json'
 
   def new
     @group = Group.new
@@ -23,6 +23,7 @@ require 'json'
 #méthode de recherche de vol
   def search
     @group = Group.find(params[:id])
+
     @search = []
     #itère sur les différents travelers pour passer en multi recherches
     @group.travelers.each do |traveler|
@@ -38,6 +39,6 @@ require 'json'
   private
 
   def group_params
-    params.require(:group).permit(:date_from, :date_to, :fly_to)
+    params.require(:group).permit(:fly_to)
   end
 end
