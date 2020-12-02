@@ -14,11 +14,14 @@
 <%= simple_form_for [@group, @traveler]  do |f| %>
   <%= f.input :name %>
   <%= f.input :fly_from %>
+  <div id="container">
+  <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+  </div>
   <%= f.input :price_to %>
     <%= f.input :date_from %>
     <%= f.input :date_to %>
   <%= f.submit "Ajouter un participant", class: "btn btn-primary" %>
 <% end %>
 
-<%# <%= link_to "Recherche", :group_search %>
+<%= link_to "Recherche", :group_search %>
 <%= link_to "Retour", :root %>

@@ -9,7 +9,6 @@ class GroupsController < ApplicationController
   def show
     @group = Group.find(params[:id])
     @traveler = Traveler.new
-    console
   end
 
   def create
@@ -23,7 +22,7 @@ class GroupsController < ApplicationController
 
   def search
     @group = Group.find(params[:id])
-    response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.date_from.strftime('%d/%m/%Y')}&date_to=#{@group.date_to.strftime('%d/%m/%Y')}&partner=grouptrottergrouptrotter&v=3&price_from=1&price_to=#{@group.travelers.first.price_to}&curr=EUR"
+    response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.travelers.first.date_from.strftime('%d/%m/%Y')}&date_to=#{@group.travelers.first.date_to.strftime('%d/%m/%Y')}&partner=grouptrottergrouptrotter&v=3&price_from=1&price_to=#{@group.travelers.first.price_to}&curr=EUR"
     @search = JSON.parse(response)["data"]
   end
 
