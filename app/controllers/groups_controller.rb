@@ -20,10 +20,19 @@ class GroupsController < ApplicationController
     end
   end
 
+#méthode de recherche de vol
   def search
     @group = Group.find(params[:id])
-    response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.travelers.first.date_from.strftime('%d/%m/%Y')}&date_to=#{@group.travelers.first.date_to.strftime('%d/%m/%Y')}&partner=grouptrottergrouptrotter&v=3&price_from=1&price_to=#{@group.travelers.first.price_to}&curr=EUR"
+
+    #recherche du vol
+
+    response = RestClient.get "https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.date_from.strftime("%d/%m/%Y")}&date_to=#{@group.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{@group.date_to.strftime("%d/%m/%Y")}&return_to=#{@group.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{@group.travelers.first.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+
     @search = JSON.parse(response)["data"]
+
+
+    #LA BONNE URL https://api.skypicker.com/flights?fly_from=#{@group.travelers.first.fly_from}&fly_to=#{@group.fly_to}&date_from=#{@group.date_from.strftime("%d/%m/%Y")}&date_to=#{@group.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{@group.date_to.strftime("%d/%m/%Y")}&return_to=#{@group.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{@group.travelers.first.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR
+    # test = RestClient.get "https://api.skypicker.com/flights?fly_from=MRS&fly_to=ORY&date_from=12/12/2020&date_to=12/12/2020&flight_type=return&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
   end
 
   private
