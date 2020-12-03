@@ -19,8 +19,14 @@
   <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
   </div>
   <%= f.input :price_to %>
-    <%= f.input :date_from %>
-    <%= f.input :date_to %>
+  <%= f.input :date_from, label: false,
+                  placeholder: "Date Aller",
+                  as: :string,
+                  input_html: { class: "datepicker"} %>
+  <%= f.input :date_to, label: false,
+                  placeholder: "Date Retour",
+                  as: :string,
+                  input_html: { class: "datepicker"} %>
   <%= f.submit "Ajouter un participant", class: "btn btn-primary" %>
 <% end %>
 
