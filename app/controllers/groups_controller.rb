@@ -25,19 +25,32 @@ class GroupsController < ApplicationController
   def search
     @group = Group.find(params[:id])
     #création d'un tableau avec l'ensemble des données des voyageurs
-    @search_a = []
-    @search_r = []
     #itère sur les différents travelers pour passer en multi recherches
+
+    @travelers_ar = {}
+
     @group.travelers.each do |traveler|
+      @search_a = []
+      @search_r = []
+
        #parse des infos de vols
         aller = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime("%d/%m/%Y")}&date_to=#{traveler.date_from.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
         @search_a << JSON.parse(aller)["data"]
 
-      @search_a.first.each do |hash|
-        retour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{hash["flyTo"]}&fly_to=#{traveler.fly_from}&date_from=#{traveler.date_to.strftime("%d/%m/%Y")}&date_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
-        bertrand = JSON.parse(retour)["data"]
-        @search_r << bertrand unless bertrand == []
-      end
+        @search_a.first.each do |hash|
+          retour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{hash["flyTo"]}&fly_to=#{traveler.fly_from}&date_from=#{traveler.date_to.strftime("%d/%m/%Y")}&date_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+          bertrand = JSON.parse(retour)["data"]
+          @search_r << bertrand unless bertrand == []
+        end
+
+        search_r_desti = []
+        @search_r.each do |hash|
+          search_r_desti << hash.first["cityFrom"]
+        end
+
+      @search_a = @search_a[0].select { |hash| search_r_desti.include?(hash["cityTo"]) }
+
+      @travelers_ar[traveler.id] = [@search_a, @search_r]
     end
 
     #test avec la bonne url "https://tequila-api.kiwi.com/v2/search?apikey=dA_ZyNbfWwC6tB6h1iwevDVUybsLVp4U&fly_from=MRS&fly_to=europe&date_from=12/12/2020&date_to=12/12/2020&flight_type=round&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
