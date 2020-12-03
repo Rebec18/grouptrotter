@@ -4,30 +4,28 @@
     <h1>Reunissez-vous facilement ! ✈</h1>
     <p>Le facilitateur des voyages a plusieurs.</p>
   </div>
-  <div class="container d-flex justify-content-between p-3 mt-5 searchbar">
-    test autocomplete :
-    <input type="text" id="results-from">
-    <%# <div id="container"> %>
+  <div class="container p-3 mt-5 searchbar">
+      <%= simple_form_for(@group) do |f| %>
+        <%= f.input :fly_to,
+                    label: false,
+                    placeholder: "Destination"%>
+                    <div id="container">
     <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-    <%# </div> %>
-    test datepicker :
-    <input class="datepicker">
-    <a class="btn btn-flat" href="/groups/new">Je voyage</a>
   </div>
+   <div class="d-flex justify-content-end">
+      <%= f.submit "Fly", class: "btn btn-search"%>
+    <% end %>
+  </div>
+  </div>
+  <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
 </div>
 <div class="container d-flex my-5 p-3" style = "box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); border-radius: 5px">
-  <div>
+  <div class ="mr-3">
   <%= image_tag("undraw_travel_together_re_kjf2.png", class:"image-home") %>
   </div>
   <div>
-    <h1>Reunissez-vous facilement ! ✈</h1>
-    <p>Le facilitateur des voyages a plusieurs.</p>
+    <h2>Reunissez-vous facilement avec GroupTrotter !</h2>
+    <p>GroupTrotter permet aux personnes vivant dans differentes villes de trouver facilement un destination commune de voyage repondant aux criteres de chacun.</p>
   </div>
   </div>
-
-<%# le modèle pour le f.input :
-f.input :end_time ,
-                  label: false,
-                  placeholder: "Choisir date",
-                  as: :string,
-                  input_html: { class: "datepicker"} %>
+                  
