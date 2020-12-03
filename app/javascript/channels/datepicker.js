@@ -3,7 +3,9 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 flatpickr(".datepicker", {
   // altInput: true,
-  enableTime: true
+  enableTime: true,
+  minDate: "today",
+  minuteIncrement: 15,
 });
 
 export { flatpickr };
