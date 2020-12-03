@@ -39,3 +39,17 @@
   background: linear-gradient(#147eff, #0f67da);
   color: white;
 }
+
+.btn-search {
+  background-color: #4a4a4a;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.btn-search:hover {
+  opacity: 1;
+  color: white;
+}
