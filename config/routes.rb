@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :travelers, only: [:create]
   end
   get "groups/:id/search", to: "groups#search", as: :group_search
+  get "groups/:id/tickets", to: "groups#tickets", as: :group_tickets
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
