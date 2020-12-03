@@ -1,83 +1,48 @@
 <% require 'date' %>
 
-<h1>Nos recherches </h1>
+<h1> Nos recherches </h1>
 
 
-<h1>Proposition du traveler n°1</h1>
-<% i = 1 %>
- <% @search[0].each do |result| %>
-   <h2>VOL n°<%= i%> à destination de <%= result["cityTo"] %>, <%= result["countryTo"]["name"] %></h2>
+<% @travelers_ar.each do |key, value| %>
+
+  <h1>Proposition pour <%= Traveler.find(id = key).name %></h1>
+  <% count = 0 %>
+  <% while count < value[0].count %>
   <h2>ALLER</h2>
-  <ul><h3>Départ</h3>
-    <li> Ville de départ : <%= result["cityFrom"] %></li>
-    <li> Date de départ : <%= Time.at(result["dTime"]).strftime("%d/%m/%Y") %> </li>
-    <li> Heure de départ : <%= Time.at(result["dTime"]).strftime("%H:%M")%></li>
-</ul>
-<ul><h3>Arrivée</h3>
-    <li> Ville d'arrivée : <%= result["cityTo"] %></li>
-    <li> Date d'arrivée : <%= Time.at(result["aTime"]).strftime("%d/%m/%Y") %></li>
-    <li> Heure d'arrivée : <%= Time.at(result["aTime"]).strftime("%H:%M")%></li>
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= value[0][count]["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(value[0][count]["dTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure de départ : <%= Time.at(value[0][count]["dTime"]).strftime("%H:%M")%></li>
     </ul>
-
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= value[0][count]["cityTo"] %></li>
+      <li> Date d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%H:%M")%></li>
+    </ul>
   <h2>RETOUR</h2>
-  <ul><h3>Départ</h3>
-     <!-- on prend la deuxième route dans le json, valable que pour les vols directs-->
-    <li> Ville de départ : <%= result["route"][1]["cityFrom"] %></li>
-    <li> Date de départ : <%= Time.at(result["route"][1]["dTime"]).strftime("%d/%m/%Y") %></li>
-    <li> Heure de départ : <%= Time.at(result["route"][1]["dTime"]).strftime("%H:%M")%></li>
-    </ul>
-</ul>
-<ul><h3>Arrivée</h3>
-    <li> Ville d'arrivée : <%= result["route"][1]["cityTo"] %></li>
-    <li> Date d'arrivée : <%= Time.at(result["route"][1]["aTime"]).strftime("%d/%m/%Y") %> </li>
-    <li> Heure d'arrivée : <%= Time.at(result["route"][1]["aTime"]).strftime("%H:%M")%></li>
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= value[1][count].first["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(value[1][count].first["dTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure de départ : <%= Time.at(value[1][count].first["dTime"]).strftime("%H:%M")%></li>
+      </ul>
 
-<ul><h3>Détails</h3>
-    <li> Prix sa mèèèère : <%= result["price"] %></li>
-    <li> Code de la compagnie aérienne : <%= result["airlines"] %></li>
-    <li> Coordonnées de l'aéroport de <%= result["cityFrom"]  %>  : <%= result["route"].first["latFrom"] %> / <%= result["route"].first["lngFrom"] %></li>
-    <li> Coordonnées de l'aéroport de <%= result["cityTo"]  %> : <%= result["route"].first["latTo"] %> / <%= result["route"].first["lngTo"] %></li>
-    </ul>
-  <% i += 1 %>
-
-
-<% end %>
-
-<h1>Proposition du traveler n°2</h1>
-<% i = 1 %>
- <% @search[1].each do |result| %>
-   <h2>VOL n°<%= i%> à destination de <%= result["cityTo"] %>, <%= result["countryTo"]["name"] %></h2>
-  <h2>ALLER</h2>
-  <ul><h3>Départ</h3>
-    <li> Ville de départ : <%= result["cityFrom"] %></li>
-    <li> Date de départ : <%= Time.at(result["dTime"]).strftime("%d/%m/%Y") %> </li>
-    <li> Heure de départ : <%= Time.at(result["dTime"]).strftime("%H:%M")%></li>
-</ul>
-<ul><h3>Arrivée</h3>
-    <li> Ville d'arrivée : <%= result["cityTo"] %></li>
-    <li> Date d'arrivée : <%= Time.at(result["aTime"]).strftime("%d/%m/%Y") %></li>
-    <li> Heure d'arrivée : <%= Time.at(result["aTime"]).strftime("%H:%M")%></li>
-    </ul>
-
-  <h2>RETOUR</h2>
-  <ul><h3>Départ</h3>
-     <!-- on prend la deuxième route dans le json, valable que pour les vols directs-->
-    <li> Ville de départ : <%= result["route"][1]["cityFrom"] %></li>
-    <li> Date de départ : <%= Time.at(result["route"][1]["dTime"]).strftime("%d/%m/%Y") %></li>
-    <li> Heure de départ : <%= Time.at(result["route"][1]["dTime"]).strftime("%H:%M")%></li>
-    </ul>
-</ul>
-<ul><h3>Arrivée</h3>
-    <li> Ville d'arrivée : <%= result["route"][1]["cityTo"] %></li>
-    <li> Date d'arrivée : <%= Time.at(result["route"][1]["aTime"]).strftime("%d/%m/%Y") %> </li>
-    <li> Heure d'arrivée : <%= Time.at(result["route"][1]["aTime"]).strftime("%H:%M")%></li>
-
-<ul><h3>Détails</h3>
-    <li> Prix sa mèèèère : <%= result["price"] %></li>
-    <li> Code de la compagnie aérienne : <%= result["airlines"] %></li>
-    <li> Coordonnées de l'aéroport de <%= result["cityFrom"]  %>  : <%= result["route"].first["latFrom"] %> / <%= result["route"].first["lngFrom"] %></li>
-    <li> Coordonnées de l'aéroport de <%= result["cityTo"]  %> : <%= result["route"].first["latTo"] %> / <%= result["route"].first["lngTo"] %></li>
-    </ul>
-
-  <% i += 1 %>
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= value[1][count].first["cityTo"] %></li>
+      <li> Date d'arrivée : <%= Time.at(value[1][count].first["aTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure d'arrivée : <%= Time.at(value[1][count].first["aTime"]).strftime("%H:%M")%></li>
+  </ul>
+  <ul>
+    <h3>Détails</h3>
+      <li> Prix aller : <%= value[0][count]["price"] %></li>
+      <li> Prix retour : <%= value[1][count].first["price"] %></li>
+      <li> Prix sa mèèèère : <%= value[0][count]["price"] + value[1][count].first["price"] %></li>
+      <li> Code de la compagnie aérienne aller : <%= value[0][count]["airlines"] %></li>
+      <li> Code de la compagnie aérienne retour : <%= value[1][count].first["airlines"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[0][count]["cityFrom"]  %>  : <%= value[0][count]["route"].first["latFrom"] %> / <%= value[0][count]["route"].first["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[0][count]["cityTo"]  %> : <%= value[0][count]["route"].first["latTo"] %> / <%= value[0][count]["route"].first["lngTo"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[1][count].first["cityFrom"]  %>  : <%= value[1][count].first["route"].first["latFrom"] %> / <%= value[1][count].first["route"].first["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[1][count].first["cityTo"]  %> : <%= value[1][count].first["route"].first["latTo"] %> / <%= value[1][count].first["route"].first["lngTo"] %></li>
+  </ul>
+  <% count += 1 %>
+  <% end %>
 <% end %>
