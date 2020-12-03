@@ -1,22 +1,30 @@
-<h1>GroupTrotter</h1>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/730778/pexels-photo-730778.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)">
-  <div class="container">
-    <h1>Reunissez-vous facilement !</h1>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/161850/venice-grand-canal-water-boats-161850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+  <div class="container text-center">
+    <h1>Reunissez-vous facilement ! ✈</h1>
     <p>Le facilitateur des voyages a plusieurs.</p>
+  </div>
+  <div class="container d-flex justify-content-between p-3 mt-5 searchbar">
+    test autocomplete :
+    <input type="text" id="results-from">
+    <%# <div id="container"> %>
+    <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+    <%# </div> %>
+    test datepicker :
+    <input class="datepicker">
     <a class="btn btn-flat" href="/groups/new">Je voyage</a>
   </div>
 </div>
+<div class="container d-flex my-5 p-3" style = "box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); border-radius: 5px">
+  <div>
+  <%= image_tag("undraw_travel_together_re_kjf2.png", class:"image-home") %>
+  </div>
+  <div>
+    <h1>Reunissez-vous facilement ! ✈</h1>
+    <p>Le facilitateur des voyages a plusieurs.</p>
+  </div>
+  </div>
 
-test autocomplete :
-<input type="text" id="results-from">
-
-
-<%# <div id="container"> %>
-  <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-<%# </div> %>
-
-test datepicker :
-<input class="datepicker">
 <%# le modèle pour le f.input :
 f.input :end_time ,
                   label: false,
