@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'date'
+require 'json'
+require 'rest-client'
+
 
 Traveler.destroy_all
 Group.destroy_all
@@ -25,3 +28,12 @@ rebec = Traveler.create!(name:"Rebecca", fly_from: "Marseille", price_from: 1, p
 
 marie_jo = Traveler.create!(name:"Marie-Jo", fly_from: "Lyon", price_from: 1, price_to: 600, group: group_family, date_from: depart1, date_to: arrivee1)
 michel = Traveler.create!(name:"Michel", fly_from: "Paris", price_from: 1, price_to: 300, group: group_family, date_from: depart1, date_to: arrivee1)
+
+
+# # url = ("https://api.skypicker.com/flights?fly_from=CDG&date_from=10/12/2020&date_to=30/12/2020&price_from=1&price_to1400&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR")
+# search = RestClient.get "https://api.skypicker.com/flights?fly_from=CDG&date_from=10/12/2020&date_to=30/12/2020&price_from=1&price_to1400&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+# @search1 = "OK"
+
+# searchb = RestClient.get "https://api.skypicker.com/flights?fly_from=SFO&date_from=10/12/2020&date_to=30/12/2020&price_from=1&price_to1400&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+# @search2 = JSON.parse(searchb)
+
