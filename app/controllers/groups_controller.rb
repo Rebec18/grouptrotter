@@ -58,6 +58,12 @@ class GroupsController < ApplicationController
     # test = RestClient.get "https://api.skypicker.com/flights?fly_from=MRS&fly_to=ORY&date_from=12/12/2020&date_to=12/12/2020&flight_type=return&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
   end
 
+
+#on ajoute une route vers les tickets
+  def tickets
+
+  end
+
   private
 
   def group_params

@@ -19,6 +19,7 @@
       <li> Date d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%d/%m/%Y") %></li>
       <li> Heure d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%H:%M")%></li>
     </ul>
+
   <h2>RETOUR</h2>
     <ul><h3>Départ</h3>
       <li> Ville de départ : <%= value[1][count].first["cityFrom"] %></li>
@@ -44,5 +45,31 @@
       <li> Coordonnées de l'aéroport de <%= value[1][count].first["cityTo"]  %> : <%= value[1][count].first["route"].first["latTo"] %> / <%= value[1][count].first["route"].first["lngTo"] %></li>
   </ul>
   <% count += 1 %>
+
+
+
+
+
+
+
+
+    <!-- on ajoute un bouton pour aller sur la page tickets -->
+    <div class="group-btn float-right">
+
+      <%= link_to "Selectionner cette destination", :controller => "groups", :action => "tickets", :query => "#{value[0][count]["cityTo"]}" %>
+    </div>
+
   <% end %>
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
