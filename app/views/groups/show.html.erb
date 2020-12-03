@@ -1,34 +1,57 @@
-<h1>Mon groupe</h1>
-
-<h2><%= @group.fly_to %></h2>
-
-<div class="list-group">
- <% @group.travelers.each do |traveler| %>
-          <li class="list-group-item">
-            <p>Nom: <%= traveler.name %></p>
-            <p>Depart: <%= traveler.fly_from %></p>
-            <p>Budget max: <%= traveler.price_to %></p>
-            <!-- ajouter les dates de vols -->
-          </li>
-        <% end %>
+<div class ='group-titre p-4' >
+  <h1> Mon Groupe </h1>
+  <h2>Vers <%= @group.fly_to %></h2>
 </div>
-<%= simple_form_for [@group, @traveler]  do |f| %>
-  <%= f.input :name %>
-  <%= f.input :fly_from %>
-  <div id="container">
-  <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-  </div>
-  <%= f.input :price_to %>
-  <%= f.input :date_from, label: false,
-                  placeholder: "Date Aller",
-                  as: :string,
-                  input_html: { class: "datepicker"} %>
-  <%= f.input :date_to, label: false,
-                  placeholder: "Date Retour",
-                  as: :string,
-                  input_html: { class: "datepicker"} %>
-  <%= f.submit "Ajouter un participant", class: "btn btn-primary" %>
-<% end %>
 
-<%= link_to "Recherche", :group_search %>
-<%= link_to "Retour", :root %>
+
+<div class = "group-form justify-content-center d-flex">
+    <%= simple_form_for [@group, @traveler]  do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :name,
+                      label: false,
+                      required: true,
+                      placeholder: "Inscrivez le nom du voyageur"%>
+      <%= f.input :fly_from,
+                      label: false,
+                      required: true,
+                      placeholder: "De quelle ville part-il?"%>
+      <div id="container">
+      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+      </div>
+      <%= f.input :price_to,
+                      label: false,
+                      placeholder: "A t'il un budget maximum?",
+                      input_html: { autocomplete: "250" }%>
+      <%= f.input :date_from,
+                      label: false,
+                      placeholder: "Inscrivez sa date d'aller",
+                      as: :string,
+                      input_html: { class: "datepicker"} %>
+      <%= f.input :date_to,
+                      label: false,
+                      placeholder: "Inscrivez sa date de retour",
+                      as: :string,
+                      input_html: { class: "datepicker"} %>
+      <%= f.submit "           Ajouter un participant           ", class: "btn btn-ghost m-3" %>
+    <% end %>
+</div>
+
+<div class="group-list justify-content-center d-flex">
+      <% count = 1 %>
+     <% @group.travelers.each do |traveler| %>
+              <li class="list-group-item m-4">
+                <h3>Voyageur n° <%= count %></h3>
+                <p>Nom : <%= traveler.name %></p>
+                <p>Départ : <%= traveler.fly_from %></p>
+                <p>Budget maximum : <%= traveler.price_to %>€</p>
+                <p>Souhaite voyager du <%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %> au <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+              </li>
+              <% count += 1 %>
+            <% end %>
+    </div>
+
+<div class="group-btn float-right">
+     <% if @group.travelers.size > 0 %>
+      <%= link_to "Lancer la recherche", :group_search, class: "btn btn-ghost m-3 float-right"  %>
+    <% end %>
+</div>
