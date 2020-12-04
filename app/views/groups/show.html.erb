@@ -2,7 +2,9 @@
 
 <div class ='group-titre p-4' >
   <h1> Mon Groupe </h1>
-  <h2>Vers <%= @group.fly_to %></h2>
+  <% if @group.fly_to != "" %>
+    <h2>Vers <%= @group.fly_to %></h2>
+  <% end %>
 </div>
 
 
@@ -20,20 +22,39 @@
       <div id="container">
       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
       </div>
-      <%= f.input :price_to,
+      <% if @group.travelers.count > 0 %>
+          <%= f.input :price_to,
                       label: false,
                       placeholder: "A t'il un budget maximum?",
-                      input_html: { autocomplete: "250" }%>
-      <%= f.input :date_from,
+                      input_html: { value: @group.travelers.first.price_to }%>
+      <% else %>
+          <%= f.input :price_to,
+                      label: false,
+                      placeholder: "A t'il un budget maximum?"%>
+      <% end %>
+      <% if @group.travelers.count > 0 %>
+          <%= f.input :date_from,
                       label: false,
                       placeholder: "Inscrivez sa date d'aller",
                       as: :string,
-                      input_html: { class: "datepicker"} %>
-      <%= f.input :date_to,
+                      input_html: { class: "datepicker", value: @group.travelers.first.date_from } %>
+          <%= f.input :date_to,
                       label: false,
                       placeholder: "Inscrivez sa date de retour",
                       as: :string,
-                      input_html: { class: "datepicker"} %>
+                      input_html: { class: "datepicker", value: @group.travelers.first.date_to} %>
+      <% else %>
+          <%= f.input :date_from,
+                      label: false,
+                      placeholder: "Inscrivez sa date d'aller",
+                      as: :string,
+                      input_html: { class: "datepicker" } %>
+          <%= f.input :date_to,
+                      label: false,
+                      placeholder: "Inscrivez sa date de retour",
+                      as: :string,
+                      input_html: { class: "datepicker" } %>
+      <% end %>
       <%= f.submit "           Ajouter un participant           ", class: "btn btn-ghost m-3" %>
     <% end %>
 </div>
@@ -49,8 +70,9 @@
                 <p>Souhaite voyager du <%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %> au <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
               </li>
               <% count += 1 %>
-            <% end %>
-    </div>
+              
+      <% end %>
+</div>
 
 <div class="group-btn float-right">
      <% if @group.travelers.size > 0 %>
