@@ -36,7 +36,6 @@
   }
 }
 
-
 .card-category:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
@@ -75,7 +74,6 @@
   }
 }
 
-
 .grande-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -87,7 +85,7 @@
   }
 }
 
-#first-card{
+#first-card {
   background-size: cover;
   background-position: center;
   height: 180px;
@@ -113,7 +111,7 @@
     right: 7px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
-    #destination {
+  #destination {
     position: absolute;
     font-size: 18px;
     bottom: -10px;
@@ -123,5 +121,44 @@
 }
 
 #first-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+#banner-ticket {
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fcfcfc;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-tickets {
+  height: 180px;
+  color: rgba(100, 100, 100, 1);
+  font-size: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  h4 {
+    font-size: 24px !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0 !important;
+  }
+  #prix-voyage {
+    position: absolute;
+    font-size: 16px;
+    bottom: -10px;
+    right: 5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card-tickets:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
