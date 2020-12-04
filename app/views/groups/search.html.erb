@@ -1,27 +1,86 @@
 <% require 'date' %>
 
-<h1>Ma recherche </h1>
-<% i = 1 %>
- <% @search.each do |result| %>
-  <h2>VOL n°<%= i %></h2>
-  <ul><h3>Départ</h3>
-    <li> Ville de départ : <%= result["cityFrom"] %></li>
-    <li> Pays de départ : <%= result["countryFrom"]["name"] %></li>
-    <li> Date de départ : <%= Time.at(result["dTime"]).strftime("%d/%m/%Y") %> </li>
-    <li> Heure de départ : <%= Time.at(result["dTime"]).strftime("%H:%M")%></li>
-</ul>
-<ul><h3>Arrivée</h3>
-    <li> Ville d'arrivée : <%= result["cityTo"] %></li>
-    <li> Pays d'arrivée : <%= result["countryTo"]["name"] %></li>
-    <li> Date d'arrivée : <%= Time.at(result["aTime"]).strftime("%d/%m/%Y") %></li>
-    <li> Heure d'arrivée : <%= Time.at(result["aTime"]).strftime("%H:%M")%></li>
-    </ul>
-<ul><h3>Détails</h3>
-    <li> Prix sa mèèèère : <%= result["price"] %></li>
-    <li> Code de la compagnie aérienne : <%= result["airlines"] %></li>
-    <li> Coordonnées de départ  : <%= result["route"].first["latFrom"] %> / <%= result["route"].first["lngFrom"] %></li>
-    <li> Coordonnées d'arrivée  : <%= result["route"].first["latTo"] %> / <%= result["route"].first["lngTo"] %></li>
-    </ul>
-  <% i += 1 %>
+<h1> Nos recherches </h1>
+
+Il faut comparer les résultats de chaque voyageurs pour ne prendre que les villes communes à tous les voyageurs
+Test constitution array des villes du premier voyageur:
+<% array_cities_first = [] %>
+<% @big_hash[@group.travelers.first.id][0].each do |element| %>
+  <% array_cities_first << element["cityTo"] %>
 <% end %>
+<%= array_cities_first %>
+
+Test array villes 2eme voyageur:
+<% array_cities_second = [] %>
+<% @big_hash[@group.travelers[1].id][0].each do |element| %>
+  <% array_cities_second << element["cityTo"] %>
+<% end %>
+<% common_cities = array_cities_second.select { |city| array_cities_first.include?(city)} %>
+
+Là j'obtient un array de toutes les villes communes aux 2 voyageurs
+<% @big_hash.each_key do |voyageur| %>
+  <% @big_hash[voyageur][0].select! { |mini_hash| common_cities.include?(mini_hash["cityTo"]) } %>
+<% end %>
+
+
+
+<% @big_hash.each do |key, value| %>
+
+  <h1>Proposition pour <%= Traveler.find(id = key).name %></h1>
+  <% count = 0 %>
+  <% while count < value[0].count %>
+  <h2>ALLER</h2>
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= value[0][count]["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(value[0][count]["dTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure de départ : <%= Time.at(value[0][count]["dTime"]).strftime("%H:%M")%></li>
+    </ul>
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= value[0][count]["cityTo"] %></li>
+      <li> Date d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure d'arrivée : <%= Time.at(value[0][count]["aTime"]).strftime("%H:%M")%></li>
+    </ul>
+
+  <h2>RETOUR</h2>
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= value[1][count].first["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(value[1][count].first["dTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure de départ : <%= Time.at(value[1][count].first["dTime"]).strftime("%H:%M")%></li>
+      </ul>
+
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= value[1][count].first["cityTo"] %></li>
+      <li> Date d'arrivée : <%= Time.at(value[1][count].first["aTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure d'arrivée : <%= Time.at(value[1][count].first["aTime"]).strftime("%H:%M")%></li>
+  </ul>
+  <ul>
+    <h3>Détails</h3>
+      <li> Prix aller : <%= value[0][count]["price"] %></li>
+      <li> Prix retour : <%= value[1][count].first["price"] %></li>
+      <li> Prix sa mèèèère : <%= value[0][count]["price"] + value[1][count].first["price"] %></li>
+      <li> Code de la compagnie aérienne aller : <%= value[0][count]["airlines"] %></li>
+      <li> Code de la compagnie aérienne retour : <%= value[1][count].first["airlines"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[0][count]["cityFrom"]  %>  : <%= value[0][count]["route"].first["latFrom"] %> / <%= value[0][count]["route"].first["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[0][count]["cityTo"]  %> : <%= value[0][count]["route"].first["latTo"] %> / <%= value[0][count]["route"].first["lngTo"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[1][count].first["cityFrom"]  %>  : <%= value[1][count].first["route"].first["latFrom"] %> / <%= value[1][count].first["route"].first["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= value[1][count].first["cityTo"]  %> : <%= value[1][count].first["route"].first["latTo"] %> / <%= value[1][count].first["route"].first["lngTo"] %></li>
+  </ul>
+  <% count += 1 %>
+
+
+
+
+
+
+
+
+    <!-- on ajoute un bouton pour aller sur la page tickets -->
+    <div class="group-btn float-right">
+
+      <%= link_to "Selectionner cette destination", :controller => "groups", :action => "tickets", :query => "#{value[0][count]["cityTo"]}" %>
+    </div>
+
+  <% end %>
+<% end %>
+
 
