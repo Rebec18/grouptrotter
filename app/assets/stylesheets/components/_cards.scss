@@ -4,7 +4,7 @@
   grid-gap: 30px;
   min-height: 80%;
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
@@ -15,21 +15,21 @@
   justify-content: center;
   align-items: center;
   color: #fcfcfc;
-  font-size: 20px;
+  font-size: 24px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(250, 250, 250, 0.2);
   padding-left: 5px;
   position: relative;
   h4 {
-    font-size: 24px !important;
+    font-size: 30px !important;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0 !important;
   }
   #prix-voyage {
     position: absolute;
-    font-size: 16px;
+    font-size: 20px;
     bottom: -10px;
     right: 5px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -81,7 +81,8 @@
   border-top: solid 1px rgba(0, 0, 0, 0.2);
   min-height: 80%;
   a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #fcfcfc;
   }
 }
 
@@ -92,21 +93,21 @@
   justify-content: center;
   align-items: center;
   color: #fcfcfc;
-  font-size: 24px;
+  font-size: 28px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(250, 250, 250, 0.2);
   padding-left: 5px;
   position: relative;
   h4 {
-    font-size: 30px !important;
+    font-size: 34px !important;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0 !important;
   }
   #prix-voyage {
     position: absolute;
-    font-size: 18px;
+    font-size: 20px;
     bottom: -10px;
     right: 7px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -147,7 +148,6 @@
   h4 {
     font-size: 24px !important;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 0 !important;
   }
   #prix-voyage {
@@ -155,7 +155,6 @@
     font-size: 16px;
     bottom: -10px;
     right: 5px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
 }
 
