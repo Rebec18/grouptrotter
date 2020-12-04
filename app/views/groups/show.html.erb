@@ -228,3 +228,25 @@ requestAnimationFrame(loop);
 
 
 </div>
+=======
+</div>
+
+<div class="group-list justify-content-center d-flex">
+      <% count = 1 %>
+     <% @group.travelers.each do |traveler| %>
+              <li class="list-group-item m-4">
+                <h3>Voyageur n° <%= count %></h3>
+                <p>Nom : <%= traveler.name %></p>
+                <p>Départ : <%= traveler.fly_from %></p>
+                <p>Budget maximum : <%= traveler.price_to %>€</p>
+                <p>Souhaite voyager du <%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %> au <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+              </li>
+              <% count += 1 %>
+            <% end %>
+    </div>
+
+<div class="group-btn float-right">
+     <% if @group.travelers.size > 0 %>
+      <%= link_to "Lancer la recherche", :group_search, class: "btn btn-ghost m-3 float-right"  %>
+    <% end %>
+</div>
