@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.loader0 {
+    width: 900px;
+    display: none;
+}
+
+.toxt {
+text-align: center;
+font-size: 24px;
+}
+
+.centrer {
+    position: absolute;
+    top: 120px;
+    left: 250px;
+}
+
+.loader {
+    display: none;
+}
+
+.globe {
+    height: 300px;
+    width:900px;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/globe-512.png');
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    background-position: center ;
+}
