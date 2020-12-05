@@ -1,14 +1,18 @@
-<% if @semitraveler_count/2 != @group.travelers.count || @big_hash == {} %>
-  <script type="text/javascript">
+<%# <% if @semitraveler_count/2 != @group.travelers.count || @big_hash == {} %>
+  <%# <script type="text/javascript">
     let sr = document.querySelector(".search-results") 
     sr.innerHTML = "<p>recherche échouée etc bouttons etc</p>" 
   </script>
-<% else %>
+<% else %> 
+
+
     <%= render "shared/results" %>
+
+<%#     
 <% end %>
 
-<div class="search-results">
+<%# <div class="search-results">
 
-</div>
+</div> %> 
 
 
