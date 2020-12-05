@@ -1,5 +1,8 @@
+<%# Si jamais on a pas trouvé des vols et des retours pour chacun,
+alors dans le controller on sera pas passé par toutes les étapes et le semitraveler_count
+n'aura pas atteint 2x le nombre de travelers, et donc dans ce cas on affiche la vue noresults %>
+
 <% if @semitraveler_count/2 != @group.travelers.count %>
-<%# si jamais on a pas trouvé des vols et des retours pour chacun : %>
     <%= render "shared/noresults" %>  
 <% else %>
     <%= render "shared/results" %>
