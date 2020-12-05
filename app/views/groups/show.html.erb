@@ -1,9 +1,11 @@
 <div class="beforeload">
 
-  <div class ='group-titre p-4' >
-    <h1> Mon Groupe </h1>
+<div class ='group-titre p-4' >
+  <h1> Mon Groupe </h1>
+  <% if @group.fly_to != "" %>
     <h2>Vers <%= @group.fly_to %></h2>
-  </div>
+  <% end %>
+</div>
 
 <%# Autofill des budgets et dates %>
 
@@ -55,6 +57,7 @@
                       input_html: { class: "datepicker" } %>
       <% end %>
       <%= f.submit "           Ajouter un participant           ", class: "btn btn-ghost m-3" %>
+    
     <% end %>
 </div>
 

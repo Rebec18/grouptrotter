@@ -1,0 +1,72 @@
+<h1> Nos recherches </h1>
+
+<%# ici on a accès à final hash qui contient tout %>
+
+
+
+<% @final_hash.each do |traveler, user_hash| %>
+
+  <h1>Proposition pour <%= traveler.name %></h1>
+  <%# <% count = 0 %> %>
+  <%# <% while count < value[0].count %> %>
+  <h2>ALLER</h2>
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= @user_hash.keys[0][0]["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(@user_hash.keys[0][0]["dTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure de départ : <%= Time.at(@user_hash.keys[0][0]["dTime"]).strftime("%H:%M")%></li>
+    </ul>
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= @user_hash.keys[0]["cityTo"]  %></li>
+      <li> Date d'arrivée : <%= Time.at(@user_hash.keys[0]["aTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure d'arrivée : <%= Time.at(@user_hash.keys[0]["aTime"]).strftime("%H:%M")%></li>
+    </ul>
+
+<%# <% city = value[0][count]["cityTo"] %> 
+
+  <h2>RETOUR</h2>
+
+    <%# value[1]
+
+  récupère l'array des retour depuis city
+  on prend le moins cher
+  on affiche les données de ce ticket %>
+
+    <ul><h3>Départ</h3>
+      <li> Ville de départ : <%= @user_hash[@user_hash.keys[0]][0]["cityFrom"] %></li>
+      <li> Date de départ : <%= Time.at(@user_hash[@user_hash.keys[0]][0]["dTime"]).strftime("%d/%m/%Y") %></li>
+      <li> Heure de départ : <%= Time.at(@user_hash[@user_hash.keys[0]][0]["dTime"]).strftime("%H:%M")%></li>
+      </ul>
+
+  <ul><h3>Arrivée</h3>
+      <li> Ville d'arrivée : <%= @user_hash[@user_hash.keys[0]][0][count]["cityTo"] %></li>
+      <li> Date d'arrivée : <%= Time.at(@user_hash[@user_hash.keys[0]][0][count]["aTime"]).strftime("%d/%m/%Y") %> </li>
+      <li> Heure d'arrivée : <%= Time.at(@user_hash[@user_hash.keys[0]][0][count]["aTime"]).strftime("%H:%M")%></li>
+  </ul>
+  <ul>
+    <h3>Détails</h3>
+      <li> Prix aller : <%= @user_hash.keys[0][count]["price"] %></li>
+      <li> Prix retour : <%= @user_hash[@user_hash.keys[0]][0][count]["price"] %></li>
+      <li> Prix sa mèèèère : <%= @user_hash.keys[0][count]["price"] + @user_hash[@user_hash.keys[0]][0][count]["price"] %></li>
+      <li> Code de la compagnie aérienne aller : <%= @user_hash.keys[0][count]["airlines"] %></li>
+      <li> Code de la compagnie aérienne retour : <%= @user_hash[@user_hash.keys[0]][0][count]["airlines"] %></li>
+      <li> Coordonnées de l'aéroport de <%= @user_hash.keys[0][count]["cityFrom"]  %>  : <%= @user_hash.keys[0][count]["latFrom"] %> / <%= @user_hash.keys[0][count]["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= @user_hash.keys[0][count]["cityTo"]  %> : <%= @user_hash.keys[0][count]["latTo"] %> / <%= @user_hash.keys[0][count]["lngTo"] %></li>
+      <li> Coordonnées de l'aéroport de <%= @user_hash[@user_hash.keys[0]][0][count]["cityFrom"]  %>  : <%= @user_hash[@user_hash.keys[0]][0][count]["latFrom"] %> / <%= @user_hash[@user_hash.keys[0]][0][count]["lngFrom"] %></li>
+      <li> Coordonnées de l'aéroport de <%= @user_hash[@user_hash.keys[0]][0][count]["cityTo"]  %> : <%= @user_hash[@user_hash.keys[0]][0][count]["latTo"] %> / <%= @user_hash[@user_hash.keys[0]][0][count]["lngTo"] %></li>
+  </ul>
+  <% count += 1 %>
+
+
+
+
+
+
+
+
+    <!-- on ajoute un bouton pour aller sur la page tickets -->
+    <div class="group-btn float-right">
+<%# FAUDRA METTRE DANS LA CARD AVEC LA BONNE CITYTO %>
+      <%# <%= link_to "Selectionner cette destination", :controller => "groups", :action => "tickets", :query => "#{value[0][count]["cityTo"]}" %> %>
+    </div>
+
+  <% end %>

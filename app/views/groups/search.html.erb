@@ -1,3 +1,14 @@
+<% if @semitraveler_count/2 != @group.travelers.count %>
+<%# si jamais on a pas trouvé des vols et des retours pour chacun : %>
+    <%= render "shared/noresults" %>  
+<% else %>
+    <%= render "shared/results" %>
+<% end %>
+
+
+<%# AU DESSUS CE QUE J'AI FAIT EN DESSOUS CE QUE FAROUK ET CLAIRE ONT FAIT MAIS FAUDRA LE METTRE DANS LE PARTIAL RESULTS %>
+
+
 <div class = "container">
   <h1>Votre selection de voyages </h1>
    <div class="grande-card p-3">
