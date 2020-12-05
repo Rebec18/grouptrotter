@@ -45,6 +45,7 @@ class GroupsController < ApplicationController
         break
       end
       @semitraveler_count += 1
+      
       big_bertrand.each do |hash|
         subhash = {}
         subhash["cityFrom"] = hash["cityFrom"]
@@ -64,6 +65,7 @@ class GroupsController < ApplicationController
         # c'est un array contenant les allers
         @bertrand << subhash
       end
+      
 
       bertrand_cities = []
       convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire = {}
@@ -80,15 +82,14 @@ class GroupsController < ApplicationController
         # on vérifie d'abord si la city est bien dans la liste des cities de traveler1
         # pour éviter des parsing superflus
         if @final_hash.keys.count > 0
-          total_cities = []
           first_cities = @final_hash.values.first[1]
           ii = 1
           while ii < @final_hash.keys.count do 
-            total_cities = total_cities & @final_hash.values[ii][1] 
+            first_cities = first_cities & @final_hash.values[ii][1] 
             ii += 1
           end
           # ici on obetient la liste de destinations communes à tous les travelers
-          unless total_cities.include?(city)
+          unless first_cities.include?(city)
             next
           end
         end
@@ -113,6 +114,7 @@ class GroupsController < ApplicationController
           # subhash["url"] = hash["deep_link"]
           @robert << subhash
         end
+        
       # on a un robert propre qui est un array de retours(hashes)
         if @robert != []
 
@@ -130,6 +132,7 @@ class GroupsController < ApplicationController
           # pour ne garder que les retous depuis city
 
           noemie = [array_allers_for_city, @robert]
+          
         end
         # on a fait pour chaque city donc on a plein array (noemies) : allers, retours 
         # pour chaque ville
@@ -147,7 +150,7 @@ class GroupsController < ApplicationController
         reducing << bignoemie.keys.first
       end
       bertrand_cities = bertrand_cities & reducing
-
+      
       # on vérifie si full_user n'est pas vide (sinon faudra dire que la recherche a échoué)
       @semitraveler_count += 1 if @full_user.count != 0
 
@@ -172,8 +175,17 @@ class GroupsController < ApplicationController
         fulluser[0].select! { |bignoemie| @common_cities.include?(bignoemie.keys.first) }
         # @final_hash[traveler] = fulluser
       end
-      raise
       # on a le final hash bon
+
+      # les données qu'on peut récupérer :
+      # liste des villes communes :
+      # @final_hash.values.last[1]
+      # l'array des allers, retours du traveler i :
+      # @final_hash[@group.travelers[i]][0] 
+
+
+
+
     end
           # test avec la bonne url "https://tequila-api.kiwi.com/v2/search?apikey=dA_ZyNbfWwC6tB6h1iwevDVUybsLVp4U&fly_from=MRS&fly_to=europe&date_from=12/12/2020&date_to=12/12/2020&flight_type=round&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
           # LA BONNE URL "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime("%d/%m/%Y")}&date_to=#{traveler.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{traveler.date_to.strftime("%d/%m/%Y")}&return_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"

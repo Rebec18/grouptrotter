@@ -1,18 +1,8 @@
-<%# <% if @semitraveler_count/2 != @group.travelers.count || @big_hash == {} %>
-  <%# <script type="text/javascript">
-    let sr = document.querySelector(".search-results") 
-    sr.innerHTML = "<p>recherche échouée etc bouttons etc</p>" 
-  </script>
-<% else %> 
-
-
+<% if @semitraveler_count/2 != @group.travelers.count %>
+<%# si jamais on a pas trouvé des vols et des retours pour chacun : %>
+    <%= render "shared/noresults" %>  
+<% else %>
     <%= render "shared/results" %>
-
-<%#     
 <% end %>
-
-<%# <div class="search-results">
-
-</div> %> 
 
 
