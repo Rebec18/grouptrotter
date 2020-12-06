@@ -1,4 +1,7 @@
 
+<%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
+
+
 <div class = "container">
   <h1>Votre selection de voyages </h1>
 
@@ -31,27 +34,29 @@
   <div class="cards p-3 mt-1" style="min-height : 65vh">
     <% for city in cities %>
         <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80');">
-            <h4><%= city.upcase %></h4>
-            <p><%= trips.values.first[city][0].first[:country] %></p>
-            
-                <% prices_aller=[] %>
-                <% for traveler in travelers %>
-                    <% prices_aller << trips[traveler][city][0][0][:price] %>
-                <% end %>
-                <% prices_aller.sort! %>
-                <%# on a la liste des plus bas prix pour chaque voyageur pour une city
-                suffit de prendre le premier et dernier élément de l'prices_array
-                et on aura un range de prix à afficher
-                on fait d'abord pareil pour les retours %>
-                <% prices_retour=[] %>
-                <% for traveler in travelers %>
-                    <% prices_retour << trips[traveler][city][1][0][:price] %>
-                <% end %>
-                <% prices_retour.sort! %>
-                <% min_price = prices_aller.first + prices_retour.first %>
-                <% max_price = prices_aller.last + prices_retour.last %>
-                
-            <p id="prix-voyage"><%= min_price %> - <%= max_price %>€/personne </p>
+            <div class="cardrecto">
+              <h4><%= city.upcase %></h4>
+              <p><%= trips.values.first[city][0].first["country"] %></p>
+              
+                  <% prices_aller=[] %>
+                  <% for traveler in travelers %>
+                      <% prices_aller << trips[traveler][city][0][0]["price"] %>
+                  <% end %>
+                  <% prices_aller.sort! %>
+                  <%# on a la liste des plus bas prix pour chaque voyageur pour une city
+                  suffit de prendre le premier et dernier élément de l'prices_array
+                  et on aura un range de prix à afficher
+                  on fait d'abord pareil pour les retours %>
+                  <% prices_retour=[] %>
+                  <% for traveler in travelers %>
+                      <% prices_retour << trips[traveler][city][1][0]["price"] %>
+                  <% end %>
+                  <% prices_retour.sort! %>
+                  <% min_price = prices_aller.first + prices_retour.first %>
+                  <% max_price = prices_aller.last + prices_retour.last %>
+          
+              <p id="prix-voyage"><%= min_price %> - <%= max_price %>€/personne </p>
+            </div>
         </div>
     <% end %>
   </div>
@@ -65,35 +70,35 @@
 
     <% for traveler in travelers %>
 
-        <h1>Proposition pour <%= traveler.name %></h1>
+        <h1>Proposition pour <%= traveler["name"] %></h1>
 
         <div class ="d-flex justify-content-between">
             <div>
             <h2>ALLER</h2>
                 <ul><h3>Départ</h3>
-                <li> Ville de départ : <%= trips[traveler][city][0].first[:cityFrom] %></li>
-                <li> Date de départ : <%= Time.at(trips[traveler][city][0].first[:dTime]).strftime("%d/%m/%Y") %> </li>
-                <li> Heure de départ : <%= Time.at(trips[traveler][city][0].first[:dTime]).strftime("%H:%M")%></li>
+                <li> Ville de départ : <%= trips[traveler][city][0].first["cityFrom"] %></li>
+                <li> Date de départ : <%= Time.at(trips[traveler][city][0].first["dTime"]).strftime("%d/%m/%Y") %> </li>
+                <li> Heure de départ : <%= Time.at(trips[traveler][city][0].first["dTime"]).strftime("%H:%M")%></li>
                 </ul>
             <ul><h3>Arrivée</h3>
-                <li> Ville d'arrivée : <%= trips[traveler][city][0].first[:cityTo] %></li>
-                <li> Date d'arrivée : <%= Time.at(trips[traveler][city][0].first[:aTime]).strftime("%d/%m/%Y") %></li>
-                <li> Heure d'arrivée : <%= Time.at(trips[traveler][city][0].first[:aTime]).strftime("%H:%M")%></li>
+                <li> Ville d'arrivée : <%= trips[traveler][city][0].first["cityTo"] %></li>
+                <li> Date d'arrivée : <%= Time.at(trips[traveler][city][0].first["aTime"]).strftime("%d/%m/%Y") %></li>
+                <li> Heure d'arrivée : <%= Time.at(trips[traveler][city][0].first["aTime"]).strftime("%H:%M")%></li>
                 </ul>
             </div>
 
             <div>
             <h2>RETOUR</h2>
                 <ul><h3>Départ</h3>
-                <li> Ville de départ : <%= trips[traveler][city][1].first[:cityFrom] %></li>
-                <li> Date de départ : <%= Time.at(trips[traveler][city][1].first[:dTime]).strftime("%d/%m/%Y") %> </li>
-                <li> Heure de départ : <%= Time.at(trips[traveler][city][1].first[:dTime]).strftime("%H:%M")%></li>
+                <li> Ville de départ : <%= trips[traveler][city][1].first["cityFrom"] %></li>
+                <li> Date de départ : <%= Time.at(trips[traveler][city][1].first["dTime"]).strftime("%d/%m/%Y") %> </li>
+                <li> Heure de départ : <%= Time.at(trips[traveler][city][1].first["dTime"]).strftime("%H:%M")%></li>
                 </ul>
 
             <ul><h3>Arrivée</h3>
-                <li> Ville d'arrivée : <%= trips[traveler][city][1].first[:cityTo] %></li>
-                <li> Date d'arrivée : <%= Time.at(trips[traveler][city][1].first[:aTime]).strftime("%d/%m/%Y") %></li>
-                <li> Heure d'arrivée : <%= Time.at(trips[traveler][city][1].first[:aTime]).strftime("%H:%M")%></li>
+                <li> Ville d'arrivée : <%= trips[traveler][city][1].first["cityTo"] %></li>
+                <li> Date d'arrivée : <%= Time.at(trips[traveler][city][1].first["aTime"]).strftime("%d/%m/%Y") %></li>
+                <li> Heure d'arrivée : <%= Time.at(trips[traveler][city][1].first["aTime"]).strftime("%H:%M")%></li>
             </ul>
             </div>
         </div>
@@ -104,11 +109,11 @@
             </div>
 
                 <h3>Détails</h3>
-                <li> Prix aller : <%= trips[traveler][city][0].first[:price] %></li>
-                <li> Lien : <a href="<%= trips[traveler][city][0].first[:url] %>">Réserver sur kiwi</a></li>
-                <li> Prix retour : <%= trips[traveler][city][1].first[:price] %></li>
-                <li> Lien : <a href="<%= trips[traveler][city][1].first[:url] %>">Réserver sur kiwi</a></li>
-                <li style = "color: lime"> Prix total : <%= trips[traveler][city][0].first[:price] + trips[traveler][city][1].first[:price] %></li>
+                <li> Prix aller : <%= trips[traveler][city][0].first["price"] %></li>
+                <li> Lien : <a href="<%= trips[traveler][city][0].first["url"] %>">Réserver sur kiwi</a></li>
+                <li> Prix retour : <%= trips[traveler][city][1].first["price"] %></li>
+                <li> Lien : <a href="<%= trips[traveler][city][1].first["url"] %>">Réserver sur kiwi</a></li>
+                <li style = "color: lime"> Prix total : <%= trips[traveler][city][0].first["price"] + trips[traveler][city][1].first["price"] %></li>
                 <!--  <li> Code de la compagnie aérienne aller : <%= trips[traveler][city][0].first[:airlines] %></li>
                 <li> Code de la compagnie aérienne retour : <%= trips[traveler][city][1].first[:airlines] %></li>
                 <li> Coordonnées de l'aéroport de <%= trips[traveler][city][0].first[:cityFrom]  %>  : <%= trips[traveler][city][0].first[:latFrom] %> / <%= trips[traveler][city][0].first[:lngFrom] %></li>

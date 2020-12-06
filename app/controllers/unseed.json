@@ -1,0 +1,1456 @@
+{
+    "#<Traveler:0x0000557d0717aa00>": {
+      "Amsterdam": [
+        [
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 122,
+            "dTime": 1608900000,
+            "aTime": 1608904800,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c4af189155_0%7C25c310e848bd48c4af189155_1&price=122&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BT5vqr266rAx0OWER3nw3J0gf9XxlgLSMGbIXg7UAc3SQ3Uha2Jh7cz4SkErqhXaYy9ZDONEMnA8PfeOJ7maYJd0NnrrfsvzHpcUST98Z4t4RZGJsVzSRyL3_jD27jPumRRwypPtaG2xS1qHAgkrevaPPXgoBYG8iGgdl2Cry93CG3du-jJrRfhFVbyPG2wnwO99n-GZpqULhyhbM5pyNVay7IdfD_QRds6fup5Td4S3HBVJasrJJpVCvli1SND6Bh5Q8CBMinzk76il3NQzX0e-e3eWSyMZcAh3OVluVeuc5jYBdS2YFbdu2fpOkdmq0KmygYH9VMRY5Cr1iOyy-pMzjyOr-syah-Ktg8ymmnYa89IeohSrNQsEwuScJm9IuHlncMfbqGbsz_DrM4Aj3IRSOtiqQftSi2ueczSYhWhB5_hs6hYUi_juGAna7rwnR0v5gEjoU4-pCqxMTEyF5vyoMfsVIG3mZdIUCTWDunDYoPtx3wMwfpusfItz1vkvq9LqaIvZuTiJJ8VIx6hLqCPXu-kBU4yP1uCaA3MOdVQOu3tq5CgsjZuqHLFtA8bGj4GM7RZz2V9ckwOyi_XIW1JsQ5VbYU63EIJgs-7MVg-U=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 122,
+            "dTime": 1608890400,
+            "aTime": 1608895500,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c48a719f5e_0%7C25c310e848bd48c48a719f5e_1&price=122&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bj4sXCtPoxKCmSo3OGX5t9c3AyyoNbAPw1xgp80-r9aeW0GXijZaACKhyk2kVqxdiwHi6VHwj7-fpFvD-f7Fgd_RiNN9imi04RkvX_Kzu-UmW1qOkTmSBGryxMkCZtbIST4XWvvof11y5HyVv-BVq7G1AmRngbq6VtQojtAqxAX85Na6waLgDJHbX7xZIOoTlK3EZxUUfnaiKQ6JaI5jBrurl9f_-FBLEX6QM9n8McaLdmgDSuwtK2S24uSCljv9lCr4EAXXBLKgUQC-MHXhZiauvfCBzEjGLtfy58VdGszt4Yj9zNBMJY9d-2ljOAoAIOXtAwVoUFFv_RV6DXlOXKY8m7jcZa2bKdS9yzQ0nvKyAvUz9vNl1LUTtrtuiET1v6SGp4OUVHlgQ4SLVYGGvPYd4ejdBGa4IGFd08SzuUbsZo8hsQp33jEropTZEZgXoptJ1g609F_xY7_bmcNx9nnsP0dcafOkP9-mGfsibZZo4zjfYYN0gTw0bIU7-PwtKVntbZmwW-pNsTLCMkARfCAenBJQ9AfyBEKrvfy9TRynBGA4eTDXkRLAcZZNuasDUmYOfbDDpX7LYCiJM_NmFr3NgF3gfQ2I1MJbQ01PLfcU=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 129,
+            "dTime": 1608920100,
+            "aTime": 1608924900,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c3c2e60e20_0%7C25c310e848bd48c3c2e60e20_1&price=129&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BKvJTBRSfJLurG7IGnhdWcZswzONb4Z26Uhw4e2_xCsqTjF0MTGqCaoTwf4oe5HHPxZ-w2WL1jCmBoCtLe8OaqChwm0CiuhxnsldLSO2jd1kpjOyZ-z3K2jVSea-PRad-p-PGyS_HoPjwGovBs5soPzBZ3J_N5z3jO9zKNAU3Z7Nu6uMTYrxWqYl6DlGgLAGRwDQRT6AenfIPvq_n22bE3M4fyTXcaHzkS8BVMcu--Xrgbd30PqsbWWBnuRg8h0xgJh0GbEMrJdBJn2e6U9auz21gqMMHhd93s7EJRHaHnlN387Hth9qfNsKEOS29PELYQGa7CriSrpSDf82AmaUtX_KzzYKVjcawXMd1gSbT3jaEdzL3ZFB6qoFDLXX1l1kW52Ln8J-16SS9GYHS54zVs_NNw28eDMnXP5WI5vDfGRKNhmk-02CbCl4MPhnunDJwLjQzs8ggofVy-UosiypP_aFmynhFP-K2ZBv9W0GcZ08T-8_a6xi3uYpRNbWJTVY8DXS4ZHNRkspeGq6YXWVpG2zUPNWxjmnv-ODxFp5VPFKgLlXFIPQ61P1QOm9fNjPp6mByX-mgBcVL9HUn3HFww587IViDOlWt6Oed3fZU75s=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 129,
+            "dTime": 1608896700,
+            "aTime": 1608901500,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c3c07a90a1_0%7C25c310e848bd48c3c07a90a1_1&price=129&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BITsfVTkxxbPggHZ8y7ZEyKPs0mX8G9zBqzTf-1ESsJg85EiJ-gvMdkoa8gUeRwnzvEF1-_jpTcTPLcSvfrMqQ8Pqc4FrVfQti_UzFFcsFprS_cv6yrQOHAhKsCD2Vq2I5YqxtRXF2fiexjWjczSDbMVryQukhdEPClfjASRjsgL8aiI9ouUGJzvwp_GxKzhYv9r9SVi8mXBi-1X3JdDetpGAHb_4NYp3sTsVRTG7PGCbV-ceCxFs7VE7ENDfbe-8J3jCy5G7oRCOFXLB3GZ9GHvQXPzav39eQ1MO9PF3kq9iaZqzRKZ0GVgLFuGTJooio15Vf-YhkddbkFW4j-nVbswsUh-e1Ojn4oIjUOBdQdNiHlOl771mV9uZ_sm9igdKWEFiPKElrx2lUcj3HkBAefIVKwk3_1btb_IfqaBuFOJR0kM70_6QmqWyf5QF9iSuCc_XfKMWioIK-Vdc5ZQwiC_Utx9n9WLae8hS1l9JROHui3tjVmG7cACnzmNguxpM2INgG9Ntt3oLoK9VjTMZP0DJ_XngNWMOJp4FEtUCBNMGp6CU8UOnmyEEQDJuPbaLL35pOfa9EiIxyNsyyvFdqY_Ve-20sbeBlmCF6yNWrac=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 145,
+            "dTime": 1608921600,
+            "aTime": 1608926400,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c4097b2e8f_0%7C25c310e848bd48c4097b2e8f_1&price=145&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BFhZu_egXIowXvPQn0-_DAWhtbdANS0YfLkIfbiDrV8KtldYVfqvZy33n89czGyMG2nnQlqIwFlOphCf3-Fni5X3tTEOfzh2YJl-35cVcCHuJ39_uAPGG4a_cHzXbRFksKBleDlEuLqAVBx7pLsiaKcPi_iTAMlbpyQBVv2Pia6VFr6bbv4eojx2-snDiFgm5WTq9Zxq7eDfCJMlWcMzadi-kjzAKQDrUynohDBOSpwxdxSBDIjxw6GUXUTDQ9dRGU8hY0oWF2n4rIcjDdcGWMr1VugCKYOV6VhgzPRhzFYjWb8atHBB20P8xkW13CHASbgfkZvfVJYdAXbGNfGqoZiiTSrMtTxsBCwT_SmQw1FVQB1UIZgaARCJqLZYUmASP1_tBoR51eQrC9q_m7DxKVE52obCNGg9mFc0fPmXquww3Dwn5qV4UhFRgQnaI1J2upKczzcWsWppuToBROXsOG091hE2dkIgFOIkut3ryrSQCB-JnbBiggRj1e5F2aue46GzVIWMv06nEMrs_HjLQjvd-f6Wf2yf5y9PmZ1q_DA85oKsp-4_2Piv-ihCbnAItwTkc6V5t2qfa85ErquBhPyb-eE7PTbczP4IJwyJsT94=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Amsterdam",
+            "flyFrom": "CDG",
+            "flyTo": "AMS",
+            "price": 319,
+            "dTime": 1608880200,
+            "aTime": 1608885300,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=AMS&flightsId=25c310e848bd48c51915feba_0%7C25c310e848bd48c51915feba_1&price=319&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BuqMwbdHuhy7FtIVoCtC1jhwlETfq6LjXOGYeh0MzHoSdbjk9WjXaCQF_YDJK1l5SG43HBdu6lhE6AKir1Xp2jLXynSUH5FT25q10qYJACpB5Lqqvk2VjKUvug7U2sT1N6FVcf-zuLhWLLcb3wY47BIGWcfvjroyT2hXLkrsPaSeZeyRqY3w7LhefN0otxeM6_6hq-bgjgw-i_19g6SwVqHe5wHw9iD7FEKkMvVNRWY2xQDt5QHKuc1eTm6cvL0dP-uoSpj79IKLRUymutT2R30R-7fGkJNjxwWhLBTOF6Ocir7T_VO4mix2U8i7v7daBWDXLIROkWl-D1Qjmc7Ut7mqIErHPqHnnT0dvcTv4JDfGt08TQ3tWFuiH7B4HL0Zv6HzajfcQjdXnEG4FcFN_AFC8L_A1mtxiXnrh62H2hfW4V7rW9DggqNNH3ILz7PRnHFWDBgiANHYjNcuHZRPJqFxuU5XJGuWDHrbmWZBb4h1sWZyFbThB1Y4jGcZTyyQZ_xA5fYAMRjtYPjJUs4hCRmESc0ipJzWzzs8dKsJ7yA2rsb4uJfIg8moeRyg2U0YDyn1aSyCpK-fXngw-2eXQLaOFORVR7CLdf2-rZW4JLVI=",
+            "country": "Netherlands"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609417500,
+            "aTime": 1609422000,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348ca540c73fb_0%7C10e825c348c348ca540c73fb_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B7N1ZclkWPIb7K70C--uil4YiNhnEzA3vrTgHn2rhu3E7mvFaMy9bxdfkl4t18S1A7TNkvILT07U4qvGohVm6Q48A9Re3UFm1d9tmxSCrD-XCE9rjzCtPfXKCAGGkPzzOCnAa2Kt0rPaf630UaJAAMLuaw_1KrHG-rBCFS7HHf-7od1y4ve4kuhosIGIr0pJGFCwxAdiH3TnmyT7TJ1jS82xuJ0sgBABkiGwSNSoAwrIFSKK5ILXzFrmJ-MkKQ0sI88-QNFSTPFIs-okNsXM3vAQKOCXL9P2U1FwwyhIqohTlbZXVGhNVgVZrWPYCvvZIoNcTgDKHDXh9noL9o-P1VduQR3lWkX7vlY0N7WTMCSyac-DNsf-fU9mEfPaXoC69n4ROfHJwh8WjFoF91BODvH_phgtNiqCrRdpvdPTpvUNWdX4TAbepWd0LjftHOKYeWft15xwpPn4tn-PQC_-iLH9B5Jgf7OTLmau_-3441vL8vFXCYWhDaUxXYcCtt5Igf4HZDF1BZadldvW0rNKReSbKCjjsmtagybQaIGt6DW1mT7pYaKYcx_OQC6YhcJ605bwqnjkI1Y15BcXBNC17HQ==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609422900,
+            "aTime": 1609427700,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348f00db4bdd7_0%7C10e825c348c348f00db4bdd7_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B7jlqppraVc2zSZEwkHL994lzwiCtJUn_boJyEy3SpZnA0E7r5VqR-6O6KGiH9uT40D-Z1lYaABYMj7FscUyt-pVDhsGeYJ-kOIyQXAkc3nyufMuMd8H7tZBpV6is8bGVWFAnRbeJPYQ4pYRtul2UTZKPFlqhAUjtR38-aBwix-QJO0HRWzxIKrBb9NagAk7mnkRdL13wCVJdZu9oVBgRyM5LoLYmAIrCCSW9Fk9lUGVNMDftshJEfFuki6goxB3F3sEbJ5WYbfSu8UnUDjtPBneZpWwYmR6WR4Ft385Vs00utuGIxmSWgdmIyK0ejJ4RQftExGm_2FEyigYHfydzF947PkksCsB5POSDeWu1N9YoZlAFQbqWc2hkP6Tl_vB28NNxx9qMqjcI356BiobluAa_kt0L84AOAYa7X24aga5rqby40KpmSGNe7VQ7F2_j6p47eaSd4WyZAJrnwSFJzn-AQNWDunTQ9T59IlrQuPBaSnikNo_XqrzJLP5UP7DgN9FXOlt6os8skUrTSwHqutzhCLaNRXSTY1zjtcN2_-SRlg_8k7OWZR_4y8OY1AgPmdAK-BCA0fDrWQhHPuT_3g==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609446300,
+            "aTime": 1609451100,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348d1c2891d98_0%7C10e825c348c348d1c2891d98_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bs48bpkmd-jJeOIW7_yjp0F2mBddfV7NVMtL_iSGlZ6wVjCFyRMNjOgo4fTxfs4aM_bJCMlmDIRZXlQ0sQCZza71vxJ0CfW5BqHv_8SjPIThfcjDMFAgx76lnRNCJrnJQc5gvCT8CU9W6EDilBRCKYoeI2WaF5knM9Nx84BNC_9yFnjgIoPQILRyj534_OQ_lp257_dSlyflA5kI6m3ahuSme10n11583EOgGL97UsNAe7itRPgIbtIkAle9Fu6fuCMgibg9NNTwB2T8oh05e9KIlcFLmnyM80w8krZim2RgDfv8XOOmwhWeQEvWQyGU-tE4ajD79eFT5iy6PMa8g0a90fYPKD3TIeh7keATxBlkzV2WbnQ6qJOitceSfmoIYWAsU5H43nK5DBDLgRBifmvc29zoYfZBSCt46JsA6cqVOcoZqPldBY-a-70JyYUkM2da95d1G-gLm9FsTG2BGyG6msQc4CWeJ-LbKRyQD38CQjS52y6JHnT2dU_2E_ip-1NFiABVLmiU5hVqSp6PWW1LuPiDcGYUTPAgyBbojfE0T_byU4DkrncBPzHtS30ZJ68p8HANnPjNXdqC-l6taJw==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609426200,
+            "aTime": 1609431000,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348dc17270cfa_0%7C10e825c348c348dc17270cfa_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B0EKBjBphjkP2-3EMhVRzppEjgdae20XDi6kJ5VnOwmCUwae3mj4vr_CgT1-3MspKR9P6IACkFUA_fdHUM2cK-QNihEZ_LcGPDxPkHrhhHNJCmSAEz_Sv7mev3btcMsbnmLz4ztqC-8NMROuRF6wqtTe3E5lytCMuVqhDCMwhqj9IG9fpums1FiZ-tV7lJfQUKT3aMMm71r_1luG3PRluzaqIpDICn6BQ8PzcB-3yC26imTPcEDc5Ko3rsPYPSAgFHyJtsvvxjPPg0xIxn2lb-gspST5ZRwPMdl7aMEz3dFivhXYH6N77oqwmy0iXLFu-POi29g1yetwnRnh9ogtRPljOWNCjCryM4Or55ISjG0kNRvIbf_WfD3IDLWgsUdB2WlsW1dzH3t13-XETbpVPI3azc0K0joUGOzq7yBYKK0LclYVR_8ire9ifpAN1eBeSTlo95Hhco7MTLOQHix-HEBcqy0R88Mtsf-QWWkLDG0cHdniVZrI5oq9Ax5_f5BZD9NpPwePSrJvzxMNAeZ6MdieaINgITNrQha5Ys1DU0jU8KgP2iDMF-HdRNbUrfGgBOwO0A4V07jRHtAUAN5DJzA==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609401000,
+            "aTime": 1609406100,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348dd41190a58_0%7C10e825c348c348dd41190a58_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bb6F5JUjvqY66hZT0hmUhFUSEQNQrL_cEcUyI18JNLiKRTv5e5lpmiR08cspSkGfZfEYkLmW7a1tXvMERx22bWAuXi6FTWhjTw0_6y0fgQ5zpIFSte1o5hnQnJIOzGEbmdL47rtLimmmIq45PEc7RE_0b_Pyb1ykRvFQxF1VI391TOWQdrQcEpZe0kiRaueMpRLa771TU6kgrZ_98Kn3J1viIiwbDDijlBW4ve2fCEbKSEnVGfrSxj_ix4Jq-NaIkTgFS2YTi7iLmZQminE4mulS4Td8yKwHHpdI7lbVGtq0JUt8ZFHnlo-gCxs0dfh8LttSuoT8u7Xk5plEXu7JBgi91RWAj0GJIYHz7mze9hLcuG56JGUHkDevcW5t7ChQs6zenkK44o4j9RkDAyX1CBTvFlsCWKHQJzeDb-kkNV7hsomcQVDNFxtuvoCUYG--tgciNp4wpIz_j6gXDP7OZYIdYLBSLIJdbXgQWaK4rOYQM68se7ABjQlGZ1Yx9OIeGhxAKa81RbCQ1Y8Y3Ao3Gfgjf4MHONU5-XbLiurKhCf_1uEjsFO6VWJ6pFZ-p3fA_nr8ajGsaHZSzvZnj1beg9A==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 147,
+            "dTime": 1609407000,
+            "aTime": 1609412100,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c348de6303cbbc_0%7C10e825c348c348de6303cbbc_1&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BsTtZfn7yz52r-QT5hZNB8RsTi1WuFu5Vb3rZxMOMGKiJd9_hiKUs2klCejH6DBw8QRMWVD4ze0oOcGO1Zoyi12jlDh_7YoGkf7Qjsp3nPSqGIZ89lhgirkZ2tHUDf2O3cPM6f3LzJU8us57L5P63hcAexG72jJu1-kceaW14lKqGhfgdQg-zwRffVI6ZfH7E12vZTyXvrDtyzNOebp12Vqgbae4zwmFU3_NloAvnGA16o_Pz2TuzVgIOkbnKDtOBLMeT3GNRNKViVwkQktlAOgRu6GKaivaj71Af2MyFKfnt_OYpBy8AcdnM75u5YoCd7BttvQ0KxCm7REZycnNOY-K6T01MSGkyP0K9QBOeoGTlOszcylIcVQJQl69BhVVRVan4i5ci3zVpvuTKwiTxLUxiafcvPaf6hwR6giEE3ZAHymBPQO5_l7TsxblPBJS5Gh1SbiuWw91xCprx-VyN7JBwXLTSdroC2b_oQufxyDcMFwbgkyGSBG0eHCVciIVwG2LN3tci_vLvC2a3rAJDf-KxKN39GLRzScOv9eaZMSfFLybo5l06OFsrt0nQ1kVvrCeGDzu_eAeZqg2e9hQGGA==",
+            "country": "France"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Paris",
+            "flyFrom": "AMS",
+            "flyTo": "CDG",
+            "price": 152,
+            "dTime": 1609432500,
+            "aTime": 1609437000,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=CDG&flightsId=10e825c348c30000aa6ba239_0&price=152&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BpFE2-N3ly4bjV_eImP-mSQ8cJnjJUzlL_92i0gF42pqVXyWcnEuvX56bwOIDaUZVLsIAII4va24ajibiH0tSvidC4ab3oGTeTxEKK4TCZBG8rI0XA71nj5UcjwX4waymD0X9JmqJfmJj9_EXScqWowygHrehZeOkAJOHNSjbkaEDdvkO8M7fbzngzlAq5_muFltP8usLXGfpxhockCpZ3YoZnA1jCjYYo998ccT5bTxTeJCyQC8a_ef8xjiefVi6pW-qwLd1gPho7Lo87sD6NM07u47X2MMEUotkbQRt_ajKmFeaxZJ9bWkS4g6wuSKOWs-1d9l0EHmXTiiaxFF5RmS78LMMu-h_jiW9sfA5TMOgm8FuwvkON780fdQrD9Tda25Klo5KqIsq65WXT9clqS8fFFPJglq3rvzKkprIE_adj-4W8oLijjb2t2_hipPdP4TGK4Wmyk-vK7rvmWPwUWul54lMzTPVkKrA3YMM2nbhjPIFZ4u03KY_mEv0fXR4zQNAVssdmsgTkpAI2dli7yAhyXgmplmI0ursMY6AaAusr4gjp1DWS83qEeFWAKvxJJGKP8E6qq3hi3FckaLup-y3U8yaOo8dn8Ru_U5ikFM=",
+            "country": "France"
+          }
+        ]
+      ],
+      "Barcelona": [
+        [
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Barcelona",
+            "flyFrom": "CDG",
+            "flyTo": "BCN",
+            "price": 178,
+            "dTime": 1608909600,
+            "aTime": 1608915900,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=BCN&flightsId=25c301af48bd00008f707b63_0&price=178&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BsUUxRMaEXWYPotxRpRQPVFrAm2Kmh0MAHd8_tCFl_yqfbzG-6MBeQw4XRVrcQA_YtHt8Mu8ZzqH1bzAh-kCwBRcBRH8JbC1CXledaUOcE0-LVJ3-JjGvfzZ0jg3LdDRQFUG-_1JZYqT0na9RTmTT2agbWF8nB1K4dubFMHaOu7LINO404cXB6TtDQPnZn5Q8x040Eo-CG2pAmEHW7LJVQuzY45wmiPQo1qhmkbQakho5-wVchtQqvwDdm8EcjuhEBMpZ68_gD88k0fNakcYS0A7n_oTLebufEyXlN4esIbr9CWMJjgO3c5sqTbdEP7DDI86nmjtIADilAb2OznDcKyP8bpLdTY_mj2tmGK6hDeMS37Z7N2UPKSRemkD11m2DTnB6Wf1mdIbLaAoBKd566otiT34NRbxYz-x45j8RpsxwnJ7U1oB7hhMZYXqhpm6Wn3oOhPxFgN_qLLIVmtllxZaPLOkBA3CVHwJ4LkMzFJsqX3BbZfGYezh7XDu438piIOZIg-g9rGwrdY2XaJk3cS185wTN3GNdIwuqqp5NNGj919QH_xYeAoizdy5SLm0OGyQnhHxjPKKboAN4jOK5lg==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Barcelona",
+            "flyFrom": "CDG",
+            "flyTo": "BCN",
+            "price": 191,
+            "dTime": 1608888600,
+            "aTime": 1608895200,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=BCN&flightsId=25c301af48bd48c63fe1b467_0%7C25c301af48bd48c63fe1b467_1&price=191&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bl-tdJurieHBA0hLoWiVS_yGENZBTXRWZt63VXpcCX6XertO19p-1YSI4sJT0AEZ6qYBCHn0NNaPCwRagYOSp8YEOkfRUsRf1o7OU_3OHobXV9DX2MHZ-56FECw0VZc_h5U7v7pciexXISXFxWALDMhA2nfLKsh_v_8yvOlpiKK2URa9zOjCLp7NbE4pT82U_sV04SOmjxVNH3lh-FXCGH1WDuzbbsqk0sIgTBH7qcd55n-tXewbkIq7g2gz24II908AqjGKROu0Rt926ocm2SB0necT6S7PPhW6mzYIXQENRX0Q2ZYKhplFGdSeVW6zUVZvEsxYFiJUb-SZ94qIPIwL5Pw50gVvm5CWwtefbh21UkV8Hbkg8Prabj_qYd-5uI_UIMpz__fEoN9uwFnn0wWUbZf-H1Tpt6e6VxciVviZ5eDnIshCz_NEAq_s-vvWasTvXXkfcfe1xCpISiW7tmeTZ0E1CIhVhPWWYsMxZacRRkaWj_N71l1Up4cunRWtA4JUF3UeEs_DCw4NGuQswRiYgHK_Tl94s_6NnJKX72BdCLo2ZP0SdvckZ9I1QCb3qrS8NfZ--TjLogsfa6QuIOWQ7gAB361i1sKvzTidcPD0=",
+            "country": "Spain"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Paris",
+            "flyFrom": "BCN",
+            "flyTo": "CDG",
+            "price": 135,
+            "dTime": 1609416900,
+            "aTime": 1609424100,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=CDG&flightsId=01af25c348c30000d670c1cd_0&price=135&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BU9dKbluCcEoev--7WawfhRmXdg07MamiXQhgBBcvbol1VhPCqLCG-sN7ohbVMSadkcvF2_NSGJvG3CEGSCRqFV5eDtSJNIn5BEVlisOOuzFLEq5x2AvKXpQhJBgUjGp6dbRAvax7stLWRBeMt3PDiGHK_q3VQvMdvlvGOgD5A7M_M1uX4f4nA0nOhQnDNub-xMm69RpBnLWu9R3ZEllz8PjpurvbCCF8QXzkClw34l2D1TVjnrDqnhhZjRCQM7vkhTXIZj4LDQf-7JoutRaPmE7Bwjf7CZR8N6Ozh3dKTLuJfjQJrUlfqL0ziX8xEYzzWOxc2AosP2KNSXopcsf147xyhQ7A04QHEfiEoryW9xY0sVUCOOkVcf_lyvqzXRXG-1tOpnT0htTBuuveZalBCBLB25l5dfhZX9qTzlZ8CkCFCUTsemCTr65idtEZnGgX9QO5wubE9uqRc46dAaI9Ye7t9Kcp6kRQbQxvH2MVJUF3fJ2lOkJt8xOE8YN9DOKlvFG9Bl5Oi2GIMlUqVofaHZRgDU3h6OmPT1Zu2iMNoEz0yzwmSVMbZn6ABGDAYlrf_Uth2q9b3u_gjUWW2_KWfIMFtTCx3qgYF3J7h8uuzYw=",
+            "country": "France"
+          }
+        ]
+      ],
+      "Lisbon": [
+        [
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Lisbon",
+            "flyFrom": "CDG",
+            "flyTo": "LIS",
+            "price": 234,
+            "dTime": 1608889500,
+            "aTime": 1608895500,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=LIS&flightsId=25c3035848bd000024cc4470_0&price=234&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BNHdELbeCalBfg6dXwuDKjEyN3B4Lhx5MT-EeVHg3LtlhgvXd5TvUq0qdLC-_eHdJqSTnLqRqR-9emUgIooGX2PF0aD1d6MMx5yirkbYME2OROgTnttn0nuvnVa822I-yHvSZ-gkOZIXm5lYtFBvs-M9uXqOHNvMhK1Qbj2kdQfNepGH1XaBO68pvm8M0dSmevCiI2Vo4jPgLIrdyIFTg04395xnFIMeA3yu2K97W9DgBVpz523WTrub5DnHSR4oxWW4937pM9I6eO13fkhmn3m0HqtX7bSYvVIpVb-39N_OQiYfxluKvlm8mj8W5ZOpyb6asP3A9YfJei6-HrXYJtBNb5nh5Qj12rv8Mgx9nVUa7_GsUaJqA42jATx-DPCMpLQVDLiW0FxOaHD4QVkqld-QnIRD3GtadV9S3j_Ele7PsHxepPQMkuTLHbeRxJheWRUEHRajmauaMd35LdmJG2MxP57w5o7SniyOHs18RhxBbCNHRdm_fPFZvmcGBFOqJAxs3HGHEM2KR1qqnGt4v1VbcXLt5mMrXfzkk06Ssi8qNfuwsAocQeOErp_Ja0_NtZHycAZP4nFZ4hzVVTfRlBA==",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Lisbon",
+            "flyFrom": "CDG",
+            "flyTo": "LIS",
+            "price": 247,
+            "dTime": 1608929100,
+            "aTime": 1608935100,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=LIS&flightsId=25c3035848bd48c3557ce3eb_0%7C25c3035848bd48c3557ce3eb_1&price=247&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BjeHTvZPYe_2w99prKP8xswwbxi9ur6dMHZFFJkPYtzRNJO79wtSd0YA-couvB6KbYd9mwEJGwtu5RyiGmZZ1I0S6dMDdgH3-kZbdz3KlMpye3nYVxCqz6AfVSzb5dHZfEZDzxRYHzca97xxxz2Hn5i-mrn224qzXDqtlGshn6hnIxxd50GCPDmaCP0tUWqTB5ANjM-pzRjMOK0wrJFgP3U4Y1s1wAPxbpnzegT6taQZjQNfjM4AAKMS_fPeMrPLvROXtOn5cg3M9f1XHaxBPvx8mEGymKctOKVytKqY74-pD7S5VV_HOxUQ-lBVo5B5h7u_L7Gh3ck1worvnbhfOHhbT2q9wl5fKMxv8tEhjnflWZLIMMqpz4VdWjUk9PJOXm9dvDbLtC7BzKvO2KA7PbnKH8VaT6_D3jVx_YkYf40rcon2Bydl17JAaJyqs896TjcdMaWgOphPgWT4mXwMHR5Vj0AP0Lbcbnhl8HU4PESHU-LtIn47YIkTrkFwRvVGL256SFszZjmXceaO1E79RT0fH1g_oFPkU0XopaqYMW3crBhxwgDzmkmC5HO0AOZV5HniSIyeiZPkIp3Q9gFSz2oPfSsnWJTDLViL-6LukFcc=",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Lisbon",
+            "flyFrom": "CDG",
+            "flyTo": "LIS",
+            "price": 314,
+            "dTime": 1608902700,
+            "aTime": 1608908700,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=LIS&flightsId=25c3035848bd48c4471d42c5_0%7C25c3035848bd48c4471d42c5_1&price=314&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B-h7kFYULEKGkA1r8y_9AQ9PsfkKFYPxerM8zhAzTqAOczqV2y5fS0Ejjn7my7kFZHctXPvR3RMQHOd0iSy4XaxpulIIQE_h8CxUzRpKMMBQ5zXPzNUDjNvARvC6wDkp4iOEMMP4Xj3C9ZpTTGs1_z0NfBraKwh8whTXEaLWMa3bA5Kk7TuBGcABUmggBVQoDTRozaXy5-TiOb4zxwaDA5RcyqfXWcC13-ntviV--aCxwTUfdfQdBjSjEASSCfQq79eDyUzTp3kgX2OKOGeShDq-5XaC74wgI1dyif_nZVTA0iT6HqQWm8jooYzeHjs3NfinQpWNw6F3WC6jahuCBIi-2LjUICodH7GSPLbfzdUV_dLxZUQCSwGz8qxHM7qkPjbYAyNCwiPUefPSwHa_aDTtJupoSCogtf0mKiA3Z_MgekjeM6J-L85hvWUqK-ljmdtJJ0iF22mFw37ARsPWboM2UdH9ddK8zyF4fcCACVpbltl2VDcfDHbMlmjgAQDcl-lnx9BZEPNSPMWVYMjgvQsN6MQHVOEfdYyX69ewTbb5CvvMECOF5WOUHy-5lchZ6XxG2U0XKEhh-2E2AgIoSPpOxYjSq59YcqRdm3BytuNIUtVclpDXSfRaetbt34zjZ",
+            "country": "Portugal"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Paris",
+            "flyFrom": "LIS",
+            "flyTo": "CDG",
+            "price": 174,
+            "dTime": 1609437900,
+            "aTime": 1609451100,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=CDG&flightsId=035825c348c30000dd1a745d_0&price=174&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=ByFO1jRNkfn_ppenX5VYTejmxZJL4CmBFNsG53LaFrX_IrHx9wzxCrEmlhF5MnUaMCC1nbE6Zqdb_irrwVcN2bFGFcXLCZNFO2KuO7JBk8frZD29PAMz1CRD7JSGYzrc3SioJxOUYziKC4uhz3x1lW0dTC6WDErDu2FSXo6xZWbMPjJxiyFZHNji6vveiWp4TS_p96yl4-X7Dg7DO-25GYymN1yGfBUZpoiiSGOP2INPhCfJcxo2c0R0KttudiAznOYhL7c5ZX5HNuUjFKo0_-eDlRTP1JC0rleMeC78bwUoHgABEOQs0SSRGgp-Y_PqxY_vSCME9_AnNvJiXQnqI8xXhwBkL7AyKahR0n8cgMgOtBWd3xXfHtf9Ma0W0xeDgBwBRwZOpMvUkQyFK9elZ_WdDnxm9xZmEXJNqm1IBuZ_gpEnvpLOF8Mhf2oao5GpI-tTOyF-JZITqRbkWrDFLgA1F5yK_NsSPUkCil7PyYInxpJ2MxWeEZsYMf3DMa0nSkSqVkxI5m75tvWIm1govxRVtbN9mtxQSvgGXB0_rzWB9bGdjxIX1g1-ssEa900mh2_GzLKeg5IdskdT7nRf_CwSPKwrI3ydkqwjW2tGFmQ0=",
+            "country": "France"
+          }
+        ]
+      ],
+      "Zürich": [
+        [
+          {
+            "cityFrom": "Paris",
+            "cityTo": "Zürich",
+            "flyFrom": "CDG",
+            "flyTo": "ZRH",
+            "price": 238,
+            "dTime": 1608901800,
+            "aTime": 1608906300,
+            "airlines": [
+              "AF"
+            ],
+            "latFrom": 49.0097222,
+            "latTo": 47.4647222,
+            "url": "https://www.kiwi.com/deep?from=CDG&to=ZRH&flightsId=25c3057b48bd00001d3ab086_0&price=238&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BTEaOn0ITRhG_IcCulGt97SVWDkq4peY7Wvwsucol953A9iRNxcsvkDetSJkdlWKQUy5RddwvgIrkAqTRyOXLz8fEoS5EUXqBRtRNm-heq5042qnSUYzW1OVwiInqpBIj9EUdvqIirhkkJKouOcQFiyhJxJq0dYaS6lK7X7EpAkGAmji7fqHrxNogdv3UPNwn_l-jsNUW46Ldw4YFpu97HBphCNmoEULJ-OjT0jSR0z4Mfmca2-3OBeTYKLBlYOAhjgQnojXlWxpDIwfEd1RrR2VgP9BPSO3Lm1Bn6EdR8DjZ0F9JNvyxjLlw9XWQBpeANp7dO5G6DnzX-DhB21fEMjgMWWIwpOILGwRf_a_PrxlJ740xM_MKpFrlpkpHzEiwZRcPB0AtOrUGaiKNqdNKSJ7xZvNoj1V3FGthiOtcfK1e86agyj22yRVL4-mLwiiNi-0hszv3ILzOXagsi-to4EJ8rk29iAXnDvRWNgVzbM5dpbcc-M17Ye11ygniZ7HVdVUsWYTLVVf7g21yw2CBW4pSR0y2q_dJgUEtZFbVCW0NJWhXWswYBYZmAZ4SlCCJ5zpcNaecabgKOnvfKUlBpw==",
+            "country": "Switzerland"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Zürich",
+            "cityTo": "Paris",
+            "flyFrom": "ZRH",
+            "flyTo": "CDG",
+            "price": 106,
+            "dTime": 1609407600,
+            "aTime": 1609413000,
+            "airlines": [
+              "LX"
+            ],
+            "latFrom": 47.4647222,
+            "latTo": 49.0097222,
+            "url": "https://www.kiwi.com/deep?from=ZRH&to=CDG&flightsId=057b25c348c300005e6aaa79_0&price=106&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BVjWhJZ41wwLssjUTKBBbIklIBYYZu7y8kB-JBXePjuPJRAydizb9OtZs2XxqsmW3yrmMkzL9sY3MDsT5v5pxB35ms4pWdzHdA-4AAVaKCnHw-cUjb5nEAUWNWCznOmH-D_TCLXiL7wslDS0RmyXwbHLnnYtqsGUOTs8-wF25KasvMx2dWr5uZbzXTf7lU17WJJXoFfCSwIgHjgtfUZJFOXiuNG2P0glIEVag8lRV9gXp9aZdHmN_XqTwAJzog6I1WL3I9F0ULUlKLFeg5rtiZU3RGcnTPow-jiLeizraesFWQUTo4y_COl-AikAxh3ivF8Use_bLRecVa9c9wrKo6xlKxg_vhRhMR0vxGbk9ogficvqQ8rhY4O6vvnBXFNQYacqHCQN34GmP6pxSiJDNxF355Yp3jnj6hNZIjeTuGlCGpyv5VG6tEt6-9zswrB4Y7eJQWikbMS-KmPHPd3W9apiL0k-R6G3d8ihPMIH2EEDp4k479_SY1PCjlw4pLd-wvYw3ALWX8blPHran-jtrdVw1SVYRh1uKRvXIrHlN9N6cl6VZiDhP-upJAIc185-YMzxg0HXjvTKLFJUAsON4zQ==",
+            "country": "France"
+          }
+        ]
+      ]
+    },
+    "#<Traveler:0x0000557d07179448>": {
+      "Barcelona": [
+        [
+          {
+            "cityFrom": "London",
+            "cityTo": "Barcelona",
+            "flyFrom": "LGW",
+            "flyTo": "BCN",
+            "price": 52,
+            "dTime": 1608929700,
+            "aTime": 1608940740,
+            "airlines": [
+              "VY"
+            ],
+            "latFrom": 51.1480556,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=LGW&to=BCN&flightsId=22f501af48bd0000ab3f645a_0&price=52&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BT_GyUPFMbq0GOUMUeUCrICM97FgtIosradW9ia_g2KVpW1hDvkkqfsu4bZN8Nplls2VTt7gI6nAqedcjcuFTWRkB6qJGQCpSS0ERyMqqRUNj9BxhVIcWm3utFwXEl5STTfS91d9rnj039llo8FrNsJ3Ip3hnAEsN_dDyTKApORbNYkSTWqwABZl4bAfNxLETAv18_LXVD1TAm_KUfZ0IhUV95Cy9WwZKtC65cDxvowGrioJzGjY4kDeStdoDn4ZDT5kHgqGdiuvSMuHydoNbncO_INyA9kVh2-mzAKyiJ58zp1kknzq7f_16HfilIqPPmBZlYDU0YNCpM-yR647JRKGQ34O4525jAjMLmOwciDMr5x6DelHcXnWpNnHyW3g5obLpS3O8hEG-gomC5ndjD70obYyqnMdcNOHrfX0ClJLkVxouUpEOMwpbV6o7O0EIhJNUye_enXHlYpx2_KcV9mF2kKybd91BYuw7HLzermXHvwxIdvszlwIifLEfwWJOJdNgq6Bs6whe1Fvsmy999koHUasOXnZMclwtbDx2uWcoSSVP_w9DgLr6auHcuZeB",
+            "country": "Spain"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "London",
+            "flyFrom": "BCN",
+            "flyTo": "LHR",
+            "price": 52,
+            "dTime": 1609401300,
+            "aTime": 1609407000,
+            "airlines": [
+              "BA"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=LHR&flightsId=01af0f6448c3000068044520_0&price=52&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BB1fKYl3-ItdTQibs2nAtNU1a7_C3OswaevPenMs6SDxLhNQEgoq8pX_XQGPHuYEHebPJzNmykGwKhsnksHZErhDwFHjbyU4580KGoYbHUWCljdJMGXkZGqERHkDn1P-H1-CcY-w_TSS8PSf5jIo-OiyRZavQ8abSNtm4b_YWTkBt0lz-GyQfEz29iQRAnDF9gOdvGJxpWtZfGjBVUB3lhqeZVg4tHtOjfIGXuE74DgwMsRKvzvfGlZL1jr9bZcaO_My0D0BZ9TEnQ7gXDUEJe_Js-R1cJByV9cn6MmgL8SgQcWqqDhh4MkNOCXXPaypSSBRUAbcBAIb6eQdUxMVjZmOI6B9dxb-P356AFRb_QcbWG7l-3Wj-U6iOLibAFlsb5vEBgO2GgURQ-GGeB_ZqO7t_dKhIZjAcbJbJ9sOE0T6ImaBpT6dTVEaV2sYju07EkKvxfylRGfytPbWEe5SjE6NYeezBlVP6sAd7B0dCpjk_YIByCJljqvvowrrL8lUm813o8_UjzyfNEAR-mMY5nnmPNjnJpNDECElIuyq9EYX5zzz1ih84kRDPDg0Xz5j_",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "London",
+            "flyFrom": "BCN",
+            "flyTo": "LGW",
+            "price": 81,
+            "dTime": 1609418400,
+            "aTime": 1609423200,
+            "airlines": [
+              "VY"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 51.1480556,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=LGW&flightsId=01af22f548c300006a9548bc_0&price=81&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BYOX1ZQFbSpdTo846AnGDaCbGALfhT_KmAubrr3huA2OAY1Dw1VockS49Aj08LjcsRsDwFDzqDyvzpoNpNAqTVQs2eTkh9RC4VQqTZBg2x6Vo8TyHf02vOUnHixejZN3NnlWQxxUtC5oN6d5FKVQOLlbytfAR-rYD4fRKlbB9CCT0nxwZuQie53yavRF-1Jhl0OZzsgtLahKgn7V7WqeIKwKzPhL2XkU_-kncs32N-k7Y-u5CVpXjAKSVBBiZ1eiuY9rYJJM0ZUBgO3yo5zqC90seCPGJeuBNowIzTkOlezs7D0bFNOw9TIwTGb4TvggWq29kyQcXNQBjNwQtJpo1q963krBvnwMOP7S25J9FPsy25HkAkIzlNMU1iv09ZrufjclDwv5doIAFPbTXH-Js-o7L7CAMEW_PNxqYtzvnMJqOMwDDvEVNM1D095fuSHV8M_lAgLwqM1JWmMkumZe8NNJRevuxQkqL9kfEWhv0obg19K580LT4uYWbM9Z4mjPKjfhQRCmu4oFrzH3f2zNptcA9vw38f5YnTIXPRMynQMndd349fK7YFJXsIl0o--ss",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "London",
+            "flyFrom": "BCN",
+            "flyTo": "LGW",
+            "price": 93,
+            "dTime": 1609423800,
+            "aTime": 1609428900,
+            "airlines": [
+              "U2"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 51.1480556,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=LGW&flightsId=01af22f548c300009b7b8189_0&price=93&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BoebE2iFbQSK76b5qh460u6YqJiSduSwg2gqchR_5a5ZXTOPZ-YhYVLxnghAH-j6jsC9ABa_iMMAPvfc38kZmK7uvAmHYdPdw6ywTNba4-MUGWj3PoWBr0G3B8lMbwNEGnrZVpdR46v17X2eUwj53nnqExZctMKvtv_vIJUF2PnLaU3bHch5qxLtsZITBTQmviu-mhpD9O9YLw90rP-xVY4UUHww5D6oPfGOk-VeRPkdSHI3RE18Z5UXSzhSYZ1m9N1QVOIaT3JUGv2Uf3fUFVpdZsbysrr4Xnm0ZsjLFSsmiv8a2E9vzMHjDiQNkw9HZhUqcupW7gsOV9AcogiT_Po0MtGRoKbcOKy7mTLT7RzXPkuH8veIxHcYfuZDgPV-PdqCLT-fNeKdtmYVyIeZV_v-iv8vFRM5w2ufQIoaq2gDJ7qcqAr1DM9rjdhntT4OL-X4FtkHeI8D9b-ENOO5toCO7dSRa5wT_Ft__IjVy5Ve4al6iA1rLQx0zjDPx80ilyoacXPZOv9nXIfnLF4cVw45h-Y4EY4MekDPtOSbD_xiniANLXtVYYcCh44OJC-mk",
+            "country": "United Kingdom"
+          }
+        ]
+      ],
+      "Amsterdam": [
+        [
+          {
+            "cityFrom": "London",
+            "cityTo": "Amsterdam",
+            "flyFrom": "LHR",
+            "flyTo": "AMS",
+            "price": 80,
+            "dTime": 1608890400,
+            "aTime": 1608899100,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 51.4775,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=LHR&to=AMS&flightsId=0f6410e848bd000066f2e6b3_0&price=80&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BAfqGEGiQE9_3EszcEJVqu1Qxos9OEJ86s82tOaLOeuT839F1EaVwteOxkGKDqsh3NBks30A0LWBTBWN2xOBjG64nDshbBD-i4rM80fsfKQqo9_Kbu426An9OWWDmwDOWIsJj0xaYVs_ChFxSYoePehu_75-42cg4r10YNEN2EK8f0MM0mnmuDNBKFrKX1HrUI2L8nLlUbswWl8i2zltYFULWgOoEmP43_R1hwUxvn0DunidCdiIiFvjy2gEdOIy4VG3TfAzJ99PP5JYeZ6tXBR8W2a5JQcDlRbKTnjIUC8mcVwlRRlFjA5wxVyszW5oZWSAbRDkl-AVR5GnGX8WbQZWDTs8z3VK0C4TV3bny0Pctbq9i7NGoAxTe-6lbJ4DbwLInGB3fF0xWuTdICKtxID8tiZ_ulLKbKMgJi70CoatCXPXnxDiJKzuiU7z07WrGlxD88uJbsafjNjMZphXBItsXuNl36HXXlRXvttFRfjNpnshadixlXYTSCQogLnMXAqDBSeQyHj1ctfJg7FQ2bw_C0GnF4x7b7PeiFR0LLpAOORSRuQ1ZjoKlYZvCi-L0aMX7tqGUQtkSZISuHyCIjg==",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "London",
+            "cityTo": "Amsterdam",
+            "flyFrom": "LHR",
+            "flyTo": "AMS",
+            "price": 80,
+            "dTime": 1608877800,
+            "aTime": 1608886500,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 51.4775,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=LHR&to=AMS&flightsId=0f6410e848bd000068296e81_0&price=80&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BAfqGEGiQE9_3EszcEJVqu1Qxos9OEJ86s82tOaLOeuT839F1EaVwteOxkGKDqsh3NBks30A0LWBTBWN2xOBjG64nDshbBD-i4rM80fsfKQp58dZBfuRcTPP0c4cETUHUQ7IPTz9Kgsz6Xvy0BE23QA1KZYEyHpDObZPUJYsQ2ZWSlT_wrFhqs9MNQRW4ceeR1uPFhtdcaZNSwS2lKokVAgCa99LnsYVwO2BSmU5JBFvj2qj3zH9srJWVvQxeBQ25H72MVAhNTmcZsAStdGLwZj4RRMqBj_lqbJXUy7jDUCZ8WPhYLRHxm6Tmgk8Nn6ewhrnAvlrYW-WT4_pxeI_8Q4J6Bb66LwqsuS2Kg5kopfQTbRUfvHObtXsPEU1Zs0Oh7IV8pY8Dk2vJG4F_EprUhiI1wrtDWcSOJEoM1XQCbyuUdmrXC5dOYm7RiOUSKxGvo59UTQtmgGN4tgyRN723NmfNqS-KEvQ36HNu0ekwFnot1PQmUP8dvFrWZJkh-yrsUnao53iZuyetNFdwrdkObxm5BooeqAfTai3FlGhInPtBlr0qlu0tLrsKc-k3IJ5W-PnK_lGurJSWmkR8Q4EEsQ==",
+            "country": "Netherlands"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LHR",
+            "price": 41,
+            "dTime": 1609399500,
+            "aTime": 1609400400,
+            "airlines": [
+              "BA"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LHR&flightsId=10e80f6448c300001f6b358a_0&price=41&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BVtHNnS0auNfa54g8v8VRxEPzUcz1oFFShB0nhL47GcrCjz_J-i7aRe19HrASh3zzNx_Ev25hdEz6kpxyZJjoh4q7nYTEpzoj_zHwCgSWctd586Wkqux5q76bMDdaJFDcCUMpbKgzfhoE9PeyqjwctG6IKg6Y2uuqWiDlOUPrOSRwJOOIIeWqMaoL2wbWL37ZY479dN_mXE2pxpyn4T2bYNcwUt-BubYZezIx7tMFK-DtgeBRtEKlxnClurgaxcksb7DSvJgaEMi8FmlgL7m5rc-OP3kNhXP4dzXFhYh4pXpkFvtssx0n15hZsUUkI2_4-0ylCQREiELeHT21pwsHV1gP6m9nxrHQ8bKXWvcd_fViuL4_UWKavyzlc98SbWN4i7EwjdYCZgVB8N9mzBsF1KUJAF_AcekBf2nWcojirKXr_BV2GAkk2UCUXIdqudgZHlqlVAQjlZNINi2XrEy_iu79wxaorBT2-kkySdGV_RgU9MiWG4zoQYinaojD7y_l1knVZ-ML-1azgP2AK4f4GKYTeQKK_QYKGxG3gh1NY7U6EtPTBeVprOx7EGdVdthl",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "STN",
+            "price": 47,
+            "dTime": 1609401000,
+            "aTime": 1609401300,
+            "airlines": [
+              "U2"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.885,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=STN&flightsId=10e8032d48c30000ca649240_0&price=47&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BgH8n1SCcp_RlD5z6ufWWGVyHRnMVkqQh9ycbLtum5c-3KnII3wehQJpBTCOQ1JtAJUoAyMlKYVGKxJz__AkPxAfXflHa5OdgDhu_VcA7ab8PS-ps8bWWFp71NthIiVf2sC-2ypyzBcJqpE2gl1aqttg7eYc8D0qIaKtZnAToN1jZS8wBtRz61DgOqgEeFrnDwBPU4v7y9y9r8YzDB0aN6KzSxUn72EX51eSge1N0Nm7tOs2fMSGpNvSwMbEZODG8RXkz-sd6g0Eh7sgpRv2ngDsyv68qiNtA31WyrCMAH0GUl3Y7o_9Wz5oAg_eJJ-K5HP1t7hUXUpPRZBYqHWtfWd2alLUQ3OMnZFB01cL-hFcOo2NzMkLFBiVt-B72QhddhAlSu10gmdMsTXHdOkdCgc21c3is1LO_TsHBm59WP4ewXNYR_gl2UhJtxO9p5Fln_Og3gcO1cCxCSStgkyBZI0TDx13wyCjkEq3roGzJpPRO3tAY1KhEGqZh23HMhcEds-26o4F32JDnfYtdIIM-GdrAsGuqwpUdg2Xn6yUe8Xlw5ZoIzAlIkYiKPWA1JxCCyn_1t753elZFtDc3BSJkfw==",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LGW",
+            "price": 53,
+            "dTime": 1609415400,
+            "aTime": 1609416300,
+            "airlines": [
+              "U2"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.1480556,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LGW&flightsId=10e822f548c300008b89da50_0&price=53&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BXLOHcYU7prBlGxxHml0jjOv32-2oOI6r89Bl9mJuzqj0KMhTP9dkSW9H2UMN6AbSmkDyWtwHhV2jh5zPM-hMai4ArhvhrFgKiodB7Mrhn0VK5SlHTdvSYFMZLn7gJsc_HadqRAwhq79hezLu9qRSODmk9jJnEVjgwZRedMW8iX5t-r5FdXRrqtyM5n6uc5L10NarTJYeKlYnveE9pIerpn9NKeOwfFVlqVY_wxCi4oht3HbRvT0uTQobnSGAfcSuS6TOyiBVp8hCu7OYS81s92aieIaS-tAbKu-y6VfRjNfj-8hbIqAXzyupC9HzGmj9gx5y3U0hBi2JLOQtl-olPPQNGCkqPlyhlQ8bzP_0HGdCs0-nrSxSVi6mowdei3GZPAo3FAQ357DIrx3U9gTaw7a5UdoOMhwaoh-3B4eV4lSVRgwsRIoauW2eNAeBfRjnAZCwgEJubjGJYozBtzUqOI7wSoZixuvqvWrGDGuSYAN3snjzW-ciCH_diGrPnvtNkaWQKap64KamxLSJv6F9KW6u-bZk820yIr97wHoYzNlrVgzCw8pgX_A7Wsk4EV0I",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LCY",
+            "price": 75,
+            "dTime": 1609401900,
+            "aTime": 1609402200,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.505,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LCY&flightsId=10e8259948c300003548ede8_0&price=75&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B0sLq1RE55r838RajTwH4imwgfpnEAOY1m64BX569fmFqc45BLWmfClBIU5iMOalX25s-Gj1yLFSxVQjEOej07XBIKrVbRIIwkLUrrI0D1TbV-6Xe2nUNkv7-VzUvpSO7GTawe-Ksx1W1DRBHVWGIstgx00AaWJy2-p_Hq_hORN1su-96MkMEJlia7slib1dPYscyuigdZ27ezfFtU6GNtzFc46DXJlOkEWbBY_YoqsalcKdhCdp4P1naRfPkkSN63SDU1HqxC38nm2XzPS5-A6WZPENgd_d4sbrEaKOso3wUBIVHmWWlWjrJhjB_MNh1Tz_vog_GGhA21qWYqAqPT51uHrBeTkC7W4RBklkKwWl6oHI_MQxM_yWB3xZ2sv9FF_J6KbBLJwwgKQasQ1lhi88WSGvSMwgWTy8qvPBpF1KNqg3raPLAWbP-hkXomd_D4zzG-Lm9uuYEvLNgE3auhmLcAVkfmhoDTjRIgqmar5ELRmOkS7WN-2d1k99Xp-lBDu_HOTwsnkZMPjzkI576dlNgDe7eSjVja2PQxSyV-xOeYV7u1bh800B0n91vAkn6GoDBO1EtFOh0cOHCZ9kjiw==",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LHR",
+            "price": 85,
+            "dTime": 1609446900,
+            "aTime": 1609447800,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LHR&flightsId=10e80f6448c30000dc2f8471_0&price=85&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BtR6xbb8XfyU02IyJdXdBnfgn2MmK1aMO2sc2mIqcs6OlkzyQZBo9ox4BgCirDukKUl1LKAr-6KEiYiS-aO1rwtHwVrMvegA54frP6ffCfAPMyeGEWAN0focBgBXgijaDMSA1RMrXWObufJptHFyO5Sw6B68_Xdb_yfb75DT7Jy3Ffag5TMe_SlxBH6FaThs4c7upP7Vq3zdMGY68ZY9dz6NXLoNfTXjFu5ZmOYzOVKdJEhF4WljQZj05IAFLLVODackg9nQOzNhtVwqCy5ELHNwbjDGEW4aLZfyPECVW_RP10GR1H34sHFjDwrTHvMRpuw5DKlSAXAoL57k7ECNdFCINqk0QIqPKwH748qi0NNrHzJh2sd1sAkUB3qaYQwtEBgJn6sgZgbWaqkZKd18nZ2xmpnFkENxybJw1a9gSdiUkECi5e2d5vJkWyAP1Gaq00grKmTdOtFaO_xHV31VF0ft-AzdKq-TU1rmeov5OeBe4_Nll09ZAGBQwiGEPUUN-uHdnZiq7BViLJUaWbYEmlhkrKY3XTc-PlF974xF1O0I1MUQ5C9pTRTPPNAFfXSKto3QAKHBXcIs3zsIGka6VxA==",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LHR",
+            "price": 85,
+            "dTime": 1609403700,
+            "aTime": 1609405200,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LHR&flightsId=10e80f6448c30000f06f13ab_0&price=85&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bhu9O8zDEfiQAzUSaMBN2Yrtq-Frk5I8jP4qY5uthrx-DTJ6duMTV90AWF1LJpIGKDyL8tEeGpv9RY0dC5MMpXcPte5sbaB85Vom5f1RZEUlAUrhrePzPlGgfPuQr7yZpK5jC7FkyTLBmq8_wMdqzqff-SUaVrTrp0PdQCRzvdqvoWGMxccN9_6TpddKbs9TfUbo9M7lVB84jStPRW9Yt0K_SjpoOfBWtCJHmuEopxrmoMiZpt2Lkbe3MyxK9uXBfyYU_hiCoCD5tEPFDotZS80vtm1F5xHjr4kW5RZidNQ5sZexEXJXxrKCyW-aRkYVUqbgYqxgWNdPSuhSZWUySaKF6ZHStudzMJKpaK3yFlqcjOI3l3cM5a4bzH-LEPt9RB-Z2mMEoRH7E7CorpedO8MFYKrA4pqTtLvfBJdwpYdwg_4_VjJYYDM_9PZ9p2XlFQSlsvZQPO9zT32Wtppn80tYePr804FReVvmNTM5vZwISxmJPv8uUyMVeH8VKHZ65Vk3FR-isT4SdNaBcRbXVNW6fCiaR3NLrKSRYmoE4Ja8Lmt7_LmOnwlavbKWwdD67nF9-EkIo-RyrssyX18IPrQ==",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "London",
+            "flyFrom": "AMS",
+            "flyTo": "LHR",
+            "price": 166,
+            "dTime": 1609429500,
+            "aTime": 1609430700,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=LHR&flightsId=10e80f6448c300002b3ad41c_0&price=166&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BHOAFZrSYfJdEl_HyMkQimQDNT3Kcwc6Gdu0nroXAKI65JUbml8Uo0s8SFBI9lYd8BL8q8WGPHyDd24sp7YuI9FsVsPXKoKTZbgwlxluOWWZdyqE6DXXc5owN8RpwRakALdP2sGVOOB4_BBvt8XfeHusSC5XW2Tl3RL6xadFFmQpCBHAXB-yA1YDCdIp4tXKpKT6jx1JRBg-_xh-4szmEWz0zkfv_VtsSk2S4cjZjMXH-9U1CJaf8Ij5SP9ySUL9ltLhrIfDYkOMDRU_WLHslhfstdqc-Tp6kMUPbEJwLWO0MrlfppdeEkLLurtBqUWNtqDiQKl4MQQOqPAMK-7DDarbdGQ0X_Olnvh0TAS87pxBDH-WTzBGxS0EGCTlRYBsL9xcFtgplle2MjZtXx2FBL1N5-WoEyTSu1b3DeWNlHJYWaifPpdjCcnRax6bjG59PSanNNB91Xt8KzGr7Rqx0IMPZ3iPaPsxPolPAYsrXtPntlCKYwPIBv2CWUcSviBv8sIqKYYqnt7SIJ04YijMxFQ1A9b-pubcm5W95WAB5VVMDp0clV008CI3wKqpXacvWJ3EVMPXUzjgL6Z7MQAVTFw==",
+            "country": "United Kingdom"
+          }
+        ]
+      ],
+      "Zürich": [
+        [
+          {
+            "cityFrom": "London",
+            "cityTo": "Zürich",
+            "flyFrom": "LHR",
+            "flyTo": "ZRH",
+            "price": 145,
+            "dTime": 1608918900,
+            "aTime": 1608928800,
+            "airlines": [
+              "LX"
+            ],
+            "latFrom": 51.4775,
+            "latTo": 47.4647222,
+            "url": "https://www.kiwi.com/deep?from=LHR&to=ZRH&flightsId=0f64057b48bd000060e3da1e_0&price=145&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BLMBWDFgVRfFzkOJVSKbFgE2VwqxQgcHD-ZXzIoq6Xw9CDZJiRDsP8PNCVqZueT721AWyTqIUgjpGi-Vhm8w332ynHBwAa4OrplMemkSE9QCqOq-1NRR1ar-48wmIc71V-D4A5-TPZn9FWlRJt-MM0_wvnIXhMxSL5mUrs9ozQJOehkjy9lomrO4UlIXji5MV6zQCmnwa4OzZwZQNDkcKiNQ4OHN7E9QmV2mO3p3fNXtDtymwofirVGTc8FJfJgHtOVoVu2c26-OuS9cDRWSZUvHfXMGaL70eF_OfZXmAjpneTYQ52zZQRvkyEzL9VCa8f-LLcY951-YsjnPM-ymI6kNGq8FXBwgJ87TmnWZ-8KvxjXuA_-esZEzTvPta6Io6tkTXDA7dyxfQX82CaOnuR05xPFNpNg3sARUWCJklcHlv0cIisCzol6OxKIVdlaq0eOhCVdYqDrZ6beS1KojXm6GSoNDUTT-b-kecfozkKFBmV7rMEAcvTfKU6hTUMbitaBg5F-JRlzdjoUfA5yoQR0ZjdB0KqxMp77uatBemY3goIPHjDIy75IlwGAZ6UkLNz4XZ_TUyU6iJI2dA-Xgfqg==",
+            "country": "Switzerland"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Zürich",
+            "cityTo": "London",
+            "flyFrom": "ZRH",
+            "flyTo": "LHR",
+            "price": 147,
+            "dTime": 1609407900,
+            "aTime": 1609411200,
+            "airlines": [
+              "LX"
+            ],
+            "latFrom": 47.4647222,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=ZRH&to=LHR&flightsId=057b0f6448c30000be77cc6f_0&price=147&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BwIDSeHqWBEbcEP7tZJrNh8NSky-z0AVZecJMlKOSbl5H5JnZ8NNx_rsnsiR6ucAjfvcbQzOoRoO2GkY17u1TvchNh1sCxukZOzqiEe_5hrgv14ljlX6trelZHiGuweLa1Ut-RDL6aofDc_CvJtG9lP99H2t4BL4oaIaiBfleud9WLV0tP9TLLAV2eXl8cSjxMhtyIgxvFJVeHekmMMgudF6uLnpT_lMIoKj6L0pMxszmGGer3EDT8X6vtwccII6jjaG2tGkq2zCur0iIwckpjDTEBss65BWQuVMZsOARjFDca7StLu8yRRG-M0318Hg2JDHjd6Ry9z3b7Is2oOcvloE1uhmGbq87zA84qLMnRAGsEOh7TKdXmyy-N02-bUoqXOZHkT_8nTG8_31Hzep3OpUsStSmg8d66PnToKsru-3d5a2OE-1rz9RytKALC4U4yo5Zj7zVf5zffoPKjyWDF9tZVendQKu_rfxNXYsKCLHVXe_cWKlUV2cpteh-wNHWmB43HVXYQZemBOCJ3z3mzHNjKRtfzEeRsgVUCq_H016lT_AhSXXsEZNqPcBVmeHli28XjxU9Vaef36fTnOcB1g==",
+            "country": "United Kingdom"
+          }
+        ]
+      ],
+      "Lisbon": [
+        [
+          {
+            "cityFrom": "London",
+            "cityTo": "Lisbon",
+            "flyFrom": "LHR",
+            "flyTo": "LIS",
+            "price": 188,
+            "dTime": 1608876000,
+            "aTime": 1608885300,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 51.4775,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=LHR&to=LIS&flightsId=0f64035848bd00004e9c118d_0&price=188&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BBZQewWHgp_3VX5kuSs75ZoxEiWcw5JM4thcIC6FPzLuNgw5N5LphT0-vjapG_csMTf_cZtyO8mevLASIfLvgFyvXf3fQpMZPbiPEsI1opohCgHloBfSRz9VHnP8tGZIBoskvAXK4W6JjH7CgyQ3WwlTvQqXgrTVwmacTAc8iLshJa4KUZy1arzqYGUB16Jsl4iadVkCzK2Nc6Yxq2miuxMTAWV3Mj0r5PXCkaa8682QXpB5B6qlM93vdxZP3_vAnJZ21G5RnFAzTmvqPoMZ-rggdweB0AMyheFOAdaH8czaDLd3vo_GZyiqb6BYsRQuUqoxUX0yB021W6ugZ8mlX9nhwfFMvNkHCV6sX9U27YsoHSGq5hSiuD8PPjKK7R2ZhGvV1gUBG57RVIH0R2hOtSMbCVKHjUu1usaFh4nBc8GPZxlME3GnEo3Dgr2Bh0L53Yjg2F0uNPQiXN0y8mqqihIY6o1xXH179sm5M-ZuyMzYIUMjIHJriT65T4QY2LC_HLN4Inq693H8uztmtyyaNXhOZfSIUATrA8PIXf6kocl2RKvNNL5fe22ul2aLE7Osp",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "London",
+            "cityTo": "Lisbon",
+            "flyFrom": "LHR",
+            "flyTo": "LIS",
+            "price": 188,
+            "dTime": 1608903600,
+            "aTime": 1608913200,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 51.4775,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=LHR&to=LIS&flightsId=0f64035848bd00008564ab50_0&price=188&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B8K28Y40FpiQVL7BbWSJu4xk_pCvRlnCykdfcYRlHD6n2WkUkhjK5JdqBhtg9T_0LVfraGKdBYR9KcqaLoD1EgSq7uIclLQ-PQv4a6yO4oqZn3kXQaVXPQGM3ayqpbeuOpsvL9SbKCaVu9hqDIMctTyN09moY_Gfl-XG6vux6lzMB7zQUvKrK4Y7SUr7YhJmVPQChSAV7hoa0wl00i6xtsQDTdHMh9t6afvDSj7zF4byPoP45uuCeEDFQSgfSR-6W4-MB1jruLklkdAqXhHhLvL92nqrgf7E3ncCwDH5e9lnOVvuxL3tCOy49P4o5V85eyIPvyZTJl0YY_b5EZ7HS7wt0bBT090ZigDY2z0ROWNyYDg6zV1hAUjEXziQ1MNVbYRmuucKGAt5ROyeCR8bSKAe8o9nZBt3yKvUycbGOI-NXLwTf1dKU0VrfS3n2gZQSrzRWZY6ZnWXR-Pn6i7dZJlDsBeYl0hCux06rH8GNLLndHDf9GexPvRirV2PEFsIknZIoNsPHAgJPu6MJMCFmYxSqtib7Pwtsslt6ny6Xu6HLOG3dW_YabwOnr4gn2d5kZB7ncubBzuNmvkzsgpKBCw==",
+            "country": "Portugal"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "STN",
+            "price": 18,
+            "dTime": 1609436700,
+            "aTime": 1609446300,
+            "airlines": [
+              "FR"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.885,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=STN&flightsId=0358032d48c300004303439c_0&price=18&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B8G_1KkbiebXeB0FjOLzONuBId_1TIUeV53Vyu8vF_wlxKzlB6pvlOXrFEnDL60lEhNTdE8XA1_8Rgq-Usk8Bf9FUCASdVcTIZcGMUaIVZI_LJCoG3l1Vi1mA_xl6qGkSTPfkxP5X1oszuIy2s6jD_E_grcGcS0sywmLp2zXNoaGMJjd3iVeoiXWUaWPWyXH4qF48_KM3c61R8bzRI2tX25noj52MnjB9fOCYxAkCSxKJ6jcqGTwVP4RyXDvvSmR7bdnhW3T2iVpzvKQ22tYYNHXYNmFyE3ChVZqUFTtVgeqo8Xq5-CyUOdYfMWFanalrlYdyIbky_ZSqQ0PxChEd6Lz9z3k8mZ6r-SgkaTDit1C-tHkifZDkdQNRxtVxgAHR0a3lQFrvU-GiiQ_mzKwLWgnkon3L1Gb4C3yQS0mbQzODpvb0ZkqGQHX-2vZgyWdw9Uv2elrenjN8q_eqKN9lFoyGmgPApzNIHqH_FGWNuX8jzclmoG-bsZXNqR1FZN0eGqTYinYxr_ZA3QgoLVam4TCFfarvHB4SCqhttDwDh2E=",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "STN",
+            "price": 30,
+            "dTime": 1609414200,
+            "aTime": 1609423800,
+            "airlines": [
+              "FR"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.885,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=STN&flightsId=0358032d48c30000aa60e6a9_0&price=30&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BZJaS_T47gzX8dX9XLuG4S5AuuLP6wzUggTajuWqclQ4rjFeyJJxgZ5YIM4tqqIqPR_Y-IhixJi0PxluHHzpeSZS4qGt0wTDPRnu-mVt1s9KV8Oe1TxH58fd5soJNJFPpy9DBJa9u3c9aRbwpYHWPOqMaDAMSvtNUPfQlMJFLGDwWGJOOBH5na2rkJHYqr14GfYQ8OiVLSVgLlJwyZ_vyXcaTYCkIOOk0eDmMsNj54xn4bYdT5hOQuFQ4y4QxrcMwnUPqkMcn8k7U9vigKoz8lJyq-Cyf0sOljjxGFB3htavwLTrCVx8QFEXzrx1c4Ak8NTxgFLFXhrjUAPwl3-TlkFWkec8noTb3g0yetUJkhBpM2Rv05Ukn0Xdz8zfinBhQHgGTWvbbgzp7ZMCLGvyEV9oCO7WmYEfX0HMAjDUClxjpNWrF08-6UkXupOJIHMJhbZP3gPHz0pcHMYsJR3A0xIhOojeqWvel1U04sDCmGzvCJ6ekoVJSJEc9JPKizjRXd14q9rQUqA4fqOoWsIEhPmDZ21ZcY5H2l5WIIrLorbJO2LBa5hvXS2aWbBfp-P4q",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "LTN",
+            "price": 81,
+            "dTime": 1609412100,
+            "aTime": 1609422300,
+            "airlines": [
+              "U2"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.8747222,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=LTN&flightsId=035818ff48c300009ef5dfa7_0&price=81&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BZI27fYkDZG-Fxi2kXMOIW26qAGvZPZL7YPmssXLqPMqQl4bazHbX6cp1se6z4shSxzgfLXL6yipfF3RXkggQhExRzurWpB_yL2Ai1I78fL0U0gvzSggXDzs2w0atG1QffHbUUgcgU6UHhWRDjPuWRtUY_ZysczETzRnBg5-R69Sogqy30LXHaELije5bVNPUnxbBhZ08o4q4NjTjoGQyZ4omVNG_4gX130wy9ldvb31YWVMjTUMb4eQKM5X-NIoTuUgizu3AlahVhZh27Bm-WGWUe1e3H3wtBhszObFiFyXn9tlpyZTxUGlcURAjfN2AcqP9all19pPWIsy8lrPonqVG2AWbS2H1DEesGYCYC2s4ftLJjk0AoLHgwqwVGrJahIeSGl0HEVL48wWIcrrGkkYpv3qqcOGm6XD_DoZYigrbWVgs8ZtuFeZDdOEBRlRQ86MgWGebdZhfztJ3oDcVd59Kx1SvGWY_xKqdvddcfvUifSgalhL9l7o7EXq8VB2mnaV3-VlVK_qDRWlgzkF5V6eCAFXqQnR0i-UnfvUrvqxpQjG9NzuAwSAGnctB-rcI",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "LHR",
+            "price": 111,
+            "dTime": 1609444500,
+            "aTime": 1609454400,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=LHR&flightsId=03580f6448c300003f2e60e8_0&price=111&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BXicc7PKaPOoaprXIFuzuWDiwVLvlzEQwKI1sZpxlajmpF597DDi9hmCDiN2KzfiFIMf4OZFEmlAVJ-kV_vO4Eqn0KQSo_fHMkdk_4Olh7ZiKeJHtruSc0rQ1q7EkKIzRCyPgtO1lbLUPlc_oSpasR_sgddi4JOel4uo-nZjcHxwxXUgIKmx10NjFmXhXisTEnIyAd5QtRnhl8sKTLQ8-pGA2Q3NJMH5Dx828V9kIr8xW1lkjT-HnMZ10ws1eRCEzX_aEsxE1g3tnfQU_SMucTJLdYEniQ4fcZfJRSj_O9JHgwTdCnryrs665hh1HMvr5uqGB9fBHngry5IYOqNW7iCxweZGs_toN5kiYofyVbf0WhCnyIG-GMvzcceOYaCBBE8mLrL2-DDe4nvr6idh0zr0VM4MsagOMqlezr4YQhusL30M7GmNMO6o44L-SUSxVhffraH0T1UyrVR7F4op2AXEmHn7GH5jN5BUNmWYlfQDI9J0sYxDWZ3Ix8FozeSivtOFsypevZIIFJ7AqhzzrK7Qa-1kHizAJK1YPwXByQ24Bzjy8s6EiNEjkH5K-z90F",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "LHR",
+            "price": 111,
+            "dTime": 1609425600,
+            "aTime": 1609435800,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=LHR&flightsId=03580f6448c300001403332b_0&price=111&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BXicc7PKaPOoaprXIFuzuWDiwVLvlzEQwKI1sZpxlajmpF597DDi9hmCDiN2KzfiFIMf4OZFEmlAVJ-kV_vO4Eqn0KQSo_fHMkdk_4Olh7ZiKeJHtruSc0rQ1q7EkKIzRDq4F0zGHDiLJBYJ29JB9AvlOZDVib4FCjNd4ysRHpS8oIQt5hZKSfs-DdkA0G-d6SsZbv-Au8V26G7kYb7pVOaQKMbH90hkrt0mtT3gqMRoBOAVou7HURyLjaEGr4ZUj6rJghnl3QoNT81LIUoek6CZFPMhGGTLtml3vqkLvxSOIbudaAAR_rv1W7AO5TlA5FXBG7frz3WD0LB1Qts8xsP600dQN3Sp1O9X_hbxmsxTrS_1uYQEbO5CRfXxje2smbXpApu1ZKu99C7L2OEhTSgRc8cBw3rGszeDruRk_WxtNr28Q5xVbRsiwTSaKS9589Y10hvWpmnjvHejL9Np7hI6YMVSuB-uTLgPFnZAugIYFANH_4RstmzDCU68Wvt4eEgoshyhzuFm3pympB5eCqXQ1XkA2eS1pibjLqHAkVfoQU1OZVm-OOCPtcwBV-RR3",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "LHR",
+            "price": 111,
+            "dTime": 1609407900,
+            "aTime": 1609418400,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=LHR&flightsId=03580f6448c30000136ef732_0&price=111&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BFeUrwD--aOp_hAzJqfmkzCmpCaFz3r3I0qpZPdgXnjUGldM_bDzkfRoujsXMnh6VSZOCf_9-jzPRv591Ht8_3StUA91Jea6SkfZdWB_-_oK4dmYf55pwDKSHu0UiyigS5WQBe4D5Rl2uWyconsaClIsJxmC22houQTbgwV0qGSa2_2vGWGAm0FC7ZRkUyeWUJCuGmRdh3K7U1DF5pC9z02Bq8VkubvtaReYPXA7A_mL1sbDMnv-sca55z6WjKd6g5dPcNArnsGbK5rF8-mdpxPFHTNzn5J8mbkUxHRzSBSVB3nSWbrevga_xjvunoiHyprausjaQlN-iuoXZ_VA59YRpMAwuXU9Do7Qt0aLn2PlAIne8roNefeExGvVbs1RM1J_qtpURNp3C7cc-Ttgy9VnFKEvFhc7qSX4hrHULu5dYLUQqSqv_N32FLXh6_16Pn_GxAFmU9KWbqs7BcYOSSq_l9Twij9Q1xy-zaAtMvBB7rotLRtCh5Pnn9WXjumVr6_DSON_QVGAghGG--pugMO2jj8ok4lrtPYxRHjdTPIgKrh4SXeRSz_7eCQuKFt_4",
+            "country": "United Kingdom"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "London",
+            "flyFrom": "LIS",
+            "flyTo": "LHR",
+            "price": 119,
+            "dTime": 1609411500,
+            "aTime": 1609421700,
+            "airlines": [
+              "BA"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 51.4775,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=LHR&flightsId=03580f6448c300009da98033_0&price=119&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B23UzHY73tn8SUhG-cJi9NXjPWQgLCfewl8tCPEPH7XDhYRHRg6QcZvJPUx_6aH44r3RfGW4rzyPk57S7u_PchV2rU5kBn38W4wT4uL3Eh1wjBLCFQbP5sS0FDGozRFj-FIrc8QbsSj_7K_k_BqeKsCWD9qXVZlp_FO5voZ_vHt4WEf2qbSfhbtPaUeE7C7H85aCIoZiY0P6PG9MLK3JBT2Xz7qvGnAmXx3rOO1osoCLAa55PdPTC5Hfm6whXWFuesls_h-UpTOM9w-L9HGJd1sOMMkha-ahYBFvdN5bFr1XrcFx05-vJwc6KTBoYphduoOHACDQ0qlIjDXcgERag9Hyk9t-UMmHnhCtvMw3j7D7r9OI_ayZxH88RSjwo_Gf5q3yRI-wxNEE6KOeU7yWUXp3PplspF3x8h9cmjAN11zJBLeafSOKil4nEVvr84I42SPFMj8GvJTqk8I7p1PsEORMRl6MvgUY6XXhOA2OPiSRwjnuSHl0gNexG1l0FsZmspdXbroFOn6-Id6e-3Mx87mkL-q3zffppF3UmKPl5hPAxB23Fgwt9t01V4g3Wk5KX",
+            "country": "United Kingdom"
+          }
+        ]
+      ]
+    },
+    "#<Traveler:0x0000557d07178a98>": {
+      "Zürich": [
+        [
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Zürich",
+            "flyFrom": "MAD",
+            "flyTo": "ZRH",
+            "price": 40,
+            "dTime": 1608908100,
+            "aTime": 1608916500,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 47.4647222,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=ZRH&flightsId=0a22057b48bd0000d0ba77ab_0&price=40&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BYXoBM4aOyRq3j9rDl3JK3wmFxBBDd2bdaV4n3EqtMAL5OoZ-3SSJGdS4dtGJCZfe5prznB4bvxhi9lFo8HynUCF7pyY_BsqlAvLJY7tMCxHMUIvAacvx3Npx3pqHnT9ttOdTAxbPt3JXoKwQLrNgMkh4BfD_Lf3qTehKUopS4j5vpdGa1MziFqQgMrwacdnQhDLqtcfOWWlLhSARNAzBWBULvx9wWWkhabq2TpXgb7cD3sV5CYyOZel_BwCYEEGRRnkArZ8FIAor6M5Nxne5NWM7jxhhRim2FeLk2AEIsQeFd7QpErSo2SgM6kMeEXAm3aXNVSM9nNN4OqP0QPXYb2eIMVhZwsvgeVOOQ9-yyc9bqX1Iow4Quqxk58RBL-YnETQePmKIaSdZcmvLwkmbeYPLrg_oY46hSmGmwjBx1pxRDOXKI2LawQEkhfZHas0YVmqEg1dwcrsXxcdPGS2qZKa93tv89JrsyA-U-yTvR0lsNnKrbuj9jHwXqNJvLi5vJU8or5s9aWq4NleB5pFtpDo2NS4YF2DaFN44kqaBxMie7ariZXPbDbIgMZ8Znw5l",
+            "country": "Switzerland"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Zürich",
+            "cityTo": "Madrid",
+            "flyFrom": "ZRH",
+            "flyTo": "MAD",
+            "price": 85,
+            "dTime": 1609356900,
+            "aTime": 1609365600,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 47.4647222,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=ZRH&to=MAD&flightsId=057b0a2248c20000a51d4e07_0&price=85&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Btl36oTSU6yvhi4ptZKpcXfCJys8iy091eO3jjgrTJX7rjLRhJ1yyyA3smZwdpmk-SQbeYcUCaGh3Bl63MTYo25DZGbHcaeTNrWADcYpeyqQvmnbhdEYnL0BAqGuHT61jXMjPh82c05XBp-D3IKF4m05LRA6Dl-GkJmU4XyVsaew78kAiRQqrhT2d8pmkXweKpAg0OcE9-AtMiegiU41e4xCbS1QSAZt8cbjabndMSgin9m1KTDJutnT5EhFO5nV2r4fX8-di78JedV0ktIVhHdlA5_ItGNWSDGPcmgDiIxSTBbMoL-he2rF7xmJCZMKnfPWd-CpjsoZ1FfT4GxD6wYOuXAlly04p1KgL34RLoPHbPYnSz2ow0h0pJYcAJqi_gyZ6INOMmCixbvv939FYR2V3Fe4G0S-Tcy9aYsvhEBNdd-a_rrMal9v71ZiB5McME9K86aoqcbK_EmFwo-ER5kMqIwHbsI3P1SHKclzwyGjAiHfZ7DqjFpZnrHugnxId_gcuoMYom89SJVja2K6USCZMgHmW3zCeqL79Dq5F91NhPRnYEVC1J58AQkEdn7pS9cyUSDaoMhOvh-IZc_mspDWqvqqvkNZTUmnW4lKxO4M=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Zürich",
+            "cityTo": "Madrid",
+            "flyFrom": "ZRH",
+            "flyTo": "MAD",
+            "price": 116,
+            "dTime": 1609353300,
+            "aTime": 1609362000,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 47.4647222,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=ZRH&to=MAD&flightsId=057b0a2248c20000c1268baf_0&price=116&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B6FwVnDxNwarcU14D1B4AJJjjiXQjMqinl8lYh5PgIKpdkcF6a3ZmjXRzcIS8hcOfy-DbSdPoubNkWbk6lyKqPzKuBuWSdTsZclDwSs7cygx9rEVhHRUOxlCdnW87mSQap33EpIy_ryDjheIV-Qk6MVlSh09KMbiRukfCeh2ChDHHm94lpyv4cgQ0Tlc6lc962ZOKk9d7WCfpxpxAevLmL-pStjwVq-NqpTOec1BXSx1Q34Ke3aE9H3-She-MSTY7aFDtrFLSe-Tqxxt52xWB-PHqDi_UEqoQBDRFDsZEmuLBZ4dBXgtvM0ckjJQ2xRgwjYo5MH6dP42NveeSPEWrqOSMtClRQ_4igGf5QFaFO0XVdMcB5Z1STpqLufq-CZpqiAbyFiI3J4EJccENkdz7yf1EaalLGkcjGmInsdGi1HSsKSokV7I6kyWPwPrWRW375kEzry4d_A-hlHcUCatMCjqsS0tO3i2wInzTluzUsb0K1wH_FalhIKnVkFqmOwcRF2uGfQAHs9xeQlkCRKg3mCr03rjnPhxe9nLXRXb4pXSoNmsTOMuzkQcv-E754bv9",
+            "country": "Spain"
+          }
+        ]
+      ],
+      "Amsterdam": [
+        [
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Amsterdam",
+            "flyFrom": "MAD",
+            "flyTo": "AMS",
+            "price": 43,
+            "dTime": 1608908700,
+            "aTime": 1608918300,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=AMS&flightsId=0a2210e848bd00008cfaa8b9_0&price=43&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BojBx77H229JIzozOxtQnEXw7V00z6xiyfQfC6ZSqzSdWyl98XQ9Osdb-sPjNBjj__R2rmSAqoU51bB95OtJC6oA_-4NcAeBXuogJcckhIIaI8K1IV-f-gqNM45-YLXFORh0f8CmZ_t6gBcvdZoBZFoXmvbMoOgRADE_vYAQr6twO8hb-4ksYIpcEf33n7E02yLd3QljKRu9MTG_qvCMwucz4gRsqtBJ6kaf09A2bhpvmM8zepFITvWumL6i1t_vQQsXMGj4tblz8dITFi1NCk-mlzNwbrP6YYxLaXQ_3Zzx_Kpvc1NQHt1iNKi5QLK50TI-eKIf9CL0YJJYXRgONT2N_dSySHLdpCUw_ajF_RBOLbg7GLFZ92ZR4ALaGSs4OH8SbY1GfJFUjv7jyXS8BdayJSK9rPCU3gR2uH8AxPC9qASpFj0ZHg-bNEZUwGvqR2ZlbMqi_TvdCHES6ewrAK7vzA6maLB5vLdEAqQ_ZLN6Y5Cy5mwC43pxnMhF2Crz3S3Htkiuw3TBUOuanpJMTHDUD6FJzwDZr3pRkHZrJIJ0=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Amsterdam",
+            "flyFrom": "MAD",
+            "flyTo": "AMS",
+            "price": 58,
+            "dTime": 1608884100,
+            "aTime": 1608894000,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=AMS&flightsId=0a2210e848bd000054bdd6ea_0&price=58&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B1ZocoBvLCQ3Fl8RWhwf6myI9zkRuwOVlE8EulvKDxB7nR6906CyIhe64dso74iyWSu8SgReyF-o_gypnIpuFiX1P51nweG9UsMI6VdVFyOwdK5BupjuQIbMsZRb-eewZNSHTiOArVayI1iqzbaWl1hKAzbThaeReOMpMJ2Do_HqkG44vAvAVxKAxZ2_UIR5SLO7insly7XdOGkv7qi3mDh7EazdYOaF4hjVB3QWyfviR7rLxZMfOzoGA0F11fp2YhY4Lbrf58378qddee7_VSejzB3h7kKmE7J-M98Xcm0BsoyTqEEOshgJvkaLXM_a6OQwzBflTSkS_nTMa1w7Fq1vfARwR770hleXW4Efff647I89FoLVQC2Qko7E7gOr6vHBe15wTWAfji0XhZhfsKpblb2ZiX_b3kxQ4p1Ts4AcgAOP2LvtgLz9ku8k2vRecBHpChei9SupjhpGQhfB7LLvXgitFOXJiYS7W7rWj27YRVEBVTzs-wtl59lvUEkPrAixMZ6SNl6upAnLgBncGmSJpWhG2C0NiYOIX5jDONeDkgR-3R2B9Mv9VBkJBu_X90w7x3pPo69iw_KHLjil6g5Ogz3CFVFSisZ3JgOb6HKs=",
+            "country": "Netherlands"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Amsterdam",
+            "flyFrom": "MAD",
+            "flyTo": "AMS",
+            "price": 119,
+            "dTime": 1608915000,
+            "aTime": 1608924900,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 52.3080556,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=AMS&flightsId=0a2210e848bd0000e5af49f5_0&price=119&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bm-ASFygsV7jHF4EM-C283Q6U9ybr9H_u5C9bPJN8oSajJ2td7yDgfcWEy-EwaVzXLCGIftXvYhVGNatzyuu3JyPy2bQXMb5g1TB5B6pzi7smibBOz-Qcc_vwuVeZF_AwMzL1pMgh-sADUDsAQMszaDX7aruKDUDjvnd0r6K79M9sX0UOOshEkmPyEq2AJjHjFf8p4EUU1W-AvBNy3Qd_cxecehg4DoTzYHTkKH6dtx7KKq7jruxsUein-YsWTGt45VHpqkNJn9RVDyvwkh5WBWYXagyKIeM6WCw2yAgyHI44rq15ooprIS7ptb9TGI0N8B6w7uSHSWWN923FJEshN_xSajaEbuRNjlp4oTVLfpkH-exWhIipeHL7E4WKO22yjRp50gGcopqW_NwOKrzu4NKL_LVhfpnGA1A5O5UZ0wK5adCzfQtpCjSppD9MqKe-GXQwSz4kFahlznf824mvueSQZTlvuBoNPQV-JhHvnU9snC02z7afCexRyCQqootBfpgbMJ-ab-X_ValLhnGrF4BSdJawxyjv4_a9ynSokErum0-KNXG3gbROBHwTxEIITeqOz64T5FgMhe87ST_8jQ==",
+            "country": "Netherlands"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Madrid",
+            "flyFrom": "AMS",
+            "flyTo": "MAD",
+            "price": 95,
+            "dTime": 1609355400,
+            "aTime": 1609365000,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=MAD&flightsId=10e80a2248c200006b505ec2_0&price=95&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BFRJ3EBKyj5-CsbkSdbAuta3oTGjqT-ZnH-vKoI7-1BQUZLEEdYEicDM2bCsiPemyvpsmrIPIxjcF2zl9gYObQj3QTVu3T9I0pXxTuuVjaaLDqKAQP3yb6WB_BqvF-uHw8lrOW27DT4xi8Y7V_XWqTnOwFCUcwkEPmcBH8JW658xJ_dm06WHI_SsPlGV8X-1z3CyilMpPP76uqReTJhPHGqU4LpqeOiVnRFpv7ZugtTwnKVsyqqLKy6EDJ1qvEl5nq4nwTcMiBxaEXEbYN6nVsZobsKuZiUjdlqge_XAlg2SCogQyD8brmlBRvbq5QxUpwuLK4gkc3DCnpNXNLeqH19j_DfYTUc9cxPPJBvRZzKnxonR_6B50RfFLO0kWi8qtNMhjLDh8foIfKtEUy3JkQYU6gslJVIt3RMlUZIDvIZNcwJDsD7v1OMWAXvq__2-RIgZWattUOmZ8gv-hjbwoPVcUXErWJhGTCBUNerRjcr7-geX5waF8QrLSChxc_MW9qDyL5NM-ZxwAR6QazdYpa_SKjpXGW7aKA8_AlqPLZyFnUQWr-OCIXE6B9CL8lgz4",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Madrid",
+            "flyFrom": "AMS",
+            "flyTo": "MAD",
+            "price": 102,
+            "dTime": 1609355400,
+            "aTime": 1609364700,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=MAD&flightsId=10e80a2248c20000f10969fa_0&price=102&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BgjDJBu0afDKCf0FklrjUOgpcGCoPm4WTTvdrtgt2hd3Q9W0TBRbS-YDTzhNzyJvp-0rF1u0WR1yNoi_gUKlOaLHxJ9tmxJrgZ8neQYQgJgN8krmIIFJpVcLpevw0-MjeTq0mObMlJgRzr8k5BQAVuPCfoSCc4iZtxJnQEZtNZRjAiCCrCefG8Jf0F5XfsMEJQBX88DP0V53lVO-2HhrBKk7ZbFhXg2Cld-94QxLpSjVdgy9sU66CxASGxLY23h3lEGTDn2JFnb9obsDTFynRrp0rmQwydR7m5QQZHY7h0z7FBl43TjTe2YdXlQF9NgRf60PHSH_MW7015nCbQUwkXQO06OHQwq6xT2UbKjExGr1qHUSbZQP9h7Ais5TbBExfj5g05CmOzGBMYxxn5UWNMldmR936jBxXPY4ZaSndbPWlsFdX3mMS5jx9cbnkQY1irgBxx5eaORFqr_IWvROdOq_GT3ZhE4L3pXqfe3yY8u2YuzWpE3w5lpbwt-KDRgC6aZpGkWnqDpUuZYX3x5Af60Bl18ZwaCOTg2-_DyFRLJTlpw7kn6VwNqxIRAX2HF5X2Id9O0ojCHx21iDu6kdvs4UTbIMNfX3ALrTHfQzTEeM=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Madrid",
+            "flyFrom": "AMS",
+            "flyTo": "MAD",
+            "price": 121,
+            "dTime": 1609361100,
+            "aTime": 1609370700,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=MAD&flightsId=10e80a2248c20000ae1597c9_0&price=121&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bh4HtbxP-mbAH4zcAaMzsl2q7Y_m6kQCks0GfHEH6oTcuczXzd-q3jpjuUL3-LCKSkFu4_ZLMHksjvn2_wAjIF9TYRLJjG94_VSU76I_CDQ5omtlcAh_PDK1OYXFaZJXSHbbc0Q0QIKpt8tZKM3pBmXej7eYOrNH0mIsyreyPwsMQF2Qu0muE7th63YLhHyM7klENmDBScUz99z7OWL8lEuToPhYdK2tt3YYH_guOiQEkaLOdMB0hWK9rIv61W8P-YJqJZqY6-32wmNTPuawHEZEIIkwG69Tc2ufDQT0h5vCObvE44cysGQeWlTiSL0XoxpygAPHXPezdj15FRXgzU5k3koAwOobEZ_tRxRpP3h9k84ib2H0O0Xcir1UCyhXUFX4geHggvnjKukYRjFhuQuB4tjW1R3k30fMftyMimSVeM42Lm8Se7wWcYgyVtiodejFHs_touReBXzOrJKC7MORaDaWPSt2hgo93qPKQw0ah7DpLyIMBn3gbEnogTfBXix5pjvGAHA1fzGwvmUGk86F20YTh5Z5klGunGX0FCFyifeTP6BZcg3waKbchP-QUbHZ9WKk9wdjf0zbO_gaejQ==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Amsterdam",
+            "cityTo": "Madrid",
+            "flyFrom": "AMS",
+            "flyTo": "MAD",
+            "price": 167,
+            "dTime": 1609335000,
+            "aTime": 1609344300,
+            "airlines": [
+              "KL"
+            ],
+            "latFrom": 52.3080556,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=AMS&to=MAD&flightsId=10e80a2248c20000a97853d0_0&price=167&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BnkJ7ih_s6YNk7M_K8szIj-kV6CZvCn4BQ0lk-TQRFo6oqbqb4fWXHK2Ah6lQ_Tj9oiB4yVl7pT6tMDPS6qv9xPg28gzatHexag4oWN2CZCKkHFv_7tzcDUb6jBQUDT8ktTfG8OU6-Xza00CsoPlNj0UHj9BD4IhfMDYhWWxpcJm-uKPVxeBvwcgSgU5YkgjZek8INfvIkFeruSPxhf7jLG_FUpLSM7fgYbhvEzVLFE02i2hr5lHfZtvZrAjmZXm4LDAsoAiKgdEDOHw9VEqQjPPryObi5r8nxj1Ct7N4erzgIoZsCW41ZtxUD4O-Nwf2kXjItAAA2471AcOrV4LglPcc7-CbuBg34m_aA43SGcHyr_4YSu5mLz4ZfpzGmcB5xRkkPxwW1FfoHZQ3xGySYyKBdYrmIV_dkjN_9UIUNL-5AIacZmEWh2QTgifWhGw5BRr59Dz5YXa_XZiJ3diV23x4DFAjozSIajdmJ9kuge0NFV1c6TSgBB8pm-DHKYKeZCuXfaRxU0uvWnMV8TSQYSgbdnfEMvw3vQgelf60Gggnf2EYyDbQQvUQB0h_P2ZvrlilxhTJdnr7wSpHGvYgzA==",
+            "country": "Spain"
+          }
+        ]
+      ],
+      "Barcelona": [
+        [
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 46,
+            "dTime": 1608919500,
+            "aTime": 1608924000,
+            "airlines": [
+              "VY"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd0000730928e9_0&price=46&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B5D0h5-JeyW073_CLCTnKlwg5DYHBDTb_Rh05Bx9BgS4uLO_7dZ6ghglu6ZM9r5A1ZUp1yXySDE1fJAEeLZfTz3_gsTJHGr-p3XUNifZfiZrn_aEQGjEYDBs3cYp-eLYBkVZGFKh8tkxA4a8VyWNQm1H0TkC8sir8IIorgVBP-mg1c3EFTqR7rz2RDxUTSTS_gPoxrpgiRbz80ydXnPOXSITEhCEJxHVuie-XOy9tcqibBueTFOlauHJEgwDL2JyDrrXNNkroOOjZp_Fw_J-Rs7qx3_blmlBK_gMKuOucIA_9wmVLm35leDqRzSu-fOJcf1nwqcYP64RawPQa12LSX4kJzJ54Zafm-rvtz-qqPNducidDvgrjqtYSr06ATheMU6huQ3FE0hgRHrfOSt1kcrJVkzQqgqsXT92-msTPn25VzdNPTEdxAuGxVehjgyL4VGHV_4iKCYSAojIUxulXAGUw_W0QhjSSzgcpEzo8HWFI3zWEjlSStgVO2fTlO890y1PzPqO4GOpU-u_WnHmgrKrC8hH_MyoDTIo51NCrgFBwcQxDf94Bn1zaI0eN27pk",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 46,
+            "dTime": 1608934800,
+            "aTime": 1608939300,
+            "airlines": [
+              "VY"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd000093dcc1f7_0&price=46&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BHzlJAR0CatVs2hV0Dt-QRNUg6Sd77X7peuWZ99CDhOY5tYziONANMqe3UUnhPWuKLefNjZ3SXqX5ngNWT05YWlMRDpT9gCqiWgsB-9oqqPwF5XZa81jKqtsoQnbAu4pJhMaSAkjT0VDg0pTGixnFt0gb5kHEBRsz_8hak-Gpd0UBEwjyT5KoDSyP9kbXp_7bnfeE-6hLXWNejEkBHvt92jad99QPs1EWfuGsUR78SlOLaojpGwK9l2NvgX64ZW3KLKHW_PZ6j4pMng0zEv6ujEKH3e1SYTCILwx8lzmMO4ydV0V5PWb39NOG-5blF2bqvasUrn4Ume7_U9n4wuxMwZfZXGhhekNrrbNcxI7LCrRaLuY9Frssy-W_D5Vh0I_jr1k7XjZJCDt9SKBl5UUdRwKtVRl6cjvEAMaOitIUOdwPOIZ-pNZif_jHV0WjAtNY3XOrKausSYON3Dhe2SYJVEufxv4BrfjO3MWEMsJuc7kEsztKPkrd-dQ62gtaX2oVl2FZ9sMMqXiSQ9b7trbGKBC7gPLffg2LNdGDRNNARSKMAP-NKHoRc700-N7Os5o2",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 61,
+            "dTime": 1608908400,
+            "aTime": 1608913500,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd00008c778a3a_0&price=61&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BYuhMfj--eqr2eqtTAmADhIdiJLoIY64lI8CdVcIvSSEyODU4omGizaDzEFzrQoI8yk4_kt12DX0fJ_09YrFClivWRiBTkiByHuKLTeQC875lMgeoSccNGjAV05T6cfaSPMA4ZuBg3P1ebStqjVGh6S_L8vzIKtWVZOAjLZYqMrLMj0rfiVmHprw11aZm5kYMMSO8HRA5xFrjmgUjdLj_bEceL3hDwzEvLdaGHmP5f0fooJ_gp8f9ode-KMl5fkLDs-i1BRr7SwbaYVCA7Szp4macMHDBZ6Jqi7esOaP5I0AxS3cKcCiY5jdADx05AEzbygysvMI_uXPdB373pjFNrNtxqJw2FNSjz03tIzdLr21xwPtQdw8L569FjQiDKopet5IvOslYGafw4kmtG87nwkbGnj4IKrG1BKTDmJ7GuRkyWfa270Gv79-iksxGTfIZF1QZdamAea6sVD2vmc1-2Phgcf-whCBYakmN-9HU_e58fexyTycFa41sBRP7RzQj0qvNmhTblKgT3RNR-Uao-8BeAXzcB8j7oyBUE_Ov_WALU9DszdfO77n3gg6McPFi",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 61,
+            "dTime": 1608881400,
+            "aTime": 1608886500,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd00006279eb16_0&price=61&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BUXnHEKh9XyrFscErzklWwa7D_iG5V1K2BFgzGNMF_GVtJIAV6Y-BoC41b_qIi7jJqQ1uchRzuqb96RzaC3TU2bOStkoRkzdO8qa1xb89ITgnRd0HAndcQm-d8ZMfSaVzOkxrtoPRsYTDf2hV8GpN5rkEKQf1M1KrYBBY2jBzh-8aNq74OWm_nGnfGfj4AncQVjn2-N7ArkNow9k_PITzh3iXH24TO2_FbprY7rdF4ugb8CfWuuaEnJS3Rd23lKFhe7UX3RTCgar6YZ-HoznD1lCvU7-RXWlk1bx65CmZ1lhrKtatk4I0diyW92u5bjKbuvUwZV9nO9vaJAqqHABjVhMAsuOhQoT7LLHGwPRQON9F2daE2RYPmuLp9btSdtYyeaHkjbZno8dEN6Dwrs7Kc4y9UvsrMChRBjuZeIy-ttaK0VaJXq9PTbbzmfelAcfrUYTGdWP1q9S2JG7Han0HEF4WFX0wkQfyHcJRaVf4ltcIQLVmcEdArasKjvLytyS0ZnhX95ZYJkR45iP25Mh4M71b8z8pKFi59bCPfd2ZAJndXqu_aGdq-PFFRPAhpwr7",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 65,
+            "dTime": 1608885000,
+            "aTime": 1608889800,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd0000539b7a64_0&price=65&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B2a-TDifGmlhkqZsXFqbZblFh0W0wTxHvtHiYR6-OHCzP3VqYdcjVgzVn8uGxyxNXS6GXD7Bf7eKN27SOmbSH8h5UWUj0TuDSjdEPaXoLllXA4B6DswbW8WwCp4w2-wuIwPRRiNifAgm7c0wvW_Gkk1fcQST-pIjAKjBDHvReRvZM8CIpvvMJI8Op8f7EC3Ohk-VD9ekCA7AOQAYaK-Y_gBHERclTTVoJ-XdaZztxTNe6JCg7-I3xlkIBAczaulcU3pqHiRE_eGjty-rSIdACJn_itErDZITK-9wqBYqjT1S8oQkcnLOkUwHsng3kp576SoAN_paLzZQGyI8pmxYjcuCcP9K7WxKe6mkpuaVayOtLiatYxiucbAHcRAZ_2Iw6C1F0ZEy9WerplAbiPpotbBtiU9ikZyhTLrTtFO06hRVEeY7o6lqL7fH6vZsfm5hF0Q1pZItMYifCO_V6HQP4iuNS2lX1hxdnQVwkLYcntiNo9jFwzoZ2tHKXmZNDHCt-5g43-L4c-mlfB7n4A24Ap6K3tDf12nXAHAYYF_woE1VP2CRBDXigubwjdw8dp8bzAEqhRjjf9kZhT78MVYvDUw==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 68,
+            "dTime": 1608906600,
+            "aTime": 1608911400,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd0000ed3debd6_0&price=68&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BvJcognymAwET3ap8KlYBG4ZXBkzRNKBLCjdIhpL7yHJzKnpzWO8oCielaX41ut_2J6ue7IpCXG_Lz3OWWskAk_SoB_3pJ4uzQ9fA3rBheSKFnCBr73CDykeaLuE_MUH6l91RzXR8fWzi0_EQeCAjgpj6-KPTQJ74JHj24zz-nZ5n2l4SBiyhprNPeUjvHUVH37S8fHzEkiSE50v9MFYRhtIZ0PO8MqJflxuEGINHWJwBp_f0FB_EF4hf6flkazdj4JID9GbHCADFMpfkbEq3wki5wMlOA4azrLjj8lFKX2HTNkj6ml0IkZjha9px3DyulWbkkZ9e6Do19UdII4-tyV257ZWb2VqfTRfn8HGTUWMERGanJWRQGyZpAjAtgM8hE3rMFb_Mryg4pK8WZXRPvXNFm-ej4aVNEfR630PmFxilB1RQt5c4Dfd_UyrplYjATY_N7GA30ykcw8TAXl7_2jcjj0sFNEzelzi4KrBEmDob0WXUKHIjRNUt27PkdBjXHiwrLxFV349D6SJ3i7B4MbmtQOjtIGlx5aj_tSZebNkr3xijSX0fF2pRw1ygqkw-TJzYxlxr6dOMfZLqzzDrxQ==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Barcelona",
+            "flyFrom": "MAD",
+            "flyTo": "BCN",
+            "price": 68,
+            "dTime": 1608917400,
+            "aTime": 1608922200,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 41.2969444,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=BCN&flightsId=0a2201af48bd0000ef7b558f_0&price=68&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BnTLce0PrdD0RP35E0jluVuue6v0jYkUhtaOUTfgyBqKR_R7b6l-LZ92EjmCsjzfJvfC_-yqKUe2mFvm4_Ax-2tzzSR5CPJX2Rd6vNb23rck50hGn55M9zixjgC_Le_cYJ5An3NOG-Qsp1BjyuvAeQtdX-bmWV55dQtkiGSJ4xiZaKx3a2Yl1xUSi2XSVzCJSupu1Q8ul5r6WLwoprQKVI-fv1KgIQHJiKEQ15uy74oAulZul3HBfNAuOTTVidlT8Eh7-F0svYnJMEfkjsPCo8nWJIEwt9IRUN2_NrYh6aMt3T_-y6zDUi-rq73cmK22_5-8p8aJduSAVxCyKNuKPvzLzLOIosDuR_vhKaYGmqHTxkVrqwc-kvxsv8WKSslDrqmlE__BWp8bJqF9qn9pNrmaeKc1xd2PuU0fq7Lo4obfZST-XjYSD38mt3ve8g0TnDtfBbrIj0zDqEAY2lx92w2C_H1etMykyfo-UBosTqWagdmq_y5yS5fYJS6TQsjsUjdbbN0DQ4Xe1BWtvvQYdF2qnXPbAzDblP2ADBCImcXMxSlDRIatPS2AY0VxDL87g23aK3NkFYVO8btM3XgncDg==",
+            "country": "Spain"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 60,
+            "dTime": 1609347300,
+            "aTime": 1609352400,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c20000271e6870_0&price=60&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BkeOy2p3qjoukvMROvOY2OHX1OkUHFLO-zoVqNxTUHs9VCPV8jk_NGTLlY8derWjFwslsbOqu3I20ZtT-OJu5DeODLPw4TdkeFCpApjoUVRBNVWfMPYgzC7fx5fuRI8X3joz2oXRi1Qyfpov7pmJQzzNkaIKBZrPdpXDQjsjQ5he45GCAK-3SKm9_lE5tAhtv0EI_Zz_-_A5xteu9cDfFApjOc3wZKUcZ6B9d1SIYa1p9RfYNi8RhcaU8z-I4097JCkv3JkxGgQdKQs7X7_Xj2qn_D1q1w6MD5PfSegjin8O-kT7GxCx768ky6YJ23CQGQOz3vKFDyQmhqIV3N6X-88LjqDLUs2hvPepU-zUvLnvuUAdeRgUDFcG0oYYWlAJJHZ1KsNFGfz91OB8-r4cSxYcEcSSdSt80UWpagXI2_Rk1aBRT5nFU7JLvY9_wBtCsqwa-YPq-L-Ipgqhj9ekRM-rx18TacRbTi7MAxX-q-oAI-uYg7myfNZ7QIIavQt8c2AjJ46NNvKCN6XIOlPOOJJQiOnsJqaGMqZTBqtHQN6PM3RRV9aPS5jRhA7gyT9u6sbwWb7sjf4YT7_hY2gTHwVWmysi23qhBmPDvFi-6NyU=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 60,
+            "dTime": 1609328700,
+            "aTime": 1609334100,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000079cd8d08_0&price=60&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BCKtPlQb5jF9n8IG4J6aQJVHtGGJHGldAzDMYQwhDKhJZONeZsJTbRqkMD6jGHW8Aou9HQkuRT6wUHWlQHUSvgHsPM9gOIavdBTGr8ifkknA7nhxbK-E5pQNvrlS4hu97wtEMLy7tuAhJ3PA2CEoz1tqMY-aOZmLpYbA91YyT4nqwvQXh3JWFzQr5ZpnrWvnym0C1BigAO-o9R0T2YvmdLdinoQgGnDCJXRMriSzTDyHRVR1bgxWWGzf5g-n-xQ7sAtHGk7k1ZQTopk4l2ZiULf70YtJYeVZ4-EvtpkuZDAHyu-gaJQShbW7yFGYUXQTlFqSFm0Qd6nHU0z_oVzP5dVHMH2GZQ_X21AogCqriHL-7G-7p1_rGcKWD081dr0SnJmvg70PT9IDhXZD4s4uKP89V1hW4pGJBqEM91swX8_Xm5bx-AqCesEUG9lvzoq3OyDdL2kOp0HQ2cPRTWS7V_284n6tl5X0BflV3-4ci5HLFoow24slj2dyM_Ih2M-cITpoQ0_WH6qyyIaQcPNjhZWvbtk3v-SXtmzgS49jB1ZY=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 65,
+            "dTime": 1609344600,
+            "aTime": 1609349400,
+            "airlines": [
+              "VY"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c20000760965d3_0&price=65&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BsiFO8Bf-41GQP0BsQRbRD7lI6wZkPvHgjTJuaWiSgmTXQ0esko_Lg59iymgfZh3zjBdU-PUl0IGrge7s_tYQC-BBg_O3T_bnI2DFPwENuWvA-qJOiTNDicdDCtbCeI6MUUtp8ts8zTIAm3_OoAL0VJPUX_6gaQKUbFinIJaXvlJL4Jv8IyPPcb-cbuXwn91WURv9kcP-7Nb4HHwgpRxQmqlwKYJTms0-7VaGoqrzyHJnIIEmk6ATMw_uOwhQ46ClPUMHqiiTdLsCL2S9flXkun4d_qN-ifnEsmrNyIE8Nk6GUjiCYN2DSLkFZxyeYOKDCxer96JYH5mBQ3uBK-iVMVRcwQflwRB7Xfyi1MaRBAtX5WGCV8053reGD_di-mdPD5cmGijEeHNZf3RNM_Js8xAxAW0UDk0l7n162X82pfDkv7rQ6pbzBWT6waaE1tUaczatJQnZM83dYqWCvI96seBrEZXElkIFdDVglV8Pqf_XCJTkXrHDm-tHBWafuIB4MWa_vMkn-8XUw3vvG0UR__udSX7JmuO94gtPJzTefHZTGlGGYMhQnHjt18aoPfPb",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 67,
+            "dTime": 1609356900,
+            "aTime": 1609362000,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c200007a1888cb_0&price=67&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BMy_cOBCXH8j32ES4MBJr-_STXSuNmSXnaEnyNCKRfvpUPZtlFBQqN7Cl6I4TJsogjsNydNM0oAsnhMAsGXwXA4wxPk3The-Z7-om9UhsDee2BnqkOx6P1muD_Nkl6kHvoHdOH6tieRNjaeJerIhOQD2o7UD_XTkwP8lkuPOuO5AtJyet4XbHEJsgYJcDaAYmDDPmGX0lHJolC-Sxubsapgj7eZu0hN3DlJGbcAcGqZkjgMCUdUq7EJVrjEkrvPhYdpNGYHGuJdCfwkiSJV3T9yCM6gmyz4GocyiyBEsVZR4cJTk2RCLFy7gJLMdqQPjdM1aVV6K7tPTsP8drVpKjcymyc07wy-6PU_EFQcRx768aXzey3We75ntUZEA0WNsT43SbKL6XKVwAYE0prPjkzs2ITzZkpVy0KnM7y8m8H8Zp4fOE5zh8KcQrLC_iUXj-o7pM69XJpeJ5F9vrRot3m0bnzC6O6JqsuHwu0Wann8KP_2xtrpHK-0WsswQBPKytRM72AaTpxZlRsSPJDj7bqdmzHbF-CA3RGZPtCM3PyCm9A3oeHhjWyD6r5L3b57bNWCcaKdWjvGpJfdNzDkdjjYELr9sAtwflWmMcS-9EQ4Y=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 78,
+            "dTime": 1609360500,
+            "aTime": 1609365900,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c200009e75a00f_0&price=78&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B5NPJfes1Mchx9bPIizvMFlzvpB3whRaPOof1RSmK6g-4f5-3ar_KpsKzAbQAHkrOfr9mUxijrDo4HJuYCoJS5qw4dRwJm7iS17Zaw6QB_fl9DWIdRl0Xc0IunRTd8fVz3hwVcs6lZZ2y1aD3bi2zpccK65x4pNhRgn9-hFC_HKDQl0loKxHYu8fjs765c65y9mrFxQmydXwY4NnH7eT6Jejw7IF2ic9PDeM4QOtNjF6zrrLUGVTboortjWn_AKKTHvTQYIlvI0K7eGf8Z8iJfd_Zt5wus0Oies28H3vZP0oFi5OCR8HJE-q8ohziAxy-3R7BR6rDplPS3LKlu9ibnw8s-6YiEs2crScj7VjQs4Mwy1rfTF6r4949a8eLQwph--Ns8pyHnBslpdwxChlsbJ2BDE4UiLBFDkOaYu156D0BMQ03d7s38M7f0XCFY4FJ9xjneIZn1ZhYkhW9fyiepGe1KFiaa8fDp3vUa9U-gZKyUeYrX4Jd2KYd0ssCz1eVs3ikZsMfJ9cRY4tmLLacde4tkx9TPP2hQ1l8RukLOE3dHoPDu62blFtnYa4L2vP-",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 90,
+            "dTime": 1609320900,
+            "aTime": 1609326000,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000060270f9f_0&price=90&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BcoDYcVSOJip0gu6mikFDAJVGwnMFLVJJMhymdoPUEwM8WmuT9tezvH85To9xpX_JrMikovl8QB2ED2SW5VofCD7aR294bBm81SZ9JM0fFGzWlTjMc1U9EnqRLOMI4pCDHlcGX2LVQ_r907BhpL5yT2a0oDNVi6SBOay7n8ti6dulQSRoyT6EVyfrJft22oAwrV0rLjPih9fqxMPQhMSedYkrcKSDO0upsjV_qWvpWcgx_Kd1AL5IjBoGG4Jj3kDzW-Q5AtoY6sN8QTJuluXG8rLkkCHe0eL2ZIJP_p9ha4-Hv16oDG8-ZDZpr49y8dvIS0AU94eBOJEG-E6qYBie_T81icNjfc_1-vceMbf4fFZdFf6xMpjaJoM98v7BMbjMIy-gb_XyoQh8QhjQburaCa4r-ac-5ZJRmltbR5kCmaKhKogNG5FlsD_tWaQDhTIvWO91jcQCNiYxigoSUidRYz1UVVGEyZdgCY3oitrue5vzEOcsGPW9l7lNxaH8KHrNzxkL8uGwrqnXqxGZSdJ8dqQxVY8_pHuABe-hhNggA1EpxG-W_-qBSxlO4UyiwH-_V4q9Yjj_MSLZYqz9CM3jlWSR1g_J4DWzP_sBUlmCwKI=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 90,
+            "dTime": 1609350600,
+            "aTime": 1609355700,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000021b1c65e_0&price=90&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BcoDYcVSOJip0gu6mikFDAJVGwnMFLVJJMhymdoPUEwM8WmuT9tezvH85To9xpX_JrMikovl8QB2ED2SW5VofCD7aR294bBm81SZ9JM0fFGzWlTjMc1U9EnqRLOMI4pCDVZlSl4_LroQgT3S_YN1rAEXdoRHgxh_ceqk3H7mBHz0C0Q8wbF7I70MyrW9sP3Jq_QwYtlDUV4IDidRzMQuIBdgocaku18kEiaf0Madh5TZktVMVHn66tE_4nS5bb-z3KDYusYYrPj_Q2MONGH3R7GgCXCBFRYBDDBDyNVfqAo4B5E9-g7dd4-Xu7Sf5VCBaYWKRVX4guLuJG5On-cDf0wAmd2loJweons-UocHOxCkavLJO4CCJBZXL6L3Do1YjHGFPuJaJJ_hXTsHDZ_apUW5WJy4SEzUFI8kQkR6Yb5zDs0dkcnzRbOdWjKvhUzTtBNBfdW-8R-hpUEVHKxgrc5D2TMd9Z3IFH0E4bRzYOSpWNd7cTaHe759jPXMksis2bsqElGnD3s-HDDeWZS-oY87xV_4FkPiSwJ8-BzoS4gcyDJH9efCezclh6axT9sH838DR_2g2U1xD18RDT8r5feUWmJL6tyv3Y_RKOJykCFY=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 90,
+            "dTime": 1609311600,
+            "aTime": 1609316700,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000046f9b54f_0&price=90&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BcoDYcVSOJip0gu6mikFDAJVGwnMFLVJJMhymdoPUEwM8WmuT9tezvH85To9xpX_JrMikovl8QB2ED2SW5VofCD7aR294bBm81SZ9JM0fFGzWlTjMc1U9EnqRLOMI4pCDe803k78f2Ts9Hh6dRxA_O-1kR9T53ih_D3U6jycpA27YpBxCBGcUlqle_BoIxraqdWXeOael0c8dncc8MCKY0vC2CTlgpLVWkXBXOdU87f9XeH4S-YBj4-WfbIaDMynCDz-QvJiI_61aCaTnG7fGR3NXF3K57Uq6iuEtRzC__2cn71kb0qaZiAz3ZgcuD1wE3Xajmp0mC6p9d95l4aWABTxuBME5TT93h39iZ3EndBd3PcCczWk3s-YDi8Zlrxoq3dIul4ljbKHBXxTNahC3yE8WwKtncMCxntDIuWR-PbE8qOcBPLVQJR7esk0ukOEGuc5lU3P2sPmkKjLkTdU-2uDgFO9Evi_WXIYuMcVyx1lkmmWw-t3vF-V2uRJGMqLf3uAyz4B1BLbmieoXd9c_k-Fix_znsTC4HTxdL6jSc6_fyYj-TlXn2tXEf-alOxH8pR5zjEzW0FkVrbij5Lt-hWNasaBU9g6hsIgIZ7jexqU=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 105,
+            "dTime": 1609324500,
+            "aTime": 1609329600,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000075c9b344_0&price=105&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B0GWYRZWw0qgu3rOSBQ8YJkHskerjqRHdIhTzBx9zivdakz6GueMRqhymhJhQmAaAqQh2eMwU1nFDvPacCjMIV21D6VsHjSk7Nd3RTVHcfsPMJ8iw5FKmRN5nPvOBlLpL4l3-C3LuVV2lFEqRbV83iGgtR4sP1zDSdNRP3dPGs5Kp-karZWDtDXFnpnx--KqfivtEHS_nUQsNoal0W8yaTn5oW3NBq__W2Ob5oUrYBPMlmB8JPwHBR8zyxxeU2mquxzkIRgJE4boN2vSjWp93pUp84YlV118leI3l-P5-prEY0Lz_-CojMbw_Ne3JC2oEnvLR4sNHH6TIPm1eH0U-t5sxGGPGgxO-b3NhO18m9Ke6o9a5zR7Vcv5ISiatXNJ7joHxizPCFZubMFqz9bSaPoys5yymVtXSDqcBIS8eb3W0J3FvFDZN4NI8iiNp7sTs5t1sRaffeOz4rBG2sd3w97sopgAgXvmI5NzWxdGVuIYqDX8jWHhlc8GtLa6m1t22IGASNKuQ0IQoGVJhPf5WyFTv9mjjWacB399dLrDLJhszIcE1YDBPF0i4Jpm2SHxAjlSe04zMEF0o8Mz5DyzzN5BZYP3QPofLTDMA3M5Z_7o=",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 128,
+            "dTime": 1609364100,
+            "aTime": 1609369200,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000066be769d_0&price=128&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B5h_xkoNmCR3UedogUOj3OxlpVTAqkQZnDnT2J3XNuXk8j_jlqhWE3A7VKpq5gDDF-NNDp91RNt4Yi0TfhiRgRIuob04hlp9sZNtogUJ3yZ6V_WVYaAU5hHTs4Yd0j7FNs_2umK27mpDzeRajYCpAWkxBMQ_0HXg4thOFkfJ_R4vOQHnaPimKn6y5KMXF4ojhJ3CIkbrK6jX0N2i_08G9-az08vwmRZ6UqtV8MQ4C-DdSgKP9i2UBbEtOrXwWQj1fIUgZznD0vG2_UqU9aw_tbXSme1Q3zQ_dUL6nr24sTwMDiexK8MKuXrr_Exp1jtzVWU30cd6W1-QLYlOsDQALxX29apHHeTG4tYAMGqr4e4Csav5cswPogwD1K6LfEdZpC9AVjwTSo1Q3WV87OsWq876iPoakFb5ay7l6yrX4bwcaSW3nB0JJsXPvzF8h5oVCoM8xuaSXA-ZMmmQ4B_lmSqv-8kMokZVyX1a7IWMraDzuHo3eimvbC0khDmDWBV3DcdhZ8IMlSGi3apDkwge18vhKZfTXfr6cx0OjwS16A4g1MRTp4ic6T-YS7oznU-UemPYXNPYac7H_Cac97X7wyg==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Barcelona",
+            "cityTo": "Madrid",
+            "flyFrom": "BCN",
+            "flyTo": "MAD",
+            "price": 284,
+            "dTime": 1609335000,
+            "aTime": 1609340100,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 41.2969444,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=BCN&to=MAD&flightsId=01af0a2248c2000070e2c904_0&price=284&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B3deRBvcq69AJ3eycyFOU0LIFNaBshPUdLbsHhdxaWnvTdO4jVAkTyRoJ4I6hcSGzSviAMRfcnnF7757GNRJiXOyRWNlBwE7RuB5jQUm0ke2jewfYT_KC7sm4FGaZ5rqKwYIBI7XldVyM6Ex96YeNBYG9HCnHwFoNuxss0IYe-opU_OaWOwfxacKR3oy6_iC3ckRRqgg0x2kMs9Lx1uFz5fBu-dEd20msNvohdPvvjGJEN47MUsAGbBIsXJkWFcrkg6GUnbvTYvJjAkJlRStBGjNz-H-aq9LnBaulY_7NZ-waG2n6OhaezwJUaM2GDk35tikjZJIdlk5uV8EAIuAyS8SCgo04F88EeL4KJtw-oF8wKAwAklzWavr6_8Tqn-BzGcQivNuvWD8HrQaqPNKHV_eJw0iS0enIXSBwhNKqjIegQ4hT5Ifr6seE2_aOAvg3IVd4atvRd_IJkz8g_HEslhiot6zcT7-qKc3eZTd2w8rJ2Dp7Uy0qbD-wW8frfm7aE9JqZDZkkbXF43nSsyLIC65niQjJFtVhYqjpqDyhgO0ULpuA8XKec-YvgHMUfiNIwS0U8C9B72Gou2wpxN8N2ZoaHgzaD88dphGW8FpY_3M=",
+            "country": "Spain"
+          }
+        ]
+      ],
+      "Lisbon": [
+        [
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Lisbon",
+            "flyFrom": "MAD",
+            "flyTo": "LIS",
+            "price": 46,
+            "dTime": 1608907800,
+            "aTime": 1608909000,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=LIS&flightsId=0a22035848bd0000cb1eee71_0&price=46&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B6v46eOuY92SFpSkuC5IiFCX3Uh6_0dxhuvbB6xsTTyx_2DOk1Jk6TokL4FSE5mvAcd_BK12ZUzeaEoWEXGV7yvpGSjazSAOJBH_1drVISMHN_6LMngGEtqIQwQbVeYTQw3IxvAGTTt1pMd-v6xt2-KiEjXtoxmb9bz614d8ngEwhJolVDc-cxiWd9xeYfhbgz47XGQzMWn08YUcNmqywCJWz9aG_ezVzt5EEAqLXYZ7-HpDVhOcjFi6WfNRtpycF-UpTykzRx9QKljHqnXH-tPd6QBh9yAT2qNRyaCZvH9zMK4z1ARGfDMY_CkVe9SxNle509539ci-Xf5q0gZIyFGg9-ROontWN-X21pQK1737l15qV-GJIwgQDBjV3tXll0wx-LLUHyGP-b_lzibOwgsEPW2Bi5M-OobO1wOD6M-A-tgf7sLkI7KXiX4XIAJhlW3yxPVv7xeNp936LaLSHwVYTFOwa_fZn01bHFUMtilLw4PnBuDMcLH9XTG-C824rNBLBe1NrmuQ-T4ubsrx7goh4peOWoddOM7Mk1pjHnPiiB4oSWk3Vnol1BR9LYpF5",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Lisbon",
+            "flyFrom": "MAD",
+            "flyTo": "LIS",
+            "price": 61,
+            "dTime": 1608902100,
+            "aTime": 1608904500,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=LIS&flightsId=0a22035848bd000000bed839_0&price=61&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B5ihhMnOt2a9IWxsL5fKJPisDGFCSuddM322vtAxHM2VsnBaoAdrWOo3NifmyZwAlHL-fRyqvkXBq7ZVXvfiQymSrhLI8VgyKARlB6FLXcBnp14ZP7n_ZDhnDedmQx2fK2MmaLTJXOSDvmS7W2OatPAu9qfcuRWLj2AVdww4EfgKjm_tIZepa3Av7g5INUyPdA8PxnRigdfTUmLvPUh4bhbdE3Ady-9sL4n_TXFS6i8CZXtnYHH1S36WTcpuCd0MqGbGcfjyWJzvxvKajplAekziMYjMhesxRG-nC7sd5e17QPYUawx5w7RHLt8RI2WtE-qR_YVexCMuI3pwMhAjVBSv1HQ70rEaWh_8DjzXeHPbEMuGXx4wdxECsvEO9Tsy2KWlexAC3XHrs34FTkSEdUDfkBqQVaQ1MoEdRCmfdf9ZTidXImHNKieHfZ0eXNIeTmnkEeJsMb1PE28CicNhoByrBkRD5k1vc6c3QPnDchmnstwd75jULt2RFEF7ldbTw8NDgDF4ULWCVbtVEi9WLiPo1UFVgRUsOkVhcF7sSYnHuEz56SNAH0dOFUuiLOKo5",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Lisbon",
+            "flyFrom": "MAD",
+            "flyTo": "LIS",
+            "price": 123,
+            "dTime": 1608910800,
+            "aTime": 1608912300,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=LIS&flightsId=0a22035848bd00009f2fed34_0&price=123&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B1uFsyjceJ76HmKnbUlYhAvHMaUmid8kRCnLKZxfHCBdc0nM97gdJaiBXGO__kffR_Poy87NgK5PJDLoKdPKpab_hncXUtilF5sXyAoIZLpo4cnMmd1d3Xcb0c1FXSk8vOvah0re35p-edpEMqchXFRshFk0SMXOpaKfpdod5FOAQpl4nvpw_wUIEjRHl94IJBefLzJtPYOQ06c24uFijk3L6Jaqiiyr1-r44iS3WJjZpZcZ_tPCljCB_6oPaHmmHyfkusGSKConvYANUmi-rFSB_ggMI-OnaWRkB_KCF4Z2KC3QEl9WMP3TXno3tIskH0l-BkST8So8kQtYt5llYpoH_pshHF6a2qjQ5CxUlRauONRPcWMTzPCSCRTJD5e79Z42Zv393TqBgV7VhDYS9_CmqKeYDF8DTdg_SQYra14xQMPPsQSGnrEvImheBkwI0cS-pePsbwtckyLYzzg1UVFeXnTDrbkrRpiJ1pFy9KlJypY6PA0t8NnU_b6rieMiPQIVWcpzE6Kct-93k2Olu5SyRKtVv0vUIeHs9TD7uq-73DbeXLfjj4txNqhx4ZNWOVgJcoJiQxj8dXONFXTtzEg==",
+            "country": "Portugal"
+          },
+          {
+            "cityFrom": "Madrid",
+            "cityTo": "Lisbon",
+            "flyFrom": "MAD",
+            "flyTo": "LIS",
+            "price": 129,
+            "dTime": 1608918600,
+            "aTime": 1608921000,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 40.4936111,
+            "latTo": 38.7741667,
+            "url": "https://www.kiwi.com/deep?from=MAD&to=LIS&flightsId=0a22035848bd000007d31c20_0&price=129&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bj-pjr5vZrKYtJmAnbsMn-a7fWgWlWS4z3Udp2tzRl0XFuG4XjSJyPv40_LZI6r8PCx5wB6GVqsUaOinMEHrafa4MVY959IIe8DysHKszAlUPYpTXJW2kPhlBDkAkzlxEnClxwO6jtOq9rWO_t-bWy69wwSCF5KsMKO9y4JzOz6A5hS9sprKCffI2__QDl1ODi1zozjCMv1gzO8PFiRd5GW5RsDJszn_Ef8x8K799htCKsulzq_ivOESLkE1dKwguY4ottcZoqmKOOq1JRUo7xITQ-PkBfYTvYUcmSddDlhfjleKHH5QzxMkjgbseDNYR-tAK9uUS5iHi2H_unnijTsjCaKDpMTXUTJpV0g7Kw2JUBdpXO0nHzi2NYQthDWIIcmU4DOSAlnPdSojZExjCdEMXbinw45_oGGKpOWrkSbAvTlckqPWo0g2rvXCKDIvQn7zeYeYz1mQzffNJEtkGOCDBAy5wi_wpvKi5qUSjiMFT6y5LkClHYdj-tnZw-lhIplC9i6j83o9aK4yvCT4jz8hXyuGKAz4vElpQtM6A95t5Qs1Z7fJZSiO4484mOQLI",
+            "country": "Portugal"
+          }
+        ],
+        [
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 42,
+            "dTime": 1609357800,
+            "aTime": 1609366200,
+            "airlines": [
+              "UX"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c20000b55f3003_0&price=42&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BbNsZ1g0lVc_Itsizr6Htk-xF-dsVfPVdw26pvmB_V4rmIYn0Aq2yYu5-nQahwzYP6ibWyy0DhkAMiVV-PQ_u-B1M7nXKKgPIHts7UJCu5ECguKdykOcG84QDKMy5jDHebMDuoM1wG0gkbX23fEh-ZwwKTHB6aimEsIGyOsT0-k1Xq_YsEksDxD6AuO8Q-psZicJfqi8eSocfRUUls7Y3ad0mMnJTiXc9zLIH3N9wQU9jwnrKKODjx8gr58vpkDW11yEobW97V7_sekDyowfegdIYy61JF7SfZMg9MPn_J-If3MyTVXOhOIS1c2lQm0PrNiJVWx31xsxcTEeTD3TPZBuLu_i25Epz5R9ucKmCxd5gKmJD-tfHJfH7F7IySItY1b0rrERHvsIcYRLgi5ihLhsU87F64SCfaGXAZfOs8AQzamXgAGF0VegXdYdj5sIIkvhmclGkYAUDUur8X-nGzNvvcv1VB2HGOud9Npb0H6Lm73X5BPgQKz8WsA2ObDwdjkJF9pUZGjjMwU8rvWW2VEypkvBXIBclrPs70hZnm28msmFLkZ2ZuhcplOVlJyx5j9rkTkY6jR-AmXe9_4L6Vw==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 57,
+            "dTime": 1609310400,
+            "aTime": 1609319100,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c2000074c3196a_0&price=57&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BeXVnSbkjRLVPQCoI5GPV1ZLKmLAMBIZBopqJNUbqQORZdr4SfLPWXKbjhnodVFvsA0pMSrfYCWfsmc9Kw7dT7OGqIWjz5sVV_uIlDH78qKeMVKfCjGVQLDiIoWBGQKZGrSCbqPw4XB_lW8U660bJZQg3rDxrtR6onURIbTH9v_EMBxvX5y4YpzMLcrvjqWK2AwIbn2zHPpQnu9bXJenyW1RW62myQo2T00lHThvtPrz48wki11AeBeBCVPR_VC9JU3prkJbY99vvXD7VwK1AuBTDFRkqYmLbEH5GtHIuFxVvunit2Wzqbi_8pDk9IK30aVyQJlDNjW-HJYT5_Dr9w5pLgJ5cpTvaAWW5uQSGgMz21m0d46JOm9l7prswyD0jw80VACPd5Cwy3Rp6ypA3WefiIQGVrUFJXI_BCGnyps8UDQgKgSFt4cHFN6lQ1fufw7zKf7IIOFQw6EMUOowImRnlhVKUPpHSyFOYgvlf-r-sYADIs6VNotKyCoj6c63AD6YqN6p8z4hVlnHwOb4i_pmdtgXSW2nWelqLZsvlQb8-ZstuoBlm6sTsQkgj9qhLRVLpm2f-e96pyUWBtPecFwLPPmE9po4EUmgP2vHReapdDCCW_QtzHjzkmGFW96tX",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 57,
+            "dTime": 1609360800,
+            "aTime": 1609369800,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c200009acd7846_0&price=57&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BK5_f3djvhUNKSjPZQC0dKMEy2qLxmwyUw2kjTWBQyj24v_ZeKyTZSDGtQWu0jMvgKpYZ4Mx0OoF0v6C6Y4npmT9Cpkou4UCEKua0eMS1oJrBidL5W-4I-ymECfyIjtzLD4R5A0zQX49zyNbFgsFcgqlny1XMjjsJfd-y6AjDbMxSay8Y22Uns_R0oP6B5CdEFG219qJbhnvPh_Jb-IPYok2fAC0dHLbaSG92IkYlv-HE5ynOuF5N1U2q2cbkoNkPB7W9HOnbvufGDknDJhzC-mYInjv2w8JutbxhDUmWEoUBCrKSUBQbf5YmVWCOIEeyLrJ_c9ejgtn7mtjXvSoRf77QRr6Bsi0NEJ3gC_Dz7nVM6gHS_RWAsIh2gzCGloUhNZ2X2lcj9IG3mLu0d0jFrOldw1_qoPbCr-AmvNG3KLt8-4u_y88gHcyxNBO2VKOWdfpMzpvZt9uT4-5_EjQc2_jaTSJY7clgk9tbD6b2tM9Q5JOkH6Ol5Zpc1oJLWjmsZC7YFJA-nCR9An7wpLpG7xL9U86kQCWDsP3uo-4p5X8CirWcZjWVvehCFfZBIbBUcSBK5AHy1vEQ4m0DHBHXcKJcUDLkRjjo4J9dV6G88b3TsDtGsDAlVhbAcicBoLUD",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 74,
+            "dTime": 1609357200,
+            "aTime": 1609366500,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c20000eb522c67_0&price=74&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BMm6qtB8kuLKJQdbc34Xpg4sOOZ0J4ruqpCN5lAOoHJysn5whLLFHxV3Awp8cSFpk5zuRFfsYekj-XV5XzV1TpNKmBgw10BkFLKCnywwwYodRldP1N08B_4yD2yMMTrfYAndh2CqI0D8oBtn0ruMASpZeaFT9piTXFF9DnpMw3vWlHQilDlEgvgG4qZJcz6LChyJw3z1cFN9_fhemLo2NKA8rq_LP6ULcRlHsums1I5DH5lO-xd884i4pXmIJNJbUSSjXE9L8bs4Pre6BxOS8xrDR2Ys2bIgzxVmdG-LtN0F30n41R2reKJZPWtNVZzX3HLx5-YMDKMvqqewss-fJWX72rHbRk-OIe6yhMrJmndNVjqh_l53aRRzAvPmxP_rh_HxdsJX1pUnbuuPTUM4oMZvxSoLyHL37kYBv_gaA4eI9R1sxOsEB-VIfRfSOsPiFgzqBxGfA9ZXGpgmu08epnSVAg6cToEsPQkJ08FbYyNo4rAaKEKAeNAc2RFIL6TkrI2R1hlx-Op8sSY2_fKrIKwCTCv2JAoGPzHcOkt5M1rxy0ZSNWS3BEG49fM1l3zPK2tlCYJUPU3L074-Ew_JmSA==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 82,
+            "dTime": 1609316700,
+            "aTime": 1609325400,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c2000084bb8d1e_0&price=82&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=Bav_p0L0wUEk1QqGgiE4dTYYThbGYgjMkwDYL6dGW71JcxGkuXDBN3Q2UKWxSVhPWrpv3jP99oVA3qVA2KhKi5QmapcPxc5nRC0RCJpjk-swcEdS6eakVd-jnbyrap2CrTaQR_zaKDTtg2Zp2gWnAsbu26gl8mkj7A_HxESiW1F8rojqpLEGw0qH8aXLfqiwtsOeqQdb-o01nLPl6afysdLDz7kW44-fHJUNX27mHrU7IPe_DiioMRTp8KXjOIzzKr4QTQ1jD-balor8N6J7kld-7VQkbTpB-5Tj7qhkkT_XdRzobCyk45ALHB1DhgqPBho2Y7wBAutNcC6zatDfXiycgj72gj1GDkWOSJuvx6ya8o2NOYTUah6S67CFmsOK1yme6Uv6IvAVWZGbPZGLILddUD_6MK2_vAq4344YjkXWLF59IQLPNwzoVmep4xKpPaz0ru-kR_DQRosyTV9qEeQX2LOfVjLtjKDPMReA3HeqHvuUbjkRURtqjSU8ybTX4gjS8_3cZRUCRYX0WtOSynxoSP6Wte4rZHvsuFtOaxKjhza1k58JNaIaaTX2I8kGm4y8b1VjavmFupt7XI0o9Vo-gk-ekhJWcdbo_7p3LNT3pZq9CoCBCBx-EPLNCPPuS",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 82,
+            "dTime": 1609346400,
+            "aTime": 1609355400,
+            "airlines": [
+              "IB"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c2000073aedd73_0&price=82&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BvpAUxt7v94inUXqLZAH40QPYDBhC0aN3buwjl0Iik_mbqtHpx41659inw6CSUQI45iLLLPOxszZdAXk3bFasisP-QmtytNyC5N4Kbd-FvZkgYdMrsC6DGNo1BrWDHeUw5K_EmJ2s9_M1uj_fmVsZTRiLWi5o4Z40YQYiMLn972CM3rgX0l5On3GFrx7kg_ryJ0mRBxTKIIyKts1yC6iornardPnf5Zuh750S1MS0dfLKUJ54PuoE8a91iZquW0ldTDN4BSBO_Pt4v8RRV6iIghnNX3155C6-6EPDerRpTlLnQJURjexfWfwGlovwNwvSgyIBqcSc_pMSj-UA1IZiY57T6QcxlqvFYgc9aomNnpyJEB2QIdcpNv8vuRYmI-7J6yG9MgtU0Th-eNx1stFBZtmuksRyjozMlm-dD5WPHDXEClwIgIXgk8AJ-XW8RW-5YXsh5zjecrLspGYOxMEPjD74Hml5b7LC0G6tbymSHAqBKarGTJaL_sBEDCak6enfZjSm_ga4gzz_o_zxac07BAchrwPdBNTNDHMnuHO4WPzJtUVP3eIbY_yK2I8LGwdp1p_xFsVIMv6-6qGqDc4Kd0qJxxF4kO7-YrrvpbjMBbtE2QNIPOkV5Ko3mlR6bVmT",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 87,
+            "dTime": 1609338900,
+            "aTime": 1609348200,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c20000291cda91_0&price=87&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=BFYmzsYSrS1H1lOFkrcrK3BpWj5aMq9YqwrzqWH3yzokVje6JsZfhn-_svaAAP0nxMmm9yZHDmLT8mKYK3TtJZUkujuYRbVnpcYbhlPii_4PuktXcvwKXu7Uyr5EOLGbYcqpq98uU9IGp3yek8yg6FxBOhZTC1dKjmOLMZLhpCxDuERKUEg0J5p33hWNru5baDLRQg89apucmf4v4Jb3PU3DbgsD23hbBVEvZJ3v8DjEI-ACnRfBN75Oe5zQC-ZumlUurFDVy_25yClIl5lDPmE_bKK8Zjw3jqMwRtbpg1yZ9zxGehQncAQvKJg693LKzFQEgDDkP8fxCQkzKK1SOYtpXVvzXFjpByKYlfHX2h0-vmPec3yGyWxEsvqwFfUUS1E9IsbPTyg5_H7m-tOgUcOfjuSSlKlGA93k10n4IeQ3L8uaOD50Y4kc54yqiyWSUv_mApAfdSXxDDFnaBT_YSxwdESDacusPKms9lGAQuW8SkplGvLhEQkyc9MyN6qo08VIR6k4qJV9zwLZpxxhzR8neB6NS9KYHsKUxdU7_xuWfono2DTFR8Rf9o5snpZH5Pf7DDRHKXAQmk658kI8hFQ==",
+            "country": "Spain"
+          },
+          {
+            "cityFrom": "Lisbon",
+            "cityTo": "Madrid",
+            "flyFrom": "LIS",
+            "flyTo": "MAD",
+            "price": 140,
+            "dTime": 1609322100,
+            "aTime": 1609331400,
+            "airlines": [
+              "TP"
+            ],
+            "latFrom": 38.7741667,
+            "latTo": 40.4936111,
+            "url": "https://www.kiwi.com/deep?from=LIS&to=MAD&flightsId=03580a2248c20000c712bbbd_0&price=140&passengers=1&affilid=grouptrottergrouptrotter&lang=en&currency=EUR&booking_token=B6K9r5JO_rcTl849kh2BvyQ9QwR8PBiyLXb85wwh7D64pVFyjmoLL6EKN_1WJGSPLNjkhXqqCBTJCg2P54j5rNsvaKUI7Q2HGS8I4H5mGI_9f_BZ696L6hYKrwTydH80nH7yAe7RUOp-V-o3WoZzSDvnFgkKQIx4uE-vn7wFOOL9P7_K6m6ZGhzRNOy-987ohr9vDyhnK4dIn3-c7WJOhEXv7oI5q0r-CT52EIHATOuxENXwoVQQ-kSgCpCpdCjsUj7EHP5vcrDGErwhArWOx1YHYJNgbwIP-xDd0YuJMlWdvSPFhu004VylkNJlMCw34mhAGDyixl26XfED4mxyj9uMOlYv4IaM2nrbGhGHSxcoIOop27kGF177BcafDAM-YYSjcuiwBVMrTxS6mI6eHElAVPbXpaKvbtC3DghMggfSCOYrNW8TqRbJ1NaxyoL4Bby2QQVw3wbtYof60vRu4pR2VS7IINTwQl6-3UlK71xM7PjMuzcxD9RcLltYho2Qpfg-UtI2Pw6zoLlRiPbzegAaLqbV0kt8VFnkWz2US-Japz9CgXgq76FIneipY3bYDpRSUSmLmP8ivOpnl9XeNWTn3H-OH1rh7o-O9AazBcnQ=",
+            "country": "Spain"
+          }
+        ]
+      ]
+    }
+  }
