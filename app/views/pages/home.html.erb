@@ -1,22 +1,20 @@
 <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=3000&q=400&fit=crop)">
-  <div class="container text-center text-align-center">
-    <h1>Organiser un voyage à plusieurs</h1>
-    <p>un vrai bonheur, avec Grouptrotter!</p>
-  </div>
-  <div class="container p-3 mt-5 searchbar">
-      <%= simple_form_for(@group) do |f| %>
-        <%= f.input :fly_to,
-                    label: false,
-                    placeholder: "Sélectionnez votre destination"%>
-                    <div id="container">
-                    <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-                    </div>
-    <div class = "justify-content-center">
-        <%= f.submit "Ajoutez un voyageur", class: "btn btn-search"%>
-      <% end %>
+  <div class= "titre_searchbar">
+      <h1>Organiser un voyage à plusieurs</h1>
+      <p>un vrai bonheur, avec Grouptrotter!</p>
+    <div class="searchbar">
+        <%= simple_form_for(@group) do |f| %>
+          <%= f.input :fly_to,
+                      label: false,
+                      placeholder: "Sélectionnez votre destination"%>
+                      <div id="container">
+                      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+                      </div>
+          <%= f.submit "Ajoutez un voyageur", class: "btn btn-search"%>
+        <% end %>
     </div>
+    <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
-  <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
 </div>
 
 <div class="container d-flex my-5 p-3 align-items-center w-50" style = "box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); border-radius: 5px">

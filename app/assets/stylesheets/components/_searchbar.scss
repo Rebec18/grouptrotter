@@ -1,14 +1,19 @@
 .searchbar {
   // background-color: rgba($color: white, $alpha: 0.6);
   // border-radius: 10px;
-  width: 400px;
+  width: 300px;
+  margin: auto;
 }
 
 .form-control {
-    display: block;
     text-align: center;
     color: #495057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
+    background-color: #F7F7F7;
+    border: none;
     border-radius: 20px;
+  }
+
+.form-control:hover {
+  background-color: #F7F7F7;
+  color: #495057;
   }
