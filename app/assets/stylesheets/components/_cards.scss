@@ -175,7 +175,7 @@
   transition: transform 1.5s;
   transform-style: preserve-3d;
   // -moz-backface-visibility: hidden;
-} 
+}
 
 .card_recto {
   // background: red;
@@ -198,4 +198,21 @@
 }
 
 
-
+.card-home {
+  border-radius: 100px;
+  width: 20%;
+  text-align: center !important;
+  align-items: center;
+  display: block;
+  padding: 23px !important;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+  border: 1px solid #333333;
+    p {
+    margin: 0 !important;
+  }
+    h3 {
+    margin: 0 !important;
+  }
+}
