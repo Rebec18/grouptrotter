@@ -1,0 +1,21 @@
+<h4><%= @city.upcase %></h4>
+<p><%= @trips.values.first[@city][0].first["country"] %></p>
+
+<% prices_aller=[] %>
+<% for traveler in @travelers %>
+    <% prices_aller << @trips[traveler][@city][0][0]["price"] %>
+<% end %>
+<% prices_aller.sort! %>
+                  <%# on a la liste des plus bas prix pour chaque voyageur pour une @city
+                  suffit de prendre le premier et dernier élément de l'prices_array
+                  et on aura un range de prix à afficher
+                  on fait d'abord pareil pour les retours %>
+<% prices_retour=[] %>
+<% for traveler in @travelers %>
+    <% prices_retour << @trips[traveler][@city][1][0]["price"] %>
+<% end %>
+<% prices_retour.sort! %>
+<% min_price = prices_aller.first + prices_retour.first %>
+<% max_price = prices_aller.last + prices_retour.last %>
+          
+<p id="prix-voyage"><%= min_price %> - <%= max_price %>€/personne </p>
