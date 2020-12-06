@@ -185,7 +185,6 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rubysl-open-uri (2.0.0)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -267,7 +266,6 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.4)
   redis (~> 4.0)
   rest-client
-  rubysl-open-uri
   sass-rails (>= 6)
   selenium-webdriver
   simple_form
