@@ -63,6 +63,8 @@ class GroupsController < ApplicationController
       end
       
 
+      
+
       bertrand_cities = []
       convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire = {}
 
@@ -174,7 +176,7 @@ class GroupsController < ApplicationController
 
     end
       # on a le final hash bon
-raise
+
 
       # les données qu'on peut récupérer :
       # liste des villes communes :
