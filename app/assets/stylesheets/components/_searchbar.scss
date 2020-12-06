@@ -1,5 +1,14 @@
 .searchbar {
-  background-color: rgba($color: white, $alpha: 0.6);
-  border-radius: 5px;
+  // background-color: rgba($color: white, $alpha: 0.6);
+  // border-radius: 10px;
   width: 400px;
 }
+
+.form-control {
+    display: block;
+    text-align: center;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+  }

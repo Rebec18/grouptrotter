@@ -1,20 +1,20 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/161850/venice-grand-canal-water-boats-161850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
-  <div class="container text-center">
-    <h1>Reunissez-vous facilement ! ✈</h1>
-    <p>Le facilitateur des voyages a plusieurs.</p>
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=3000&q=400&fit=crop)">
+  <div class="container text-center text-align-center">
+    <h1>Organiser un voyage à plusieurs</h1>
+    <p>un vrai bonheur, avec Grouptrotter!</p>
   </div>
   <div class="container p-3 mt-5 searchbar">
       <%= simple_form_for(@group) do |f| %>
         <%= f.input :fly_to,
                     label: false,
-                    placeholder: "Destination"%>
+                    placeholder: "Sélectionnez votre destination"%>
                     <div id="container">
-    <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-  </div>
-   <div class="d-flex justify-content-end">
-      <%= f.submit "Fly", class: "btn btn-search"%>
-    <% end %>
-  </div>
+                    <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+                    </div>
+    <div class = "justify-content-center">
+        <%= f.submit "Ajoutez un voyageur", class: "btn btn-search"%>
+      <% end %>
+    </div>
   </div>
   <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
 </div>
@@ -29,3 +29,19 @@
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+<!--
+linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+VENISE : https://images.pexels.com/photos/161850/venice-grand-canal-water-boats-161850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+MONTGOLFIERE https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=2050&q=150&fit=crop
+GLOBE : https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=2050&q=150&fit=crop
+MONTGOLFIERE BIS https://images.unsplash.com/photo-1590756739785-ffad41261679?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&w=2050&q=150&fit=crop
+MONTGOLFIERE TER https://images.unsplash.com/photo-1482376297902-a54c222cec2b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&w=2050&q=150&fit=crop-->
