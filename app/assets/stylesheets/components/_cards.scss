@@ -161,3 +161,41 @@
 .card-tickets:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
+
+// EFFET FLIP CARD : https://3dtransforms.desandro.com/card-flip
+
+
+.cards {
+  // background-color: green;
+}
+
+.card-category {
+  position: relative;
+
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  // -moz-backface-visibility: hidden;
+} 
+
+.card_recto {
+  // background: red;
+  transform: rotateX(0deg);
+}
+
+.card_verso {
+  transform: rotateY(180deg);
+}
+
+.card-category:hover {
+  transform: rotateY(180deg);
+}
+.card_recto, .card_verso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+
