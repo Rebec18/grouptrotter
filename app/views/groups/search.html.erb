@@ -2,7 +2,11 @@
 alors dans le controller on sera pas passé par toutes les étapes et le semitraveler_count
 n'aura pas atteint 2x le nombre de travelers, et donc dans ce cas on affiche la vue noresults %>
 
-<% if @semitraveler_count/2 != @group.travelers.count %>
+<%# pendant le test avec le seed je mets false dans le if 
+après faudra remplacer false par 
+@semitraveler_count/2 != @group.travelers.count %>
+
+<% if false %>
     <%= render "shared/noresults" %>  
 <% else %>
     <%= render "shared/results" %>

@@ -22,7 +22,13 @@ class GroupsController < ApplicationController
 
   # méthode de recherche de vol
 
+  # LE SEARCH AVEC LE SEED
   def search
+    @final_hash = JSON.parse(File.read("unseed.json"))
+  end
+
+    # LE VRAI SEARCH QU'ON REMETTRA APRES
+  def searchLEVRAI
     @group = Group.find(params[:id])
     #création d'un tableau avec l'ensemble des données des voyageurs
     #itère sur les différents travelers pour passer en multi recherches
@@ -39,12 +45,12 @@ class GroupsController < ApplicationController
       big_bertrand = JSON.parse(allerjson)["data"]
       # big_bertrand est l'array des allers parsés (les allers sont des hashs).
       
-      # s'il est vide alors pas de vol et donc on stoppe tout !!!
+      # S'il est vide alors pas de vol et donc on stoppe tout !!!
       if big_bertrand == []
         break
       end
 
-      # S'il est pas vide alors ok on a passé une étape. On augmente notre compteur
+      # S'il n'est pas vide alors ok on a passé une étape. On augmente notre compteur
       # qui va nous permettre de savoir à la fin si toutes les étapes ont été passées.
       @semitraveler_count += 1
       
@@ -75,8 +81,8 @@ class GroupsController < ApplicationController
         # Le unless ci-dessous sert à ne pas remplir l'array plusieurs fois avec la même ville
         # car dans bertrand il y a plusieurs vols pour la même destination.
         unless bertrand_cities.include?(aller[:cityTo])
-        bertrand_cities << aller[:cityTo]
-        convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[aller[:cityTo]] = aller[:flyTo]
+          bertrand_cities << aller[:cityTo]
+          convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[aller[:cityTo]] = aller[:flyTo]
         end
       end
       # Ok, on a un array avec les villes de destination : bertrand_cities
@@ -216,10 +222,18 @@ class GroupsController < ApplicationController
           fulluser.delete(ville) unless @common_cities.include?(ville)
           # BAM, ça jarte ! (sauf si la ville est bien dans les destinations communes)
         end
+      
       end
+
     end
 
       # On a épuré le final_hash. Il est maintenant complet et sans vols en trop.
+
+      # pour créer le seed
+      # File.open("unseed.json", "wb") do |file|
+      #   file.write(JSON.pretty_generate(@final_hash))
+      # end
+
 
     # Remarque :
 
