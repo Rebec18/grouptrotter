@@ -30,7 +30,7 @@ const autocompleteFrom = (container, resultsFrom) => {
 };
 
 const initAutocomplete = () => {
-    const resultsFrom = document.getElementById('traveler_fly_from');
+    const resultsFrom = document.querySelector(".autocomplete");
     const container = document.querySelector("#container");
     const body = document.querySelector("body");
     

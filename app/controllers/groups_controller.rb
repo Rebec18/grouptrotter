@@ -34,7 +34,7 @@ class GroupsController < ApplicationController
       @search_r = []
 
       # parse des infos de vols
-      aller = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+      aller = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       robert = JSON.parse(aller)["data"]
       robert.each do |hash|
         subhash = {}
@@ -54,7 +54,7 @@ class GroupsController < ApplicationController
       # end
       # robert est l'aller, bertrand le retour
       @search_a.each do |subhash|
-        retour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{subhash['flyTo']}&fly_to=#{traveler.fly_from}&date_from=#{traveler.date_to.strftime('%d/%m/%Y')}&date_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+        retour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{subhash['flyTo']}&fly_to=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_to.strftime('%d/%m/%Y')}&date_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
         # bertrand est un array contenant tous les hash de résultats
         bertrand = JSON.parse(retour)["data"]
         # on fait un sous hash avec les données dont on a besoin
