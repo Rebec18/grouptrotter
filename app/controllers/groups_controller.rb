@@ -31,8 +31,8 @@ class GroupsController < ApplicationController
     @semitraveler_count = 0
 
     @group.travelers.each do |traveler|
-      @bertrand = []
-      @full_user = {}
+      bertrand = []
+      full_user = {}
 
       # parse des infos de vols
       allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
@@ -59,7 +59,7 @@ class GroupsController < ApplicationController
         subhash[:country] = hash["countryTo"]["name"]
         # bertrand c'est bébé big_bertrand (big_bertrand mais qu'avec infos utiles)
         # c'est un array contenant les allers
-        @bertrand << subhash
+        bertrand << subhash
       end
       
 
@@ -68,7 +68,7 @@ class GroupsController < ApplicationController
       bertrand_cities = []
       convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire = {}
 
-      @bertrand.each do |aller|
+      bertrand.each do |aller|
         unless bertrand_cities.include?(aller[:cityTo])
         bertrand_cities << aller[:cityTo]
         convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[aller[:cityTo]] = aller[:flyTo]
@@ -94,7 +94,7 @@ class GroupsController < ApplicationController
         end
         # fin de la vérification
 
-        @robert = []
+        robert = []
         retours = RestClient.get "https://api.skypicker.com/flights?fly_from=#{convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[city]}&fly_to=#{traveler.fly_from}&date_from=#{traveler.date_to.strftime('%d/%m/%Y')}&date_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
         # big_robert est un array contenant tous les hash de résultats
         big_robert = JSON.parse(retours)["data"]
@@ -114,11 +114,11 @@ class GroupsController < ApplicationController
           subhash[:latTo] = hash["route"].first["latTo"]
           subhash[:url] = hash["deep_link"]
           subhash[:country] = hash["countryTo"]["name"]
-          @robert << subhash
+          robert << subhash
         end
         
       # on a un robert propre qui est un array de retours(hashes)
-        if @robert != []
+        if robert != []
 
           # si robert n'est pas vide alors on a des retours et donc
           # on va créer un array (noemie) avec en premier élément l'array des allers pour city
@@ -126,16 +126,16 @@ class GroupsController < ApplicationController
 
           # d'abord on construit l'array des allers pour la city
           array_allers_for_city = []
-          @bertrand.each do |aller|
+          bertrand.each do |aller|
             array_allers_for_city << aller if aller[:cityTo] == city
           end
 
-          noemie = [array_allers_for_city, @robert]
+          noemie = [array_allers_for_city, robert]
 
         # on a un array (noemie) : allers, retours 
         # pour chaque ville
-        # on le fout dans @full_user avec la key city
-        @full_user[city] = noemie unless noemie == nil
+        # on le fout dans full_user avec la key city
+        full_user[city] = noemie unless noemie == nil
         end
 
 
@@ -145,17 +145,17 @@ class GroupsController < ApplicationController
 
       # on raccourcit bertrand_cities si jamais y en a sans vol
       # reducing = []
-      # @full_user.each do |bignoemie|
+      # full_user.each do |bignoemie|
       #   reducing << bignoemie.keys.first
       # end
       # bertrand_cities = bertrand_cities & reducing
       
       # on vérifie si full_user n'est pas vide (sinon faudra dire que la recherche a échoué)
-      @semitraveler_count += 1 if @full_user.keys.count != 0
+      @semitraveler_count += 1 if full_user.keys.count != 0
 
 
-      # on veut ajouter au final_hash la key value : traveler => @full_user
-      @final_hash[traveler] = @full_user unless @full_user == {}
+      # on veut ajouter au final_hash la key value : traveler => full_user
+      @final_hash[traveler] = full_user unless full_user == {}
     
     end
     # FIN DE LA BOUCLE SUR LE TRAVELER
