@@ -1,20 +1,13 @@
 .navbar-container {
   justify-content: space-between;
-  background: white;
-  padding: 3px 10px 3px;
+  background: #F7F7F7;
+  padding: 8px 10px 8px;
 }
 
 .navbar .navbar-collapse {
   flex-grow: 0;
-  color: #0c4331 !important;
 }
 
 .navbar .navbar-brand img {
   width: 40px;
 }
-
-.logo{
-  font: 1.2em "Poiret One";
-  color: #333333;
-}
-
