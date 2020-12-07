@@ -8,8 +8,8 @@
                       label: false,
                       placeholder: "Sélectionnez votre destination",
                       as: :string,
-                      input_html: { class: "autocomplete" }%>
-                      <div id="container">
+                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
+                      <div class="container-autocomplete">
                       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
                       </div>
           <%= f.submit "Ajoutez un voyageur", class: "btn btn-search"%>
