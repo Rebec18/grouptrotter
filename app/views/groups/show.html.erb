@@ -33,7 +33,8 @@
       <% else %>
           <%= f.input :price_to,
                       label: false,
-                      placeholder: "A t'il un budget maximum?"%>
+                      placeholder: "A t'il un budget maximum?",
+                      collection: ["Pas de budget", 100, 150, 200, 250, 300]%>
       <% end %>
       <% if @group.travelers.count > 0 %>
           <%= f.input :date_from,
