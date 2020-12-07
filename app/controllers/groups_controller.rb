@@ -23,12 +23,12 @@ class GroupsController < ApplicationController
   # méthode de recherche de vol
 
   # LE SEARCH AVEC LE SEED
-  def search
+  def searchLEVRAI
     @final_hash = JSON.parse(File.read("unseed.json"))
   end
 
   # LE VRAI SEARCH QU'ON REMETTRA APRES
-  def searchLEVRAI
+  def search
     @group = Group.find(params[:id])
     # création d'un tableau avec l'ensemble des données des voyageurs
     # itère sur les différents travelers pour passer en multi recherches
@@ -39,7 +39,6 @@ class GroupsController < ApplicationController
     @group.travelers.each do |traveler|
       bertrand = []
       full_user = {}
-
       # parse des infos de vols
       allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       big_bertrand = JSON.parse(allerjson)["data"]
@@ -67,10 +66,11 @@ class GroupsController < ApplicationController
         subhash[:latTo] = hash["route"].first["latTo"]
         subhash[:url] = hash["deep_link"]
         subhash[:country] = hash["countryTo"]["name"]
+        subhash[:dHour] = hash["dTimeUTC"]
+        subhash[:aHour] = hash["aTimeUTC"]
         bertrand << subhash
       end
       # Super, on a bertrand qui contient tous les allers mais qu'avec les infos utiles.
-
       # On récupère la liste des villes de destination dans bertrand.
       bertrand_cities = []
       convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire = {}
@@ -159,7 +159,6 @@ class GroupsController < ApplicationController
         # C'est bon, on la fout dans le hash full_user avec comme clé : Madrid (city).
         full_user[city] = noemie unless noemie.nil?
         # (Sauf si noemie est vide, car ça arrive...)
-
         # Super, on a une nouvelle entrée dans full_user :
         # Madrid => [ [allers], [retours] ]
 

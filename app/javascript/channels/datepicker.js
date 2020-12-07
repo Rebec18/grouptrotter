@@ -6,6 +6,7 @@ flatpickr(".datepicker", {
   enableTime: true,
   minDate: "today",
   minuteIncrement: 15,
+  defaultHour: 0,
 });
 
 export { flatpickr };
