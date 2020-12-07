@@ -8,6 +8,7 @@
   }
 }
 
+// SEARCH
 .card-category {
   background-size: cover;
   background-position: center;
@@ -39,6 +40,42 @@
 .card-category:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
+
+
+// SEARCH EFFET FLIP CARD : https://3dtransforms.desandro.com/card-flip
+
+.cards {
+  // background-color: green;
+}
+
+.card-category {
+  position: relative;
+
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  // -moz-backface-visibility: hidden;
+}
+
+.card_recto {
+  // background: red;
+  transform: rotateX(0deg);
+}
+
+.card_verso {
+  transform: rotateY(180deg);
+}
+
+.card-category:hover {
+  transform: rotateY(180deg);
+}
+.card_recto, .card_verso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
@@ -74,6 +111,7 @@
   }
 }
 
+// SEARCH
 .grande-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -86,6 +124,7 @@
   }
 }
 
+// SEARCH
 #first-card {
   background-size: cover;
   background-position: center;
@@ -125,90 +164,102 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
+// TICKETS
 #banner-ticket {
-  background-size: cover;
-  background-position: center;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   align-items: center;
-  color: #fcfcfc;
-  font-size: 24px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  color: gray;
+  // font-size: 24px;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+  p{
+    margin: 0px;
+  }
 }
 
+
 .card-tickets {
-  height: 180px;
+  height: auto;
   color: rgba(100, 100, 100, 1);
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #F7F7F7;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   h4 {
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold;
     margin: 0 !important;
   }
-  #prix-voyage {
+  #prix-tickets {
+    position: absolute;
+    bottom: 56px;
+    right: 34px;
+  }
+  #lien-reserver {
     position: absolute;
     font-size: 16px;
-    bottom: -10px;
-    right: 5px;
+    bottom: 0px;
+    right: 20px;
+  }
+  #img-airline {
+    position: absolute;
+    bottom: 167px;
+    height: 40px;
+    right: 20px;
   }
 }
 
 .card-tickets:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-}
-
-// EFFET FLIP CARD : https://3dtransforms.desandro.com/card-flip
-
-
-.cards {
-  // background-color: green;
-}
-
-.card-category {
-  position: relative;
-
-  transition: transform 1.5s;
-  transform-style: preserve-3d;
-  // -moz-backface-visibility: hidden;
-}
-
-.card_recto {
-  // background: red;
-  transform: rotateX(0deg);
-}
-
-.card_verso {
-  transform: rotateY(180deg);
-}
-
-.card-category:hover {
-  transform: rotateY(180deg);
-}
-.card_recto, .card_verso {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
 
-.card-home {
-  border-radius: 100px;
-  width: 20%;
-  text-align: center !important;
+.card-entete-tickets {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  color: white;
+  font-family: "Lato" ;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+// HOMEPAGE
+.card-home {
+  text-align: left !important;
   display: block;
   padding: 23px !important;
   margin: 3rem !important;
   font-size: 18px;
   position: relative;
-  border: 1px solid #555555;
+  border: 1px solid #F9F9F9;
+    p {
+    margin: 0 !important;
+  }
+    h4 {
+    margin: 0 !important;
+    color: #F9F9F9;
+  }
+}
+
+// HOMEPAGE
+.card-concept {
+  border-radius: 30px;
+  background-color: #F9F9F9;
+  text-align: left !important;
+  display: block;
+  // padding: 23px !important;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+  // border: 1px solid #F9F9F9;
     p {
     margin: 0 !important;
   }
