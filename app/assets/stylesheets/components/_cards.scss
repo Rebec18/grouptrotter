@@ -199,16 +199,35 @@
 
 
 .card-home {
-  border-radius: 100px;
-  width: 20%;
-  text-align: center !important;
-  align-items: center;
+  text-align: left !important;
   display: block;
   padding: 23px !important;
   margin: 3rem !important;
   font-size: 18px;
   position: relative;
-  border: 1px solid #555555;
+  border: 1px solid #F9F9F9;
+    p {
+    margin: 0 !important;
+  }
+    h4 {
+    margin: 0 !important;
+    color: #F9F9F9;
+  }
+}
+
+
+
+
+.card-concept {
+  border-radius: 30px;
+  background-color: #F9F9F9;
+  text-align: left !important;
+  display: block;
+  // padding: 23px !important;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+  // border: 1px solid #F9F9F9;
     p {
     margin: 0 !important;
   }

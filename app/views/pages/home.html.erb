@@ -6,45 +6,71 @@
         <%= simple_form_for(@group) do |f| %>
           <%= f.input :fly_to,
                       label: false,
-                      placeholder: "Sélectionnez votre destination"%>
+                      placeholder: "Sélectionne ta destination"%>
                       <div id="container">
                       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
                       </div>
-          <%= f.submit "Ajoutez un voyageur", class: "btn btn-search"%>
+          <%= f.submit "Ajoute un voyageur", class: "btn btn-search"%>
         <% end %>
     </div>
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
 </div>
-<div class= "mt-5 d-flex align-items-center justify-content-center">
-  <h2> Grouptrotter, comment ça marche?</h2>
+
+
+<div class= "card-concept mt-5 p-5">
+  <h2> Le concept</h2>
+      <p><em>Grouptrotter, le facilitateur des voyages à plusieurs !</em></p>
+    <div class="d-flex">
+
+      <div class="card-concept">
+        <h4></h4>
+        <p> Grouptrotter permet de trouver une <strong>destination commune </strong> pour des voyageurs partant de <strong>différentes villes</strong> . Fini les heures de recherches sur les sites comparateurs de vols, vous n’avez plus qu’à entrer le nom et la ville de tous les voyageurs, les dates du voyage & <strong> notre algorithme travaille pour vous</strong> . Détendez-vous en jouant à snake en attendant sa réponse & hop vous n’avez plus qu’à partager les résultats avec vos compagnons de voyage ! </p>
+      </div>
+    </div>
 </div>
-  <div class="d-flex">
-    <div class="card-home">
-      <h4><i class="fas fa-globe-africa"></i></h4>
-      <p>Sélectionne ta destination </p>
+
+<div class= "card-concept mt-5 p-5">
+    <h2> Comment ça fonctionne?</h2>
+    <p><em>Quatre étapes et vous faites vos valises!</em></p>
+  <div class= "d-flex">
+    <div class="d-flex">
+      <h1>1</h1>
+        <div class="card-home">
+          <h4><i class="fas fa-globe-africa"></i></h4>
+          <p>Sélectionne ta destination</p>
+        </div>
+      </div>
+    <div class="d-flex">
+      <h1>2</h1>
+        <div class="card-home">
+          <h4><i class="fas fa-users"></i></h4>
+          <p>Ajoute les voyageurs</p>
+        </div>
     </div>
-    <div class="card-home">
-      <h4><i class="fas fa-users"></i></h4>
-      <p>Ajoute les voyageurs</p>
+    <div class="d-flex">
+      <h1>3</h1>
+        <div class="card-home">
+          <h4><i class="fas fa-city"></i></h4>
+          <p>Inscris leurs villes de départ</p>
+        </div>
     </div>
-    <div class="card-home">
-      <h4><i class="fas fa-calendar-alt"></i></h4>
-      <p>Sélectionne tes dates</p>
+    <div class="d-flex">
+      <h1>4</h1>
+        <div class="card-home">
+          <h4><i class="fas fa-calendar-alt"></i></h4>
+          <p>Sélectionne tes dates</p>
+        </div>
     </div>
-    <div class="card-home">
-      <h4><i class="fas fa-suitcase"></i></h4>
-      <p>Fais ta valise</p>
+    <div class="d-flex">
+      <h1>5</h1>
+        <div class="card-home">
+          <h4><i class="fas fa-suitcase"></i></h4>
+          <p>Prépare tes bagages</p>
+        </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
+</div>
 
 
 
