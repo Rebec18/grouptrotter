@@ -2,21 +2,23 @@
 <%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
 
 
-<div class = "container">
+<div class = "container mt-3">
   <h1>Votre selection de voyages </h1>
 
   <%# c'est la vignette fake pour la démo : %>
   <%# ============================= %>
-   <%# <div class="grande-card p-3">
+   <div class="grande-card p-3">
      <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80');">
             <%=link_to group_tickets_path do%>
-            <%# <h4>ROME</h4>
+            <h4>ROME</h4>
             <p>Italie</p>
             <p id="destination"><i class="fas fa-star"></i> <em>Notre meilleure selection</em></p>
             <p id="prix-voyage"> 170 €/personne </p>
+            <p id="info"> Choisir cette destination</p>
           </div>
         <% end %> 
-  <%# </div> %>
+  </div> 
+
   <%# =============================  %>
     
     <%# trier par prix pas besoin car déjà fait sur l'api : %>
@@ -29,8 +31,9 @@
         <%# ===================== %>
 
 
-  <div class="cards p-3 mt-1" style="min-height : 65vh">
+ <div class="cards p-3 mt-1">
     <% for @city in @group.cities %>
+
         <%# test scraping images from cities %>
 <% require 'i18n'%>
 <% require 'open-uri' %>
@@ -50,9 +53,9 @@
             <div class="card_recto">
               <%= render "shared/recto" %>
             </div>
-            <div class="card_verso">
+            <%# <div class="card_verso">
               <%= render "shared/verso" %>
-            </div>
+            <%# </div> %> 
         </div>
       <% end %>
     <% end %>

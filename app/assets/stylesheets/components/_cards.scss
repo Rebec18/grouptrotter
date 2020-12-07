@@ -8,6 +8,7 @@
   }
 }
 
+// SEARCH
 .card-category {
   background-size: cover;
   background-position: center;
@@ -39,6 +40,42 @@
 .card-category:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
+
+// SEARCH EFFET FLIP CARD : https://3dtransforms.desandro.com/card-flip
+
+.cards {
+  // background-color: green;
+}
+
+// .card-category {
+//   position: relative;
+
+//   transition: transform 1.5s;
+//   transform-style: preserve-3d;
+//   // -moz-backface-visibility: hidden;
+// }
+
+// .card_recto {
+//   // background: red;
+//   transform: rotateX(0deg);
+// }
+
+// .card_verso {
+//   transform: rotateY(180deg);
+// }
+
+// .card-category:hover {
+//   transform: rotateY(180deg);
+// }
+// .card_recto,
+// .card_verso {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   -webkit-backface-visibility: hidden; /* Safari */
+//   backface-visibility: hidden;
+// }
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
@@ -74,9 +111,8 @@
   }
 }
 
+// SEARCH
 .grande-card {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-gap: 16px;
   border-top: solid 1px rgba(0, 0, 0, 0.2);
   min-height: 80%;
@@ -86,6 +122,7 @@
   }
 }
 
+// SEARCH
 #first-card {
   background-size: cover;
   background-position: center;
@@ -99,6 +136,7 @@
   box-shadow: 0 0 5px rgba(250, 250, 250, 0.2);
   padding-left: 5px;
   position: relative;
+  transition: 0.4s ease-out;
   h4 {
     font-size: 34px !important;
     font-weight: bold;
@@ -123,96 +161,139 @@
 
 #first-card:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  transform: translateY(20px);
+  &:before {
+    opacity: 1;
+  }
+  #info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#first-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(black, 0.4);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
 }
 
-#banner-ticket {
-  background-size: cover;
-  background-position: center;
-  height: 40px;
+#info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  color: #fcfcfc;
-  font-size: 24px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+// TICKETS
+#banner-ticket {
+  // display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  color: gray;
+  // font-size: 24px;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+  p {
+    margin: 0px;
+  }
 }
 
 .card-tickets {
-  height: 180px;
+  height: auto;
   color: rgba(100, 100, 100, 1);
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   h4 {
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold;
     margin: 0 !important;
   }
-  #prix-voyage {
+  #prix-tickets {
+    position: absolute;
+    bottom: 56px;
+    right: 34px;
+  }
+  #lien-reserver {
     position: absolute;
     font-size: 16px;
-    bottom: -10px;
-    right: 5px;
+    bottom: 0px;
+    right: 20px;
+  }
+  #img-airline {
+    position: absolute;
+    bottom: 167px;
+    height: 40px;
+    right: 20px;
   }
 }
 
 .card-tickets:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 }
 
-// EFFET FLIP CARD : https://3dtransforms.desandro.com/card-flip
-
-
-.cards {
-  // background-color: green;
-}
-
-.card-category {
-  position: relative;
-
-  transition: transform 1.5s;
-  transform-style: preserve-3d;
-  // -moz-backface-visibility: hidden;
-}
-
-.card_recto {
-  // background: red;
-  transform: rotateX(0deg);
-}
-
-.card_verso {
-  transform: rotateY(180deg);
-}
-
-.card-category:hover {
-  transform: rotateY(180deg);
-}
-.card_recto, .card_verso {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-
-.card-home {
-  border-radius: 100px;
-  width: 20%;
-  text-align: center !important;
+.card-entete-tickets {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  color: white;
+  font-family: "Lato";
+  font-size: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+// HOMEPAGE
+.card-home {
+  text-align: left !important;
   display: block;
   padding: 23px !important;
   margin: 3rem !important;
   font-size: 18px;
   position: relative;
-  border: 1px solid #555555;
-    p {
+  border: 1px solid #f9f9f9;
+  p {
     margin: 0 !important;
   }
-    h4 {
+  h4 {
+    margin: 0 !important;
+    color: #f9f9f9;
+  }
+}
+
+// HOMEPAGE
+.card-concept {
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  text-align: left !important;
+  display: block;
+  // padding: 23px !important;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+  // border: 1px solid #F9F9F9;
+  p {
+    margin: 0 !important;
+  }
+  h4 {
     margin: 0 !important;
     color: #555555;
   }
