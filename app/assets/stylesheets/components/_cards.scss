@@ -172,17 +172,18 @@
 .card-category {
   position: relative;
 
-  transition: transform 2s;
+  transition: transform 1.5s;
   transform-style: preserve-3d;
+  // -moz-backface-visibility: hidden;
 } 
 
 .card_recto {
   // background: red;
+  transform: rotateX(0deg);
 }
 
 .card_verso {
-  // background: blue;
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }
 
 .card-category:hover {
