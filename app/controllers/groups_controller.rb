@@ -23,25 +23,66 @@ class GroupsController < ApplicationController
   # méthode de recherche de vol
 
   # LE SEARCH AVEC LE SEED
-  def search
+  def searchLEVRAI
     @final_hash = JSON.parse(File.read("unseed.json"))
   end
 
   # LE VRAI SEARCH QU'ON REMETTRA APRES
-  def searchLEVRAI
+  def search
     @group = Group.find(params[:id])
+    fill_trips(@group)
+  end
+
+  # on ajoute une route vers les tickets
+  def tickets
+    @group = Group.find(params[:id])
+    fill_trips(@group) if @trips.nil?
+    @group.cities.each do |_city|
+      @group.travelers.each do |traveler|
+        bertrand = []
+        allerretour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@trips.values.first[_city][0][0][:flyTo]}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&return_from=#{traveler.date_to.strftime('%d/%m/%Y')}&return_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR&flight_type=return"
+        big_bertrand = JSON.parse(allerretour)["data"]
+        big_bertrand.each do |hash|
+          # ici le hash est un hash d'un vol
+          subhash = {}
+          subhash[:cityFrom] = hash[0]["cityFrom"]
+          subhash[:cityTo] = hash["cityTo"]
+          subhash[:flyFrom] = hash["flyFrom"]
+          subhash[:flyTo] = hash["flyTo"]
+          subhash[:price] = hash["price"]
+          subhash[:dTime] = hash["dTime"]
+          subhash[:aTime] = hash["aTime"]
+          subhash[:airlines] = hash["airlines"]
+          subhash[:latFrom] = hash["route"].first["latFrom"]
+          subhash[:latTo] = hash["route"].first["latTo"]
+          subhash[:url] = hash["deep_link"]
+          subhash[:country] = hash["countryTo"]["name"]
+          bertrand << subhash
+        end
+        fat_hash = {}
+        fat_hash[traveler] = bertrand
+      end
+    end
+  end
+
+  private
+
+  def group_params
+    params.require(:group).permit(:fly_to, :cities)
+  end
+
+  def fill_trips(_group)
     # création d'un tableau avec l'ensemble des données des voyageurs
     # itère sur les différents travelers pour passer en multi recherches
 
     @final_hash = {}
     @semitraveler_count = 0
 
-    @group.travelers.each do |traveler|
+    _group.travelers.each do |traveler|
       bertrand = []
       full_user = {}
-
       # parse des infos de vols
-      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{_group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       big_bertrand = JSON.parse(allerjson)["data"]
       # big_bertrand est l'array des allers parsés (les allers sont des hashs).
 
@@ -205,7 +246,7 @@ class GroupsController < ApplicationController
     # (Le if pour pas que ça fasse une ERREUR si le final_hash n'a pas été rempli (dans le cas où le trip a échoué).)
     if @final_hash.keys.count > 1
 
-      @common_cities = @final_hash[@group.travelers.last].keys
+      @common_cities = @final_hash[_group.travelers.last].keys
       # On obtient les villes de destination communes.
 
       # On veut virer des full_user les vols qui ne sont pas en direction de ces villes.
@@ -235,22 +276,16 @@ class GroupsController < ApplicationController
     # @final_hash.values.last.keys
 
     # Pour récupérer l'array des allers-retours du traveler i pour la ville city :
-    # @final_hash[@group.travelers[i]][city]
+    # @final_hash[_group.travelers[i]][city]
     # = [ [aller1, aller2, ...], [retour1, ...] ]
 
     # CES TESTS CI-DESSOUS C'EST A QUI ???? VIREZ-LE SVP MDRRRRR
     # test avec la bonne url "https://tequila-api.kiwi.com/v2/search?apikey=dA_ZyNbfWwC6tB6h1iwevDVUybsLVp4U&fly_from=MRS&fly_to=europe&date_from=12/12/2020&date_to=12/12/2020&flight_type=round&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
     # LA BONNE URL "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime("%d/%m/%Y")}&date_to=#{traveler.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{traveler.date_to.strftime("%d/%m/%Y")}&return_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
     # test = RestClient.get "https://api.skypicker.com/flights?fly_from=MRS&fly_to=ORY&date_from=12/12/2020&date_to=12/12/2020&flight_type=return&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
-  end
-
-  # on ajoute une route vers les tickets
-  def tickets
-  end
-
-  private
-
-  def group_params
-    params.require(:group).permit(:fly_to)
+    @trips = @final_hash
+    @travelers = @trips.keys
+    # @cities = @trips.values.first.keys
+    _group.cities = @trips.values.first.keys
   end
 end
