@@ -1,23 +1,23 @@
 // Specific CSS for your home-page
 
-#container {
-  display: flex;
-  flex-direction: column;
-}
+// #container {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.proposition {
-  border: 1px solid black;
-  width: 400px;
-  height: 30px;
-}
+// .proposition {
+//   border: 1px solid black;
+//   width: 400px;
+//   height: 30px;
+// }
 
-.proposition:hover {
-  background-color: yellow;
-}
+// .proposition:hover {
+//   background-color: yellow;
+// }
 
-.partout {
-  background-color: rgb(209, 207, 207);
-}
+// .partout {
+//   background-color: rgb(209, 207, 207);
+// }
 
 .image-home {
   height: 150px;
@@ -30,11 +30,17 @@
   animation: anim1 50s linear 0s infinite alternate;
 }
 @keyframes anim1 {
-  0%   {left:300px; top:565px;}
+  0% {
+    left: 300px;
+    top: 565px;
+  }
   // 25%  {left:280px; top:-50px;}
   // 50%  {left:280px; top:200px;}
   // 75%  {left:280px; top:200px;}
-  100% {left:300px; top:-445px;}
+  100% {
+    left: 300px;
+    top: -445px;
+  }
 }
 
 .mongol2 {
@@ -44,8 +50,14 @@
   animation: anim2 35s linear 0s infinite alternate;
 }
 @keyframes anim2 {
-  0%   {left:-190px; top:505px;}
-  100% {left:-190px; top:-535px;}
+  0% {
+    left: -190px;
+    top: 505px;
+  }
+  100% {
+    left: -190px;
+    top: -535px;
+  }
 }
 
 .mongol3 {
@@ -55,15 +67,48 @@
   animation: anim3 30s linear 0s infinite alternate;
 }
 @keyframes anim3 {
-  0%   {left:600px; top:-170px;}
-  10%   {left:600px; top:-200px;}
-  20%   {left:600px; top:-170px;}
-  30%   {left:600px; top:-200px;}
-  40%   {left:600px; top:-170px;}
-  50%   {left:600px; top:-200px;}
-  60%   {left:600px; top:-170px;}
-  70%   {left:600px; top:-200px;}
-  80%   {left:600px; top:-170px;}
-  90%   {left:600px; top:-200px;}
-  100%   {left:600px; top:-170px;}
+  0% {
+    left: 600px;
+    top: -170px;
+  }
+  10% {
+    left: 600px;
+    top: -200px;
+  }
+  20% {
+    left: 600px;
+    top: -170px;
+  }
+  30% {
+    left: 600px;
+    top: -200px;
+  }
+  40% {
+    left: 600px;
+    top: -170px;
+  }
+  50% {
+    left: 600px;
+    top: -200px;
+  }
+  60% {
+    left: 600px;
+    top: -170px;
+  }
+  70% {
+    left: 600px;
+    top: -200px;
+  }
+  80% {
+    left: 600px;
+    top: -170px;
+  }
+  90% {
+    left: 600px;
+    top: -200px;
+  }
+  100% {
+    left: 600px;
+    top: -170px;
+  }
 }

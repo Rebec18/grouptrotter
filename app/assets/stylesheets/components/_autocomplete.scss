@@ -1,0 +1,28 @@
+.container-autocomplete {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.proposition {
+  border: 1px solid white;
+  width: 450px;
+  height: 40px;
+  border-radius: 6px;
+  text-align: left;
+  padding: 10px;
+  color: white;
+  vertical-align: center;
+}
+
+.proposition:hover {
+  background-color: rgb(238, 234, 234);
+  color: black;
+  opacity: 0.9;
+}
+
+// .partout {
+//   background-color: white;
+// }
