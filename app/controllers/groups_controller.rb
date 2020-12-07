@@ -27,11 +27,11 @@ class GroupsController < ApplicationController
     @final_hash = JSON.parse(File.read("unseed.json"))
   end
 
-    # LE VRAI SEARCH QU'ON REMETTRA APRES
+  # LE VRAI SEARCH QU'ON REMETTRA APRES
   def searchLEVRAI
     @group = Group.find(params[:id])
-    #création d'un tableau avec l'ensemble des données des voyageurs
-    #itère sur les différents travelers pour passer en multi recherches
+    # création d'un tableau avec l'ensemble des données des voyageurs
+    # itère sur les différents travelers pour passer en multi recherches
 
     @final_hash = {}
     @semitraveler_count = 0
@@ -41,19 +41,17 @@ class GroupsController < ApplicationController
       full_user = {}
 
       # parse des infos de vols
-      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{@group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       big_bertrand = JSON.parse(allerjson)["data"]
       # big_bertrand est l'array des allers parsés (les allers sont des hashs).
-      
+
       # S'il est vide alors pas de vol et donc on stoppe tout !!!
-      if big_bertrand == []
-        break
-      end
+      break if big_bertrand == []
 
       # S'il n'est pas vide alors ok on a passé une étape. On augmente notre compteur
       # qui va nous permettre de savoir à la fin si toutes les étapes ont été passées.
       @semitraveler_count += 1
-      
+
       # On rétrécit big_bertrand il est trop gros.
       big_bertrand.each do |hash|
         subhash = {}
@@ -72,7 +70,7 @@ class GroupsController < ApplicationController
         bertrand << subhash
       end
       # Super, on a bertrand qui contient tous les allers mais qu'avec les infos utiles.
-      
+
       # On récupère la liste des villes de destination dans bertrand.
       bertrand_cities = []
       convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire = {}
@@ -91,13 +89,12 @@ class GroupsController < ApplicationController
       # Garder en tête durant la suite (tant qu'on sort pas de la boucle des villes)
       # que nous sommes dans le cas où on a une city en particulier. Par exemple Madrid.
       bertrand_cities.each do |city|
-
         # Avant de parser on veut surtout pas parser pour rien.
         # Le if suivant permet vérifier si la city qu'on va parser
         # est potentiellement une city commune ou pas.
-        # Si par exemple on a déjà un traveler parsé et que dans 
+        # Si par exemple on a déjà un traveler parsé et que dans
         # sa liste de villes de destination on n'a PAS Madrid, alors Madrid ne sera pas
-        # une ville qu'on veut parser ! Car elle ne sera pas une ville commune. 
+        # une ville qu'on veut parser ! Car elle ne sera pas une ville commune.
         if @final_hash.keys.count > 0
           # (Dans le cas où on a déjà parsé au moins un traveler)
 
@@ -115,7 +112,7 @@ class GroupsController < ApplicationController
         # On initialise un array robert qu'on replira des vols retours depuis la city (Madrid).
         robert = []
         # On parse les retours.
-        retours = RestClient.get "https://api.skypicker.com/flights?fly_from=#{convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[city]}&fly_to=#{traveler.fly_from}&date_from=#{traveler.date_to.strftime('%d/%m/%Y')}&date_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+        retours = RestClient.get "https://api.skypicker.com/flights?fly_from=#{convertisseur_city_iata_le_truc_que_farouk_et_claire_voulaient_pas_faire[city]}&fly_to=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_to.strftime('%d/%m/%Y')}&date_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
         big_robert = JSON.parse(retours)["data"]
         # On obtient big_robert qui contient tous les retours... mais avec trop d'infos !
         # On le réduit pour pas se le trimballer inutilement.
@@ -135,35 +132,34 @@ class GroupsController < ApplicationController
           subhash[:country] = hash["countryTo"]["name"]
           robert << subhash
         end
-      # On a un robert clean. C'est un array des retours (hashes) depuis Madrid.
-        
-      # Il arrive qu'il n'y ait pas de retours. Et alors on fait rien de spécial, on veut pas remplir le final_hash.
-      # Par contre s'il y a des retours on veut remplir le final_hash.
-        if robert != []
+        # On a un robert clean. C'est un array des retours (hashes) depuis Madrid.
 
-          # On va créer un array (noemie) qui contiendra les allers et les retours.
-          # noemie = [ [ allers pour Madrid (hashes)], [ retours de Madrid (hashes)]] 
-          # Sachant qu'on a déjà la liste des retours, c'est robert.
-          # Donc on veut surtout récupérer la liste des allers pour Madrid. 
+        # Il arrive qu'il n'y ait pas de retours. Et alors on fait rien de spécial, on veut pas remplir le final_hash.
+        # Par contre s'il y a des retours on veut remplir le final_hash.
+        next unless robert != []
 
-          array_allers_for_city = []
-          bertrand.each do |aller|
-            # Rappel : bertrand contient tous les allers, toute ville confondue
-            # et on veut seulement les allers pour Madrid.
+        # On va créer un array (noemie) qui contiendra les allers et les retours.
+        # noemie = [ [ allers pour Madrid (hashes)], [ retours de Madrid (hashes)]]
+        # Sachant qu'on a déjà la liste des retours, c'est robert.
+        # Donc on veut surtout récupérer la liste des allers pour Madrid.
 
-            array_allers_for_city << aller if aller[:cityTo] == city
-            # On remplit l'array avec les allers de bertrand seulement sur leur cityTo est bien Madrid.
-          end
+        array_allers_for_city = []
+        bertrand.each do |aller|
+          # Rappel : bertrand contient tous les allers, toute ville confondue
+          # et on veut seulement les allers pour Madrid.
 
-          # C'est bon on peut remplir noemie avec les [allers, retours] pour Madrid.
-          noemie = [array_allers_for_city, robert]
-
-          # On a noemie avec les allers retours pour Madrid.
-          # C'est bon, on la fout dans le hash full_user avec comme clé : Madrid (city).
-          full_user[city] = noemie unless noemie == nil
-          # (Sauf si noemie est vide, car ça arrive...)
+          array_allers_for_city << aller if aller[:cityTo] == city
+          # On remplit l'array avec les allers de bertrand seulement sur leur cityTo est bien Madrid.
         end
-        
+
+        # C'est bon on peut remplir noemie avec les [allers, retours] pour Madrid.
+        noemie = [array_allers_for_city, robert]
+
+        # On a noemie avec les allers retours pour Madrid.
+        # C'est bon, on la fout dans le hash full_user avec comme clé : Madrid (city).
+        full_user[city] = noemie unless noemie.nil?
+        # (Sauf si noemie est vide, car ça arrive...)
+
         # Super, on a une nouvelle entrée dans full_user :
         # Madrid => [ [allers], [retours] ]
 
@@ -176,7 +172,7 @@ class GroupsController < ApplicationController
       # Et en valeurs les [allers, retours] pour la ville en clé. On a :
 
       # full_user = { "Madrid" => [allers, retours] , "London" => [allers, retours] , ... }
-             
+
       # On a le enfin full_user pour le premier traveler.
       # On se dépêche de remplir le final_hash avec la key-value : traveler => full_user.
 
@@ -191,11 +187,11 @@ class GroupsController < ApplicationController
 
       # On a passé une étape décisive, on augmente le compteur qui nous dira à la fin si on a bien
       # passé toutes les étapes et donc que le trip n'a pas échoué.
-      @semitraveler_count += 1 
+      @semitraveler_count += 1
     end
     # ===== FIN DE LA BOUCLE SUR LE TRAVELER =====
 
-    # Dernier soucis, c'est que lorsqu'on a construit les full_user 
+    # Dernier soucis, c'est que lorsqu'on a construit les full_user
     # des premiers travelers (avec les villes et aller-retous), on ne savait
     # pas encore quelles seraient les villes de destination communes à tout le monde...
     # Donc les premiers travelers ont des villes EN TROP.
@@ -205,7 +201,7 @@ class GroupsController < ApplicationController
     # Car à chaque nouveau traveler on ne gardait que les villes communes
     # avec le traveler précédent... le dernier traveler n'a donc que les villes communes à tous !
     # On les récupère dans les clés de son full_user :
-    
+
     # (Le if pour pas que ça fasse une ERREUR si le final_hash n'a pas été rempli (dans le cas où le trip a échoué).)
     if @final_hash.keys.count > 1
 
@@ -218,42 +214,38 @@ class GroupsController < ApplicationController
 
         fulluser.each_key do |ville|
           # (Et maintenant on itère sur chaque clé du full_user, donc chaque ville.)
-          
+
           fulluser.delete(ville) unless @common_cities.include?(ville)
           # BAM, ça jarte ! (sauf si la ville est bien dans les destinations communes)
         end
-      
       end
 
     end
 
-      # On a épuré le final_hash. Il est maintenant complet et sans vols en trop.
+    # On a épuré le final_hash. Il est maintenant complet et sans vols en trop.
 
-      # pour créer le seed
-      # File.open("unseed.json", "wb") do |file|
-      #   file.write(JSON.pretty_generate(@final_hash))
-      # end
-
+    # pour créer le seed
+    # File.open("unseed.json", "wb") do |file|
+    #   file.write(JSON.pretty_generate(@final_hash))
+    # end
 
     # Remarque :
 
-      # Pour récupérer la liste des villes communes :
-      # @final_hash.values.last.keys
+    # Pour récupérer la liste des villes communes :
+    # @final_hash.values.last.keys
 
-      # Pour récupérer l'array des allers-retours du traveler i pour la ville city :
-      # @final_hash[@group.travelers[i]][city]
-      # = [ [aller1, aller2, ...], [retour1, ...] ]
-
+    # Pour récupérer l'array des allers-retours du traveler i pour la ville city :
+    # @final_hash[@group.travelers[i]][city]
+    # = [ [aller1, aller2, ...], [retour1, ...] ]
 
     # CES TESTS CI-DESSOUS C'EST A QUI ???? VIREZ-LE SVP MDRRRRR
-    #test avec la bonne url "https://tequila-api.kiwi.com/v2/search?apikey=dA_ZyNbfWwC6tB6h1iwevDVUybsLVp4U&fly_from=MRS&fly_to=europe&date_from=12/12/2020&date_to=12/12/2020&flight_type=round&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
-    #LA BONNE URL "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime("%d/%m/%Y")}&date_to=#{traveler.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{traveler.date_to.strftime("%d/%m/%Y")}&return_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+    # test avec la bonne url "https://tequila-api.kiwi.com/v2/search?apikey=dA_ZyNbfWwC6tB6h1iwevDVUybsLVp4U&fly_from=MRS&fly_to=europe&date_from=12/12/2020&date_to=12/12/2020&flight_type=round&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+    # LA BONNE URL "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from}&fly_to=#{@group.fly_to}&date_from=#{traveler.date_from.strftime("%d/%m/%Y")}&date_to=#{traveler.date_from.strftime("%d/%m/%Y")}&flight_type=return&return_from=#{traveler.date_to.strftime("%d/%m/%Y")}&return_to=#{traveler.date_to.strftime("%d/%m/%Y")}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
     # test = RestClient.get "https://api.skypicker.com/flights?fly_from=MRS&fly_to=ORY&date_from=12/12/2020&date_to=12/12/2020&flight_type=return&return_from=14/12/2020&return_to=14/12/2020&price_from=1&price_to=300&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
   end
 
-#on ajoute une route vers les tickets
+  # on ajoute une route vers les tickets
   def tickets
-
   end
 
   private

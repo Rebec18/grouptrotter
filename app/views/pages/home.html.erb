@@ -6,7 +6,9 @@
         <%= simple_form_for(@group) do |f| %>
           <%= f.input :fly_to,
                       label: false,
-                      placeholder: "Sélectionnez votre destination"%>
+                      placeholder: "Sélectionnez votre destination",
+                      as: :string,
+                      input_html: { class: "autocomplete" }%>
                       <div id="container">
                       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
                       </div>

@@ -19,7 +19,9 @@
       <%= f.input :fly_from,
                       label: false,
                       required: true,
-                      placeholder: "De quelle ville part-il?"%>
+                      placeholder: "De quelle ville part-il?",
+                      as: :string,
+                      input_html: { class: "autocomplete" }%>
       <div id="container">
       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
       </div>
