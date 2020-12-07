@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rest-client'
 
 gem 'devise'
+gem 'rubysl-open-uri'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
