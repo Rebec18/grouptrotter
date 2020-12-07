@@ -31,9 +31,25 @@
         end %>
         <%# ===================== %>
 
+
   <div class="cards p-3 mt-1" style="min-height : 65vh">
     <% for @city in @cities %>
-        <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80');">
+        <%# test scraping images from cities %>
+<% require 'i18n'%>
+<% require 'open-uri' %>
+<% require 'nokogiri' %>
+<% city_name = I18n.transliterate(@city) %>
+<% url = "https://unsplash.com/s/photos/#{city_name}"%>
+
+<% html_file = open(url).read %>
+<%html_doc = Nokogiri::HTML(html_file) %>
+
+<% element = html_doc.search('._2UpQX').first %>
+<% element.text.strip %>
+<% image_city = element.attribute('src').value %> 
+      <%# test scraping images from cities %>
+
+        <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
             <div class="card_recto">
               <%= render "shared/recto" %>
             </div>
@@ -70,7 +86,7 @@ clik.addEventListener("click", () => {
             <h2>ALLER</h2>
                 <ul><h3>Départ</h3>
                 <li> Ville de départ : <%= @trips[traveler][city][0].first["cityFrom"] %></li>
-                <li> Date de départ : <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%d/%m/%Y") %> </li>
+                <li> Date de départ :  <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%A %d %B %G") %> </li>
                 <li> Heure de départ : <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%H:%M")%></li>
                 </ul>
             <ul><h3>Arrivée</h3>
