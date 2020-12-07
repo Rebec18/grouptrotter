@@ -70,7 +70,7 @@ clik.addEventListener("click", () => {
             <h2>ALLER</h2>
                 <ul><h3>Départ</h3>
                 <li> Ville de départ : <%= @trips[traveler][city][0].first["cityFrom"] %></li>
-                <li> Date de départ : <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%d/%m/%Y") %> </li>
+                <li> Date de départ :  <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%A %d %B %G") %> </li>
                 <li> Heure de départ : <%= Time.at(@trips[traveler][city][0].first["dTime"]).strftime("%H:%M")%></li>
                 </ul>
             <ul><h3>Arrivée</h3>
