@@ -40,6 +40,25 @@
   color: white;
 }
 
+// TICKETS
+
+.btn-tickets {
+  color: white;
+  background: #F18230;
+  border: 1px solid #F18230;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-tickets:hover {
+  opacity: 0.8;
+   color: white;
+}
+
+// HOMEPAGE
 .btn-search {
   width: 200px;
   padding: 7px;
