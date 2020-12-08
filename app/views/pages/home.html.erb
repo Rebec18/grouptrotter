@@ -3,7 +3,7 @@
       <h1>Organiser un voyage à plusieurs</h1>
       <p>un vrai bonheur, avec Grouptrotter!</p>
     <div class="searchbar">
-        <%= simple_form_for(@group) do |f| %>
+        <%= simple_form_for(@group, remote: true) do |f| %>
           <%= f.input :fly_to,
                       label: false,
 
@@ -21,6 +21,7 @@
     </div>
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
+  <div class="form-traveler"></div>
 </div>
 
 <!-- CARD CONCEPT  -->
