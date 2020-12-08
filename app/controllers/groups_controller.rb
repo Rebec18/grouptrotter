@@ -81,8 +81,14 @@ class GroupsController < ApplicationController
     _group.travelers.each do |traveler|
       bertrand = []
       full_user = {}
+      if @group.fly_to == "\u{1F30D} Toutes destinations"
+        destination_point = ""
+      else
+        destination_point = @group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')
+      end
+
       # parse des infos de vols
-      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{_group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
+      allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{destination_point}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       big_bertrand = JSON.parse(allerjson)["data"]
       # big_bertrand est l'array des allers parsés (les allers sont des hashs).
 
