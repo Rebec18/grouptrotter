@@ -4,7 +4,7 @@
 <div class = "container">
   <% for i in (0..@group.travelers.count-1) %>
      <div id="title-tickets" class ="mt-5">
-        <h2>Voyage de <%=@group.travelers[i].name%></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
+        <h2>Voyage de <span class = 'color-name'> <%=@group.travelers[i].name%></span></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
      </div>
   <div class="cards p-3 mt-3">
     <%# @missions.each do |mission| %>

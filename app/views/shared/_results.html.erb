@@ -1,16 +1,12 @@
 
 <%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
 
-        <%# test scraping images from cities %>
-      <% require 'i18n'%>
-      <% require 'open-uri' %>
-      <% require 'nokogiri' %>
-
       <%# test scraping images from cities %>
-<div class= "container mt-3">
-  <h1>Votre sélection de voyages </h1>
-  <h1>Votre sélection de voyages </h1>
-
+<div class= "container mt-5">
+  <div id="title-search">
+    <h1>Votre sélection de voyages </h1>
+    <h6>Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
+  </div>
   <%# c'est la première card, plus grande que les autres : %>
   <%# ============================= %>
  <% city= @group.cities.first %>
@@ -23,6 +19,7 @@
       <% element = html_doc.search('._2UpQX').first %>
       <% element.text.strip %>
       <% image_city = element.attribute('src').value %>
+
    <div class="grande-card p-3">
      <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">
             <%= link_to group_tickets_path(city: "#{city}"), class: "clickable-card", :target => "_blank" do %>
@@ -100,16 +97,6 @@
   </div>
 </div>
 
-
-<%# INUTILE A SUPPRIMER %>
-<%# <script type="text/javascript">
-clik = document.querySelector(".card_recto")
-
-clik.addEventListener("click", () => {
-
- clik.classList.toggle("flipped");
-})
-</script> %>
 
 <%# Pour desactiver les lignes %>
 <% if false %>

@@ -2,9 +2,15 @@
 alors dans le controller on sera pas passé par toutes les étapes et le semitraveler_count
 n'aura pas atteint 2x le nombre de travelers, et donc dans ce cas on affiche la vue noresults %>
 
-<%# pendant le test avec le seed je mets false dans le if 
-après faudra remplacer false par 
+<%# pendant le test avec le seed je mets false dans le if
+après faudra remplacer false par
 @semitraveler_count/2 != @group.travelers.count %>
+
+        <%# scraping images from cities,je les mets ici car ça fait beuguer la search %>
+      <% require 'i18n'%>
+      <% require 'open-uri' %>
+      <% require 'nokogiri' %>
+
 <% if @semitraveler_count/2 != @group.travelers.count %>
     <%= render "shared/noresults" %>
 <% else %>
