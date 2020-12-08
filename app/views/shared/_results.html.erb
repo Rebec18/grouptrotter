@@ -1,20 +1,63 @@
 
 <%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
 
+        <%# test scraping images from cities %>
+      <% require 'i18n'%>
+      <% require 'open-uri' %>
+      <% require 'nokogiri' %>
+  
+      <%# test scraping images from cities %>
 
 <div class = "container mt-3">
   <h1>Votre selection de voyages </h1>
 
   <%# c'est la vignette fake pour la démo : %>
   <%# ============================= %>
+ <% city= @group.cities.first %>
+      <% city_name = I18n.transliterate(city) %>
+      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+
+      <% html_file = open(url).read %>
+      <%html_doc = Nokogiri::HTML(html_file) %>
+
+      <% element = html_doc.search('._2UpQX').first %>
+      <% element.text.strip %>
+      <% image_city = element.attribute('src').value %>
    <div class="grande-card p-3">
-     <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80');">
-            <%=link_to group_tickets_path do%>
-            <h4>ROME</h4>
-            <p>Italie</p>
+     <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">
+            <%= link_to group_tickets_path(city: "#{city}"), class: "clickable-card", :target => "_blank" do %>
+            <h4><%= city.upcase %> </h4>
+            <p><%= @trips.values.first[city][0].first[:country] %></p>
             <p id="destination"><i class="fas fa-star"></i> <em>Notre meilleure selection</em></p>
-            <p id="prix-voyage"> 170 €/personne </p>
-            <p id="info"> Choisir cette destination</p>
+            <% prices_aller=[] %>
+            <% if @travelers.size > 1 %>
+            <% for traveler in @travelers %>
+            <%# pour calculer le prix %>
+            <% prices_aller << @trips[traveler][city][0][0][:price] %>
+            <% end %>
+            <% prices_aller.sort! %>
+            <%# on a la liste des plus bas prix pour chaque voyageur pour une @city
+            suffit de prendre le premier et dernier élément de l'prices_array
+            et on aura un range de prix à afficher
+            on fait d'abord pareil pour les retours %>
+            <% prices_retour=[] %>
+            <% for traveler in @travelers %>
+                <% prices_retour << @trips[traveler][city][1][0][:price] %>
+            <% end %>
+            <% prices_retour.sort! %>
+            <% min_price = prices_aller.first + prices_retour.first %>
+            <% max_price = prices_aller.last + prices_retour.last %>
+                      
+            <p id="prix-voyage">de <%= min_price %> à <%= max_price %>€/personne </p>
+            <% else %>
+              <% prices_aller << @trips[@travelers.first][city][0][0][:price] %>
+               
+              <% prices_retour=[] %>
+              <% prices_retour << @trips[@travelers.first][city][1][0][:price] %>
+               <% min_price = prices_aller.first + prices_retour.first %>
+               <p id="prix-voyage"><%= min_price %> €/personne </p>
+            <% end %>
+            <p id="info">Voir les details</p>
           </div>
         <% end %> 
   </div> 
@@ -32,13 +75,9 @@
 
 
  <div class="cards p-3 mt-1">
-    <% for @city in @group.cities %>
-
-        <%# test scraping images from cities %>
-      <% require 'i18n'%>
-      <% require 'open-uri' %>
-      <% require 'nokogiri' %>
-      <% city_name = I18n.transliterate(@city) %>
+  <%# on enleve la premiere ville de l'array qui est affichee plus haut %>
+    <% for @city in @group.cities[1..-1] %>
+    <% city_name = I18n.transliterate(@city) %>
       <% url = "https://unsplash.com/s/photos/#{city_name}"%>
 
       <% html_file = open(url).read %>
@@ -46,8 +85,7 @@
 
       <% element = html_doc.search('._2UpQX').first %>
       <% element.text.strip %>
-      <% image_city = element.attribute('src').value %> 
-      <%# test scraping images from cities %>
+      <% image_city = element.attribute('src').value %>
       <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
         <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
             <div class="card_recto">
@@ -73,7 +111,8 @@ clik.addEventListener("click", () => {
 })
 </script> %>
 
-
+<%# Pour desactiver les lignes %>
+<% if false %> 
 <div class = "container">
   <% for city in @group.cities %>
 
@@ -137,3 +176,4 @@ clik.addEventListener("click", () => {
     <% end %>
   <% end %>
 </div>
+<% end %>
