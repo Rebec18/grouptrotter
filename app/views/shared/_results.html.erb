@@ -45,11 +45,9 @@
       <%html_doc = Nokogiri::HTML(html_file) %>
 
       <% element = html_doc.search('._2UpQX').first %>
-      <% element.text.strip %>
-      <% image_city = element.attribute('src').value %> 
-      <%# test scraping images from cities %>
-      <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
-        <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
+      <% if element == nil %>
+        <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
+        <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg');">
             <div class="card_recto">
               <%= render "shared/recto" %>
             </div>
@@ -57,6 +55,21 @@
               <%= render "shared/verso" %>
             <%# </div> %> 
         </div>
+        <% end %>
+      <% else %>
+        <% element.text.strip %>
+        <% image_city = element.attribute('src').value %> 
+        <%# test scraping images from cities %>
+        <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
+          <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
+              <div class="card_recto">
+                <%= render "shared/recto" %>
+              </div>
+              <%# <div class="card_verso">
+                <%= render "shared/verso" %>
+              <%# </div> %> 
+          </div>
+        <% end %>
       <% end %>
     <% end %>
   </div>
