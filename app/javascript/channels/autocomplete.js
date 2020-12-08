@@ -16,7 +16,7 @@ const autocompleteFrom = (container, resultsFrom) => {
         } else if (element.type == "airport") {
           container.insertAdjacentHTML(
             "beforeEnd",
-            `<div class="proposition" id="${count}">${element.name}, ${element.city.country.name} (${element.code})</div>`
+            `<div class="proposition" id="${count}">✈️ ${element.name}, ${element.city.country.name} (${element.code})</div>`
           );
           count += 1;
           console.log(count);
@@ -25,13 +25,13 @@ const autocompleteFrom = (container, resultsFrom) => {
     );
   container.insertAdjacentHTML(
     "afterBegin",
-    `<div class="proposition partout" id="${count}">Toutes destinations</div>`
+    `<div class="proposition partout" id="${count}"><strong>🌍 Toutes destinations</strong></div>`
   );
 };
 
 const initAutocomplete = () => {
-    const resultsFrom = document.getElementById('traveler_fly_from');
-    const container = document.querySelector("#container");
+    const resultsFrom = document.querySelector(".autocomplete");
+    const container = document.querySelector(".container-autocomplete");
     const body = document.querySelector("body");
     
   if (container) {

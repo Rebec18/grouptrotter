@@ -8,7 +8,6 @@
 </div>
 
 <%# Autofill des budgets et dates %>
-
   <div class = "group-form justify-content-center d-flex">
     <%= simple_form_for [@group, @traveler]  do |f| %>
       <%= f.error_notification %>
@@ -19,8 +18,10 @@
       <%= f.input :fly_from,
                       label: false,
                       required: true,
-                      placeholder: "De quelle ville part-il?"%>
-      <div id="container">
+                      placeholder: "De quelle ville part-il?",
+                      as: :string,
+                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
+      <div class="container-autocomplete">
       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
       </div>
       <% if @group.travelers.count > 0 %>
@@ -57,7 +58,7 @@
                       input_html: { class: "datepicker" } %>
       <% end %>
       <%= f.submit "           Ajouter un participant           ", class: "btn btn-ghost m-3" %>
-    
+
     <% end %>
 </div>
 
@@ -101,7 +102,7 @@
 
 <%# ================== LOADER https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4 ==================== %>
 <div class="loader0"> <br><p class="toxt">La recherche est en cours...</p></div>
-<div class="loader"> 
+<div class="loader">
 <canvas width="400" height="400" id="game" class="centrer"></canvas>
 <script>
 var canvas = document.getElementById('game');

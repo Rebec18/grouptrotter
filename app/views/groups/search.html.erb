@@ -5,9 +5,8 @@ n'aura pas atteint 2x le nombre de travelers, et donc dans ce cas on affiche la 
 <%# pendant le test avec le seed je mets false dans le if 
 après faudra remplacer false par 
 @semitraveler_count/2 != @group.travelers.count %>
-
-<% if false %>
-    <%= render "shared/noresults" %>  
+<% if @semitraveler_count/2 != @group.travelers.count %>
+    <%= render "shared/noresults" %>
 <% else %>
     <%= render "shared/results" %>
 <% end %>
