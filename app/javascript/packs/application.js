@@ -28,23 +28,16 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initAutocomplete } from '../channels/autocomplete'
-import { flatpickr } from '../channels/datepicker'
+import { realFlatpickr } from '../channels/datepicker'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initAutocomplete();
-  flatpickr();
+  realFlatpickr();
 });
 
 
-// import flatpickr from 'flatpickr';
-// import 'flatpickr/dist/flatpickr.min.css';
-
-// flatpickr(".datepicker", {
-//   // altInput: true,
-//   enableTime: true
-// });
 let secondform = ""
 let secondformDiv = ""
 let button = ""

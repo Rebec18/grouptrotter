@@ -49,5 +49,6 @@ const initAutocomplete = () => {
       resultsFrom.value = e.target.innerText;
     });
   }
+  resultsFrom.classList.remove("autocomplete");
 };
 export { initAutocomplete };

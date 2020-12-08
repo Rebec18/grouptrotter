@@ -9,7 +9,7 @@
 
                       placeholder: "Sélectionnez votre destination",
                       as: :string,
-                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
+                      input_html: { class: "autocomplete", autocomplete: 'off', value: "🌍 Toutes destinations" }%>
                       <div class="container-autocomplete">
                       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
                       </div>
@@ -22,6 +22,7 @@
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
   <div class="form-traveler"></div>
+  <%# <%= link_to "Lancer la recherche", :group_search, class: "btn btn-ghost m-3 test"  %>
 </div>
 
 <!-- CARD CONCEPT  -->
