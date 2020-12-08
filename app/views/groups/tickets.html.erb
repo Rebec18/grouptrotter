@@ -1,11 +1,12 @@
 <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80)">
-  Rome
+  <%= params["city"] %>
 </div>
 <div class = "container">
+  <% for i in (0..@group.travelers.count-1) %>
      <div id="banner-ticket" class ="mt-5">
-        <h2>Voyage de Polo</h2><p><em> au départ de Marseille </em></p>
+        <h2>Voyage de <%=@group.travelers[i].name%></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
      </div>
-  <div class="cards p-3 mt-3">
+  <div class="cards p-3 mt-3">   
     <%# @missions.each do |mission| %>
       <%#= link_to  mission_path(mission) do %>
         <%# if mission.photo.attached?%>
@@ -14,28 +15,28 @@
                 <p>Samedi 12 décembre 2020</p>
                   <div class =" d-flex justify-content-around">
                     <div>
-                      <h4>Marseille</h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>14 : 50</h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4>Rome</h4>
+                      <h4><%= params["city"] %></h4>
                       <h5>16 : 45</h5>
                     </div>
                   </div>
                   <p>Mercredi 16 décembre 2020</p>
                    <div class =" d-flex justify-content-around">
                     <div>
-                      <h4>Rome</h4>
+                      <h4><%= params["city"] %></h4>
                       <h5>10 : 35</h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4>Marseille</h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>12 : 45</h5>
                     </div>
                   </div>
@@ -51,28 +52,28 @@
                 <p>Samedi 12 décembre 2020</p>
                   <div class =" d-flex justify-content-around">
                     <div>
-                      <h4>Marseille</h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>14 : 50</h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4>Rome</h4>
+                      <h4><%= params["city"] %></h4>
                       <h5>16 : 45</h5>
                     </div>
                   </div>
                   <p>Mercredi 16 décembre 2020</p>
                    <div class =" d-flex justify-content-around">
                     <div>
-                      <h4>Rome</h4>
+                      <h4><%= params["city"] %></h4>
                       <h5>10 : 35</h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4>Marseille</h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>12 : 45</h5>
                     </div>
                   </div>
@@ -83,92 +84,8 @@
                 <p id="lien-reserver" class= "btn btn-tickets"> Réserver </p>
               </div>
           </div>
-  </div>
-
-<div id="banner-ticket" class ="mt-5">
-        <h2>Voyage de Stéphane</h2><p><em> au départ de Lyon </em></p>
-     </div>
-  <div class="cards p-3 mt-3">
-    <%# @missions.each do |mission| %>
-      <%#= link_to  mission_path(mission) do %>
-        <%# if mission.photo.attached?%>
-           <div class="d-flex card-tickets p-3">
-              <div>
-                <p>Samedi 12 décembre 2020</p>
-                  <div class =" d-flex justify-content-around">
-                    <div>
-                      <h4>Marseille</h4>
-                      <h5>14 : 50</h5>
-                    </div>
-                    <div>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                    <div>
-                      <h4>Rome</h4>
-                      <h5>16 : 45</h5>
-                    </div>
-                  </div>
-                  <p>Mercredi 16 décembre 2020</p>
-                   <div class =" d-flex justify-content-around">
-                    <div>
-                      <h4>Rome</h4>
-                      <h5>10 : 35</h5>
-                    </div>
-                    <div>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                    <div>
-                      <h4>Marseille</h4>
-                      <h5>12 : 45</h5>
-                    </div>
-                  </div>
-              </div>
-              <div>
-                <img id="img-airline" src="https://images.kiwi.com/airlines/64x64/AF.png" alt="airline">
-                <h2 id="prix-tickets">145 €</h2>
-                <p id="lien-reserver" class= "btn btn-tickets"> Réserver </p>
-              </div>
-          </div>
-           <div class="d-flex card-tickets p-3">
-              <div>
-                <p>Samedi 12 décembre 2020</p>
-                  <div class =" d-flex justify-content-around">
-                    <div>
-                      <h4>Marseille</h4>
-                      <h5>14 : 50</h5>
-                    </div>
-                    <div>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                    <div>
-                      <h4>Rome</h4>
-                      <h5>16 : 45</h5>
-                    </div>
-                  </div>
-                  <p>Mercredi 16 décembre 2020</p>
-                   <div class =" d-flex justify-content-around">
-                    <div>
-                      <h4>Rome</h4>
-                      <h5>10 : 35</h5>
-                    </div>
-                    <div>
-                    <i class="fas fa-long-arrow-alt-right"></i>
-                    </div>
-                    <div>
-                      <h4>Marseille</h4>
-                      <h5>12 : 45</h5>
-                    </div>
-                  </div>
-              </div>
-              <div>
-                <img id="img-airline" src="https://images.kiwi.com/airlines/64x64/AF.png" alt="airline">
-                <h2 id="prix-tickets">145 €</h2>
-                <p id="lien-reserver" class= "btn btn-tickets"> Réserver </p>
-              </div>
-          </div>
-  </div>
-  </div>
-
+  </div> 
+  <% end %>
 </div>
 <!-- je récup ma ville d'arrivée !! -->
 

@@ -13,10 +13,19 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
-    if @group.save
-      redirect_to group_path(@group)
-    else
-      render "new"
+    # if @group.save
+    #   redirect_to group_path(@group)
+    # else
+    #   render "new"
+    # end
+    respond_to do |format|
+      if @group.save
+        # format.html { redirect_to "/pages/home", notice: 'Group was successfully created.' }
+        format.js
+      else
+        format.html { render :new }
+        format.json { render json: @group.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -45,7 +54,7 @@ class GroupsController < ApplicationController
         big_bertrand.each do |hash|
           # ici le hash est un hash d'un vol
           subhash = {}
-          subhash[:cityFrom] = hash[0]["cityFrom"]
+          subhash[:cityFrom] = hash["cityFrom"]
           subhash[:cityTo] = hash["cityTo"]
           subhash[:flyFrom] = hash["flyFrom"]
           subhash[:flyTo] = hash["flyTo"]
@@ -62,7 +71,9 @@ class GroupsController < ApplicationController
         fat_hash = {}
         fat_hash[traveler] = bertrand
       end
+      # On a rempli fat_hash avec tous les travelers pour une city
     end
+    # On l'a rempli avec toutes les cities
   end
 
   private
@@ -81,10 +92,10 @@ class GroupsController < ApplicationController
     _group.travelers.each do |traveler|
       bertrand = []
       full_user = {}
-      if @group.fly_to == "\u{1F30D} Toutes destinations"
+      if _group.fly_to == "\u{1F30D} Toutes destinations"
         destination_point = ""
       else
-        destination_point = @group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')
+        destination_point = _group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')
       end
 
       # parse des infos de vols

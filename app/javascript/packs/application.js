@@ -49,6 +49,9 @@ document.addEventListener('turbolinks:load', () => {
 //   // altInput: true,
 //   enableTime: true
 // });
+let secondform = ""
+let secondformDiv = ""
+let button = ""
 
 
 
