@@ -86,10 +86,8 @@
           test.addEventListener("click", function () {
           const beforeload = document.querySelector(".beforeload");
           beforeload.className += " hidden"
-          const loader0 = document.querySelector(".loader0");
-          loader0.className += "visible globe"
-          // const loader = document.querySelector(".loader");
-          // loader.className += "visible"
+          const loader = document.querySelector(".loader");
+          loader.className += "visible globe-text"
           })
       </script>
     <%# FIN DU SCRIPT %>
@@ -99,12 +97,16 @@
 </div>
 
 <%# ================== LOADER https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4 ==================== %>
-  <div class="loader0">
+  <div class="loader">
     <div class="globe-text">
-    La recherche est en cours...
+      <div class="text">
+      <h3>
+        Notre algorithme cherche vos destinations communes
+      </h3>
+      <p>
+        <em>Utilisez les flêches de votre clavier pour jouer au snake en attendant !</em>
+      </p>
+      </div>
      <%= render "shared/snake" %>
     </div>
   </div>
-<!--   <div class="loader">
-
-  </div> -->
