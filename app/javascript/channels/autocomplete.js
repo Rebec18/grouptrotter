@@ -12,14 +12,14 @@ const autocompleteFrom = (container, resultsFrom) => {
             `<div class="proposition" id="${count}">${element.name}, ${element.country.name} (${element.code})</div>`
           );
           count += 1;
-          console.log(count);
+          // console.log(count);
         } else if (element.type == "airport") {
           container.insertAdjacentHTML(
             "beforeEnd",
             `<div class="proposition" id="${count}">✈️ ${element.name}, ${element.city.country.name} (${element.code})</div>`
           );
           count += 1;
-          console.log(count);
+          // console.log(count);
         }
       })
     );
@@ -38,7 +38,6 @@ const initAutocomplete = () => {
     resultsFrom.addEventListener("keyup", () => {
       container.innerHTML = "";
       // console.log(resultsFrom.value);
-      console.log("ok");
       autocompleteFrom(container, resultsFrom);
     });
 
