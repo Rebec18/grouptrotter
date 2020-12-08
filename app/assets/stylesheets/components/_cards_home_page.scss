@@ -329,6 +329,17 @@
   transition-delay: 0.32s;
 }
 
+.title {
+  position: relative;
+  top: -32px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+
 .super-box:hover .text {
   opacity: 0;
   -webkit-transform: translateY(-4px) scale(0.8);

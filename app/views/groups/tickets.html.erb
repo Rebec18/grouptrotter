@@ -3,10 +3,10 @@
 </div>
 <div class = "container">
   <% for i in (0..@group.travelers.count-1) %>
-     <div id="banner-ticket" class ="mt-5">
-        <h2>Voyage de <%=@group.travelers[i].name%></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
+     <div id="title-tickets" class ="mt-5">
+        <h2>Voyage de <span class = 'color-name'> <%=@group.travelers[i].name%></span></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
      </div>
-  <div class="cards p-3 mt-3">   
+  <div class="cards p-3 mt-3">
     <%# @missions.each do |mission| %>
       <%#= link_to  mission_path(mission) do %>
         <%# if mission.photo.attached?%>
@@ -84,7 +84,7 @@
                 <p id="lien-reserver" class= "btn btn-tickets"> Réserver </p>
               </div>
           </div>
-  </div> 
+  </div>
   <% end %>
 </div>
 <!-- je récup ma ville d'arrivée !! -->
