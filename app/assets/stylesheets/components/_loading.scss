@@ -8,29 +8,44 @@
 
 .loader0 {
     width: 900px;
+    height: 500px;
     display: none;
 }
 
-.toxt {
-text-align: center;
-font-size: 24px;
+// .centrer {
+//     position: absolute;
+//     // top: 120px;
+//     // left: 250px;
+// }
+
+// .loader {
+//     display: none;
+// }
+
+.globe-text {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  height: 300px;
+  margin: 3rem;
+  color: gray;
+  background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/globe-512.png');
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+  background-position: center ;
 }
 
-.centrer {
-    position: absolute;
-    top: 120px;
-    left: 250px;
-}
+#game {
+  width: 400px !important;
+  height: 400px !important;
+  position: relative;
+  top: 0px;
+  left: 0px;
 
-.loader {
-    display: none;
 }
-
-.globe {
-    height: 300px;
-    width:900px;
-    background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/globe-512.png');
-    background-repeat: no-repeat;
-    background-size: 130px 130px;
-    background-position: center ;
-}
+// .container-loader{
+//   width: 90vh;
+//   height: 90vh;
+//   display: flex;
+//   justify-content: center;
+// }
