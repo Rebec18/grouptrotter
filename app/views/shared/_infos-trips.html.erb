@@ -1,0 +1,61 @@
+<%# Pour desactiver les lignes %>
+<% if false %>
+<div class = "container">
+  <% for city in @group.cities %>
+
+    <h1 style="color: red">VOYAGE EN DIRECTION DE : <%= city %></h1>
+
+    <% for traveler in @travelers %>
+
+        <h1>Proposition pour <%= traveler[:name] %></h1>
+
+        <div class ="d-flex justify-content-between">
+            <div>
+            <h2>ALLER</h2>
+            <ul><h3>Départ</h3>
+            <li> Ville de départ : <%= @trips[traveler][city][0].first[:cityFrom] %></li>
+                <li> Date de départ :  <%= Time.at(@trips[traveler][city][0].first[:dTime]).strftime("%A %d %B %G") %> </li>
+                <li> Heure de départ : <%= Time.at(@trips[traveler][city][0].first[:dTime]).strftime("%H:%M")%></li>
+                </ul>
+            <ul><h3>Arrivée</h3>
+                <li> Ville d'arrivée : <%= @trips[traveler][city][0].first[:cityTo] %></li>
+                <li> Date d'arrivée : <%= Time.at(@trips[traveler][city][0].first[:aTime]).strftime("%d/%m/%Y") %></li>
+                <li> Heure d'arrivée : <%= Time.at(@trips[traveler][city][0].first[:aTime]).strftime("%H:%M")%></li>
+                </ul>
+            </div>
+
+            <div>
+            <h2>RETOUR</h2>
+                <ul><h3>Départ</h3>
+                <li> Ville de départ : <%= @trips[traveler][city][1].first[:cityFrom] %></li>
+                <li> Date de départ : <%= Time.at(@trips[traveler][city][1].first[:dTime]).strftime("%d/%m/%Y") %> </li>
+                <li> Heure de départ : <%= Time.at(@trips[traveler][city][1].first[:dTime]).strftime("%H:%M")%></li>
+                </ul>
+
+            <ul><h3>Arrivée</h3>
+                <li> Ville d'arrivée : <%= @trips[traveler][city][1].first[:cityTo] %></li>
+                <li> Date d'arrivée : <%= Time.at(@trips[traveler][city][1].first[:aTime]).strftime("%d/%m/%Y") %></li>
+                <li> Heure d'arrivée : <%= Time.at(@trips[traveler][city][1].first[:aTime]).strftime("%H:%M")%></li>
+            </ul>
+            </div>
+        </div>
+            <div>
+            <ul>
+            <div class="group-btn float-right">
+                <%= link_to "Selectionner cette destination", :controller => "groups", :action => "tickets", :query => "#{city}" %>
+            </div>
+
+                <h3>Détails</h3>
+                <li> Prix aller : <%= @trips[traveler][city][0].first[:price] %></li>
+                <li> Lien : <a href="<%= @trips[traveler][city][0].first[:url] %>">Réserver sur kiwi</a></li>
+                <li> Prix retour : <%= @trips[traveler][city][1].first[:price] %></li>
+                <li> Lien : <a href="<%= @trips[traveler][city][1].first[:url] %>">Réserver sur kiwi</a></li>
+                <li style = "color: lime"> Prix total : <%= @trips[traveler][city][0].first[:price] + @trips[traveler][city][1].first[:price] %></li>
+                <!--  <li> Code de la compagnie aérienne aller : <%= @trips[traveler][city][0].first[:airlines] %></li>
+                <li> Code de la compagnie aérienne retour : <%= @trips[traveler][city][1].first[:airlines] %></li>-->
+            </ul>
+            </div>
+    <% end %>
+  <% end %>
+</div>
+<% end %>

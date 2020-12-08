@@ -2,10 +2,19 @@
   // display: flex;
   // justify-content: space-between;
   align-items: center;
-  color: #333333;
+  color: #666666;
   font-size: 60px;
-  border-bottom: 1px solid rgba(150, 150, 150, 0.3);
-  p {
-    margin: 0px;
+  // border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+
+ h1 {
+  // font-weight: bold;
+  font-size: 60px;
+  letter-spacing: -2px;
+
+ }
+  h6 {
+  margin-left: 20px;
+  font-size: 18px;
   }
 }
+

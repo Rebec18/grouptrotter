@@ -1,0 +1,109 @@
+<%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
+<div class= "container mt-5">
+  <div id="title-search">
+    <h1>Votre sélection de voyages </h1>
+    <h6>Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
+  </div>
+  <%# c'est la première card, plus grande que les autres : %>
+  <%# ============================= %>
+  <% city= @group.cities.first %>
+  <% city_name = I18n.transliterate(city) %>
+  <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+
+  <% html_file = open(url).read %>
+  <%html_doc = Nokogiri::HTML(html_file) %>
+
+  <% element = html_doc.search('._2UpQX').first %>
+  <% element.text.strip %>
+  <% image_city = element.attribute('src').value %>
+
+  <div class="grande-card p-3">
+    <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">
+      <%= link_to group_tickets_path(city: "#{city}"), class: "clickable-card", :target => "_blank" do %>
+        <h4><%= city.upcase %> </h4>
+          <p><%= @trips.values.first[city][0].first[:country] %></p>
+          <p id="destination"><i class="fas fa-star"></i> <em>Notre meilleure sélection</em></p>
+          <% prices_aller=[] %>
+          <% if @travelers.size > 1 %>
+            <% for traveler in @travelers %>
+            <%# pour calculer le prix %>
+              <% prices_aller << @trips[traveler][city][0][0][:price] %>
+            <% end %>
+            <% prices_aller.sort! %>
+            <%# on a la liste des plus bas prix pour chaque voyageur pour une @city
+            suffit de prendre le premier et dernier élément de l'prices_array
+            et on aura un range de prix à afficher
+            on fait d'abord pareil pour les retours %>
+            <% prices_retour=[] %>
+            <% for traveler in @travelers %>
+              <% prices_retour << @trips[traveler][city][1][0][:price] %>
+            <% end %>
+            <% prices_retour.sort! %>
+            <% min_price = prices_aller.first + prices_retour.first %>
+            <% max_price = prices_aller.last + prices_retour.last %>
+
+            <p id="prix-voyage">de <%= min_price %> à <%= max_price %>€/personne </p>
+          <% else %>
+            <% prices_aller << @trips[@travelers.first][city][0][0][:price] %>
+            <% prices_retour=[] %>
+            <% prices_retour << @trips[@travelers.first][city][1][0][:price] %>
+            <% min_price = prices_aller.first + prices_retour.first %>
+            <p id="prix-voyage"><%= min_price %> €/personne </p>
+          <% end %>
+        <p id="btn-info">Voir les détails</p>
+      <% end %>
+    </div>
+  </div>
+
+
+ <div class="cards p-3 mt-1">
+  <%# on enleve la premiere ville de l'array qui est affichee plus haut %>
+    <% for @city in @group.cities[1..-1] %>
+      <% city_name = I18n.transliterate(@city) %>
+      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+
+      <% html_file = open(url).read %>
+      <%html_doc = Nokogiri::HTML(html_file) %>
+
+      <% element = html_doc.search('._2UpQX').first %>
+      <% element.text.strip %>
+      <% image_city = element.attribute('src').value %>
+
+      <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
+        <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
+          <div class="card_recto">
+            <h4><%= @city.upcase %></h4>
+              <p><%= @trips.values.first[@city][0].first[:country] %></p>
+              <% prices_aller=[] %>
+              <% if @travelers.size > 1 %>
+                <% for traveler in @travelers %>
+                <%# pour calculer le prix %>
+                  <% prices_aller << @trips[traveler][@city][0][0][:price] %>
+                <% end %>
+                <% prices_aller.sort! %>
+                <%# on a la liste des plus bas prix pour chaque voyageur pour une @city
+                suffit de prendre le premier et dernier élément de l'prices_array
+                et on aura un range de prix à afficher
+                on fait d'abord pareil pour les retours %>
+                <% prices_retour=[] %>
+                <% for traveler in @travelers %>
+                  <% prices_retour << @trips[traveler][@city][1][0][:price] %>
+                <% end %>
+                <% prices_retour.sort! %>
+                <% min_price = prices_aller.first + prices_retour.first %>
+                <% max_price = prices_aller.last + prices_retour.last %>
+                <p id="prix-voyage">de <%= min_price %> à <%= max_price %>€/personne </p>
+              <% else %>
+                <% prices_aller << @trips[@travelers.first][@city][0][0][:price] %>
+                <% prices_retour=[] %>
+                <% prices_retour << @trips[@travelers.first][@city][1][0][:price] %>
+                <% min_price = prices_aller.first + prices_retour.first %>
+                <p id="prix-voyage"><%= min_price %> €/personne </p>
+              <% end %>
+              <p id="btn-info">Voir les détails</p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
