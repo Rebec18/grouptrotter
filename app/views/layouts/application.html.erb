@@ -7,7 +7,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'%>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
@@ -15,7 +16,6 @@
     <div class="navbar-container"><%= render "shared/navbar" %></div>
     <%= render "shared/flashes" %>
     <div class="content-container"><%= yield %></div>
-    <%= javascript_pack_tag 'application' %>
     <div class="footer-container"><%= render "shared/footer" %></div>
     </div>
   </body>
