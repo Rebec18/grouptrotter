@@ -45,7 +45,7 @@ class GroupsController < ApplicationController
         big_bertrand.each do |hash|
           # ici le hash est un hash d'un vol
           subhash = {}
-          subhash[:cityFrom] = hash[0]["cityFrom"]
+          subhash[:cityFrom] = hash["cityFrom"]
           subhash[:cityTo] = hash["cityTo"]
           subhash[:flyFrom] = hash["flyFrom"]
           subhash[:flyTo] = hash["flyTo"]
@@ -62,7 +62,9 @@ class GroupsController < ApplicationController
         fat_hash = {}
         fat_hash[traveler] = bertrand
       end
+      # On a rempli fat_hash avec tous les travelers pour une city
     end
+    # On l'a rempli avec toutes les cities
   end
 
   private
@@ -81,10 +83,10 @@ class GroupsController < ApplicationController
     _group.travelers.each do |traveler|
       bertrand = []
       full_user = {}
-      if @group.fly_to == "\u{1F30D} Toutes destinations"
+      if _group.fly_to == "\u{1F30D} Toutes destinations"
         destination_point = ""
       else
-        destination_point = @group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')
+        destination_point = _group.fly_to.gsub(/.+\((\w{3})\)$/, '\1')
       end
 
       # parse des infos de vols

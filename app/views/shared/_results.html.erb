@@ -35,20 +35,20 @@
     <% for @city in @group.cities %>
 
         <%# test scraping images from cities %>
-<% require 'i18n'%>
-<% require 'open-uri' %>
-<% require 'nokogiri' %>
-<% city_name = I18n.transliterate(@city) %>
-<% url = "https://unsplash.com/s/photos/#{city_name}"%>
+      <% require 'i18n'%>
+      <% require 'open-uri' %>
+      <% require 'nokogiri' %>
+      <% city_name = I18n.transliterate(@city) %>
+      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
 
-<% html_file = open(url).read %>
-<%html_doc = Nokogiri::HTML(html_file) %>
+      <% html_file = open(url).read %>
+      <%html_doc = Nokogiri::HTML(html_file) %>
 
-<% element = html_doc.search('._2UpQX').first %>
-<% element.text.strip %>
-<% image_city = element.attribute('src').value %> 
+      <% element = html_doc.search('._2UpQX').first %>
+      <% element.text.strip %>
+      <% image_city = element.attribute('src').value %> 
       <%# test scraping images from cities %>
-      <%= link_to group_tickets_path, class: "clickable-card" do %>
+      <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
         <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
             <div class="card_recto">
               <%= render "shared/recto" %>
