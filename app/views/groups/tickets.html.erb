@@ -1,8 +1,8 @@
- <% require 'i18n'%>
+      <% require 'i18n'%>
       <% require 'open-uri' %>
       <% require 'nokogiri' %>
       <% city_name = I18n.transliterate(params["city"])%>
-      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+      <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
 
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
@@ -11,9 +11,8 @@
       <% if element == nil %>
         <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg)">
       <% else %>
-        <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<% element.text.strip.attribute('src').value %>')">
+        <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<% element.attribute('src').value %>')">
       <% end %>
-  <% console %>
   <%= params["city"] %>
 </div>
 <div class = "container">

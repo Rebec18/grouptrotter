@@ -39,7 +39,7 @@
       <% require 'open-uri' %>
       <% require 'nokogiri' %>
       <% city_name = I18n.transliterate(@city) %>
-      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+      <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
 
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
