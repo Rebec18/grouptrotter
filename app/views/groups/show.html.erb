@@ -24,16 +24,23 @@
       <div class="container-autocomplete">
       <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
       </div>
+      <div class="range-wrap">
       <% if @group.travelers.count > 0 %>
+     
           <%= f.input :price_to,
+                      as: :range,
                       label: false,
                       placeholder: "A t'il un budget maximum?",
-                      input_html: { value: @group.travelers.first.price_to }%>
+                      input_html: { value: @group.travelers.first.price_to,  min: "150", max: "1500", value: "150",step: "50", id: "range"}%>
       <% else %>
           <%= f.input :price_to,
                       label: false,
-                      placeholder: "A t'il un budget maximum?"%>
+                      as: :range,
+                      input_html: { min: "150", max: "1500", value: "150",step: "50", id: "range"},
+                      placeholder: "A t'il un budget maximum?" %>
       <% end %>
+            <div class="range-value" id="rangeV"></div>
+      </div>
       <% if @group.travelers.count > 0 %>
           <%= f.input :date_from,
                       label: false,
