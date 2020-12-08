@@ -5,13 +5,13 @@
       <% require 'i18n'%>
       <% require 'open-uri' %>
       <% require 'nokogiri' %>
-  
+
       <%# test scraping images from cities %>
+<div class= "container mt-3">
+  <h1>Votre sélection de voyages </h1>
+  <h1>Votre sélection de voyages </h1>
 
-<div class = "container mt-3">
-  <h1>Votre selection de voyages </h1>
-
-  <%# c'est la vignette fake pour la démo : %>
+  <%# c'est la première card, plus grande que les autres : %>
   <%# ============================= %>
  <% city= @group.cities.first %>
       <% city_name = I18n.transliterate(city) %>
@@ -47,11 +47,11 @@
             <% prices_retour.sort! %>
             <% min_price = prices_aller.first + prices_retour.first %>
             <% max_price = prices_aller.last + prices_retour.last %>
-                      
+
             <p id="prix-voyage">de <%= min_price %> à <%= max_price %>€/personne </p>
             <% else %>
               <% prices_aller << @trips[@travelers.first][city][0][0][:price] %>
-               
+
               <% prices_retour=[] %>
               <% prices_retour << @trips[@travelers.first][city][1][0][:price] %>
                <% min_price = prices_aller.first + prices_retour.first %>
@@ -59,11 +59,11 @@
             <% end %>
             <p id="info">Voir les details</p>
           </div>
-        <% end %> 
-  </div> 
+        <% end %>
+  </div>
 
   <%# =============================  %>
-    
+
     <%# trier par prix pas besoin car déjà fait sur l'api : %>
     <%# ========================= %>
       <%# for city in @cities
@@ -93,7 +93,7 @@
             </div>
             <%# <div class="card_verso">
               <%= render "shared/verso" %>
-            <%# </div> %> 
+            <%# </div> %>
         </div>
       <% end %>
     <% end %>
@@ -105,14 +105,14 @@
 <%# <script type="text/javascript">
 clik = document.querySelector(".card_recto")
 
-clik.addEventListener("click", () => { 
+clik.addEventListener("click", () => {
 
  clik.classList.toggle("flipped");
 })
 </script> %>
 
 <%# Pour desactiver les lignes %>
-<% if false %> 
+<% if false %>
 <div class = "container">
   <% for city in @group.cities %>
 
@@ -165,14 +165,9 @@ clik.addEventListener("click", () => {
                 <li> Lien : <a href="<%= @trips[traveler][city][1].first[:url] %>">Réserver sur kiwi</a></li>
                 <li style = "color: lime"> Prix total : <%= @trips[traveler][city][0].first[:price] + @trips[traveler][city][1].first[:price] %></li>
                 <!--  <li> Code de la compagnie aérienne aller : <%= @trips[traveler][city][0].first[:airlines] %></li>
-                <li> Code de la compagnie aérienne retour : <%= @trips[traveler][city][1].first[:airlines] %></li>
-                <li> Coordonnées de l'aéroport de <%= @trips[traveler][city][0].first[:cityFrom]  %>  : <%= @trips[traveler][city][0].first[:latFrom] %> / <%= @trips[traveler][city][0].first[:lngFrom] %></li>
-                <li> Coordonnées de l'aéroport de <%= @trips[traveler][city][0].first[:cityTo]  %> : <%= @trips[traveler][city][0].first[:latTo] %> / <%= @trips[traveler][city][0].first[:lngTo] %></li>
-                <li> Coordonnées de l'aéroport de <%= @trips[traveler][city][1].first[:cityFrom]  %>  : <%= @trips[traveler][city][1].first[:latFrom] %> / <%= @trips[traveler][city][1].first[:lngFrom] %></li>
-                <li> Coordonnées de l'aéroport de <%= @trips[traveler][city][1].first[:cityTo]  %> : <%= @trips[traveler][city][1].first[:latTo] %> / <%= @trips[traveler][city][1].first[:lngTo] %></li> -->
+                <li> Code de la compagnie aérienne retour : <%= @trips[traveler][city][1].first[:airlines] %></li>-->
             </ul>
             </div>
-
     <% end %>
   <% end %>
 </div>
