@@ -1,6 +1,81 @@
+// CARD CONCEPT
+
+// .card-home {
+//   text-align: left !important;
+//   display: block;
+//   padding: 23px !important;
+//   margin: 3rem !important;
+//   font-size: 18px;
+//   position: relative;
+//   border: 1px solid #F9F9F9;
+//     p {
+//     margin: 0 !important;
+//   }
+//     h4 {
+//     margin: 0 !important;
+//     color: #F9F9F9;
+//   }
+// }
+
+
+.card-concept {
+  border-radius: 30px;
+  background-color: #F9F9F9;
+  text-align: left !important;
+  display: block;
+  // padding: 23px !important;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+  // border: 1px solid #F9F9F9;
+    p {
+    margin: 0 !important;
+  }
+    h4 {
+    margin: 0 !important;
+    color: #555555;
+  }
+}
+
+
+// CARDS COMMENT CA MARCHE
+.card-titre {
+  border-radius: 30px;
+  text-align: center !important;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  margin-left: 3rem;
+    p {
+    margin: 0 !important;
+  }
+    h4 {
+    margin: 0 !important;
+    color: #555555;
+  }
+}
+
+.card-white-home{
+  border-radius: 30px;
+  text-align: center !important;
+  justify-content: space-around;
+  display: flex;
+  margin: 3rem !important;
+  font-size: 18px;
+  position: relative;
+    p {
+    margin: 0 !important;
+  }
+    h4 {
+    margin: 0 !important;
+    color: #555555;
+  }
+}
+
+
  .container {
-   width: 220px;
-   height: 220px;
+   width: 200px;
+   height: 200px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -12,10 +87,110 @@
            align-items: center;
  }
 
- .box {
+ .box1 {
    position: absolute;
-   width: 220px;
-   height: 220px;
+   width: 200px;
+   height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 3px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+
+  .box2 {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 3px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+
+  .box3 {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 3px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+
+   .box4 {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 3px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+
+   .box5 {
+   position: absolute;
+   width: 200px;
+   height: 200px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -45,6 +220,10 @@
    -webkit-transition-delay: 0.32s;
            transition-delay: 0.32s;
    will-change: transform;
+   h1{
+    color: #F18230;
+   }
+
  }
 
  .icon_bg {
@@ -75,7 +254,39 @@
    position: relative;
  }
 
- .super-box:hover .box {
+ .super-box:hover .box1 {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+  .super-box:hover .box2 {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+   .super-box:hover .box3 {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+    .super-box:hover .box4 {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+     .super-box:hover .box5 {
  /*   border: 1px solid rgba(225, 227, 232, 0.18); */
    -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
            box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
@@ -94,8 +305,8 @@
  }
 
  .super-box {
-     width: 220px;
-   height: 220px;
+     width: 200px;
+   height: 200px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -129,11 +340,12 @@
 
  }
 
- .box::after {
-   content: "Discover the attacker's tactics and purposes and find out the identity of the attacker";
+ .box1::after {
+   content: "Tu peux sélectionner une destination précise ou laisser notre algorithme choisir pour toi";
+   font-size: 14px;
    position: absolute;
    width: 170px;
-   top: 111px;
+   top: 90px;
    opacity: 0;
    line-height: 20px;
    -webkit-transition: all 0.3s ease;
@@ -142,7 +354,81 @@
            transition-delay: 0.32s;
  }
 
- .super-box:hover .box::after {
+
+ .box2::after {
+   content: "Inscris les dates que vous avez sélectionnez pour votre voyage";
+   font-size: 14px;
+   position: absolute;
+   width: 170px;
+   top: 90px;
+   opacity: 0;
+   line-height: 20px;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+ .box3::after {
+   content:"Inscris leurs noms, leurs villes de départ & leurs budgets s'ils en ont un" ;
+   position: absolute;
+   font-size: 14px;
+   width: 170px;
+   top: 90px;
+   opacity: 0;
+   line-height: 20px;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+  .box4::after {
+   content:"Notre algorithme vous propose plusieurs destinations communes, vous n'avez plus qu'à choisir" ;
+   position: absolute;
+   font-size: 14px;
+   width: 170px;
+   top: 90px;
+   opacity: 0;
+   line-height: 20px;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+   .box5::after {
+   content: "Envoie le lien de la recherche aux voyageurs pour qu'ils puissent réserver leurs billets et fais ta valise!";
+   position: absolute;
+   font-size: 14px;
+   width: 170px;
+   top: 90px;
+   opacity: 0;
+   line-height: 20px;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+
+
+ .super-box:hover .box1::after {
+   opacity: 1;
+ }
+
+.super-box:hover .box2::after {
+   opacity: 1;
+ }
+
+.super-box:hover .box3::after {
+   opacity: 1;
+ }
+
+.super-box:hover .box4::after {
+   opacity: 1;
+ }
+
+.super-box:hover .box5::after {
    opacity: 1;
  }
 
