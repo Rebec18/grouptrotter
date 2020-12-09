@@ -1,4 +1,3 @@
-
 const autocompleteFrom = (container, resultsFrom) => {
   let count = 1;
   fetch(`https://api.skypicker.com/locations/?term=${resultsFrom.value}`)
@@ -16,7 +15,7 @@ const autocompleteFrom = (container, resultsFrom) => {
         } else if (element.type == "airport") {
           container.insertAdjacentHTML(
             "beforeEnd",
-            `<div class="proposition" id="${count}">✈️ ${element.name}, ${element.city.country.name} (${element.code})</div>`
+            `<div class="proposition" id="${count}">✈️  ${element.name}, ${element.city.country.name} (${element.code})</div>`
           );
           count += 1;
           // console.log(count);
@@ -25,7 +24,7 @@ const autocompleteFrom = (container, resultsFrom) => {
     );
   container.insertAdjacentHTML(
     "afterBegin",
-    `<div class="proposition partout" id="${count}"><strong>🌍 Toutes destinations</strong></div>`
+    `<div class="proposition partout" id="${count}"><strong>🌍  Toutes destinations</strong></div>`
   );
 };
 
