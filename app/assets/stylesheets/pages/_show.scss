@@ -1,3 +1,18 @@
 .group-form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+.titre_voyageur {
+  h1 {
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 25px;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+}
