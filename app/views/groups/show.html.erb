@@ -6,7 +6,7 @@
   </div>
   <div>
      <% if true %>
-      <%= link_to "Lancer la recherche", :group_search, class: "bt btn-home"  %>
+      <%= link_to "Lancer la recherche", :group_search, class: "bt btn-home serpent"  %>
   </div> 
   <div  class = "d-flex justify-content-center mb-3">
     <% if @group.fly_to != "" %>
@@ -144,17 +144,7 @@
   
 
     <%# SCRIPT POUR LANCER LE LOADER %>
-      <script type="text/javascript">
-          const test = document.querySelector(".test");
-          if (test) {
-              test.addEventListener("click", function () {
-            const beforeload = document.querySelector(".beforeload");
-            beforeload.className += " hidden"
-            const loader = document.querySelector(".loader");
-            loader.className += "visible globe-text"
-            })
-          }
-      </script>
+  <%# JE VIRE LE SNAKE D'ICI ON LE FOUT AILLEURS, SALETé DE SNAKE %>
     <%# FIN DU SCRIPT %>
     <% end %>
   </div>
