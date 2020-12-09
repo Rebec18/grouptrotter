@@ -30,8 +30,7 @@ import "bootstrap";
 import { initAutocomplete } from '../channels/autocomplete';
 import { initFlatpickr } from '../channels/datepicker';
 // import { initSlider } from '../components/slider';
-require("flatpickr/dist/flatpickr.css")
-
+// import "../../assets/stylesheets/application"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
