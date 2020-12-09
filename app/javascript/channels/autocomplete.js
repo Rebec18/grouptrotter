@@ -50,4 +50,27 @@ const initAutocomplete = () => {
   }
 };
 
+const initAutocompleteShow = () => {
+    const resultsFrom = document.querySelector(".autocomplete");
+    const container = document.querySelector(".container-autocomplete-show");
+    const body = document.querySelector("body");
+
+  if (container) {
+    resultsFrom.addEventListener("keyup", () => {
+      container.innerHTML = "";
+      // console.log(resultsFrom.value);
+      autocompleteFrom(container, resultsFrom);
+    });
+
+    body.addEventListener("click", (e) => {
+      container.innerHTML = "";
+    });
+
+    container.addEventListener("click", (e) => {
+      resultsFrom.value = e.target.innerText;
+    });
+  }
+};
+
 export { initAutocomplete };
+export { initAutocompleteShow };

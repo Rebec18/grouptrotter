@@ -1,133 +1,133 @@
 <div class="beforeload">
   <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=3000&q=400&fit=crop)">
-  <div class= "titre_searchbar">
-      <h1>Nouvelle recherche</h1>
-      <p>Remplissez les champs ci-dessous pour chacun des voyageurs</p>
-  </div>
-  <div>
-     <% if true %>
-      <%= link_to "Lancer la recherche", :group_search, class: "bt btn-home"  %>
-  </div> 
-  <div  class = "d-flex justify-content-center mb-3">
-    <% if @group.fly_to != "" %>
-    <p  class="btn-show"><%= @group.fly_to %></p>
-  <% end %>
-  </div>
-  <div class="searchbar d-flex justify-content-center">
-   <div class="mr-2">
-       <%= simple_form_for [@group, @traveler]  do |f| %>
-      <%= f.error_notification %>
-      <%= f.input :name,
-                      label: false,
-                      required: true,
-                      placeholder: "Inscrivez le nom du voyageur"%>
+    <div class= "titre_searchbar">
+        <h1>Organiser un voyage à plusieurs</h1>
+        <p>Remplissez les champs ci-dessous pour chacun des voyageurs</p>
     </div>
-    <div class="mr-2">
-      <%= f.input :fly_from,
-                      label: false,
-                      required: true,
-                      placeholder: "De quelle ville part-il?",
-                      as: :string,
-                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
-      <div class="container-autocomplete">
-      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-      </div>
-    </div>
-      <div class="range-wrap mr-2">
-      <% if @group.travelers.count > 0 %>
 
-          <%= f.input :price_to,
-                      as: :range,
-                      label: false,
-                      placeholder: "A t'il un budget maximum?",
-                      input_html: { value: @group.travelers.first.price_to,  min: "150", max: "1500", value: "150",step: "50", id: "range"}%>
-      <% else %>
-          <%= f.input :price_to,
-                      label: false,
-                      as: :range,
-                      input_html: { min: "150", max: "1500", value: "150",step: "50", id: "range"},
-                      placeholder: "A t'il un budget maximum?" %>
-      <% end %>
-            <div class="range-value" id="rangeV"></div>
-      </div>
-      <% if @group.travelers.count > 0 %>
-      <div class="mr-2">
-          <%= f.input :date_from,
-                      label: false,
-                      placeholder: "Inscrivez sa date d'aller",
-                      as: :string,
-                      input_html: { class: "datepicker", value: @group.travelers.first.date_from } %>
-       </div> 
-       <div class="mr-2">  
-          <%= f.input :date_to,
-                      label: false,
-                      placeholder: "Inscrivez sa date de retour",
-                      as: :string,
-                      input_html: { class: "datepicker", value: @group.travelers.first.date_to} %>
-      </div> 
-      <% else %>
-      <div class="mr-2">
-          <%= f.input :date_from,
-                      label: false,
-                      placeholder: "Inscrivez sa date d'aller",
-                      as: :string,
-                      input_html: { class: "datepicker" } %>
-      </div> 
-      <div class="mr-2">
-          <%= f.input :date_to,
-                      label: false,
-                      placeholder: "Inscrivez sa date de retour",
-                      as: :string,
-                      input_html: { class: "datepicker" } %>
-      </div>
-      <% end %>
+      <div class = "d-flex justify-content-center mb-4">
+        <div class = "d-flex justify-content-center ">
+          <% if @group.fly_to != "" %>
+            <p  class="btn-show"><%= @group.fly_to %></p>
+          <% end %>
         </div>
-      <%= f.submit "Ajouter un participant", class: "btn btn-home" %>
+         <div>
+           <% if true %>
+            <%= link_to "Lancer la recherche", :group_search, class: "btn btn-show-recherche"  %>
+        </div>
+      </div>
 
-    <% end %>
+      <div class="searchbar d-flex justify-content-center">
+        <div class="mr-2">
+          <%= simple_form_for [@group, @traveler]  do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :name,
+                          label: false,
+                          required: true,
+                          placeholder: "Nom du voyageur",
+                          input_html: { class: "form-control-show" }%>
+        </div>
+        <div class="mr-2">
+          <%= f.input :fly_from,
+                          label: false,
+                          required: true,
+                          placeholder: "Ville de départ",
+                          as: :string,
+                          input_html: { class: "autocomplete", autocomplete: 'off' }%>
+        </div>
+        <div class="range-wrap mr-2">
+          <% if @group.travelers.count > 0 %>
 
-    <div class="autoto">
-      <div class="container-autocomplete">
+              <%= f.input :price_to,
+                          as: :range,
+                          label: false,
+                          placeholder: "A t'il un budget maximum?",
+                          input_html: { class: "form-control-show", value: @group.travelers.first.price_to,  min: "150", max: "1500", value: "150",step: "50", id: "range"}%>
+          <% else %>
+              <%= f.input :price_to,
+                          label: false,
+                          as: :range,
+                          input_html: {class: "form-control-show", min: "150", max: "1500", value: "150",step: "50", id: "range"},
+                          placeholder: "A t'il un budget maximum?" %>
+          <% end %>
+          <div class="range-value" id="rangeV"></div>
+        </div>
+          <% if @group.travelers.count > 0 %>
+            <div class="mr-2">
+              <%= f.input :date_from,
+                          label: false,
+                          placeholder: "Date d'aller",
+                          as: :string,
+                            input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_from } %>
+            </div>
+            <div class="mr-2">
+              <%= f.input :date_to,
+                          label: false,
+                          placeholder: "Date de retour",
+                          as: :string,
+                          input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_to} %>
+            </div>
+          <% else %>
+            <div class="mr-2">
+              <%= f.input :date_from,
+                          label: false,
+                          placeholder: "Date de retour",
+                          as: :string,
+                          input_html: { class: "datepicker form-control-show" } %>
+            </div>
+            <div class="mr-2">
+              <%= f.input :date_to,
+                          label: false,
+                          placeholder: "Date d'aller",
+                          as: :string,
+                          input_html: { class: "datepicker form-control-show" } %>
+            </div>
+          <% end %>
+        </div>
+          <%= f.submit "Ajouter un voyageur", class: "btn btn-show-travelers" %>
+      <% end %>
+
+      <div class="container-autocomplete-show">
         <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
       </div>
-    </div>
+
 
     <!--  infos sur les voyageurs -->
 
     <% count = 1 %>
-    <div class= "titre_searchbar">
-      <p>Voyageur(s)</p>
+  <div class= "titre_searchbar">
+    <p>Voyageur(s)</p>
   </div>
     <% @group.travelers.each do |traveler| %>
-    <div>
-      <div class="m-4">
-        <div class= "d-flex justify-content-center">
-          <div class= "titre_voyageur">
-            <p>Voyageur n° <%= count %></p>
+      <div>
+        <div class="m-4">
+          <div class= "d-flex justify-content-center">
+            <div class= "titre_voyageur">
+              <p>Voyageur n° <%= count %></p>
+            </div>
+            <div>
+              <p class="btn-show"><%= traveler.name %></p>
+            </div>
+            <div>
+              <p class="btn-show"><%= traveler.fly_from %></p>
+            </div>
+            <div>
+              <p class="btn-show"><%= traveler.price_to %>€</p></p>
+            </div>
+            <div>
+              <p class="btn-show"><%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+            </div>
+            <div>
+              <p class="btn-show"> <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+            </div>
+                  <% count += 1 %>
           </div>
-          <div>
-            <p class="btn-show"><%= traveler.name %></p>
-          </div>
-          <div>
-            <p class="btn-show"><%= traveler.fly_from %></p>
-          </div>
-          <div>
-            <p class="btn-show"><%= traveler.price_to %>€</p></p>
-          </div>
-          <div>
-            <p class="btn-show"><%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
-          </div>
-          <div>
-            <p class="btn-show"> <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
-          </div>
-                <% count += 1 %>
         </div>
-      </div>
-      <% end %>
+    <% end %>
 </div>
 
 
-     
+
     <div class="mongol-show1"><%= image_tag ("mongol1.png") %></div>
     <div class="mongol-show2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
     <div class="mongol-show3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
@@ -141,7 +141,7 @@
 
 
 
-  
+
 
     <%# SCRIPT POUR LANCER LE LOADER %>
       <script type="text/javascript">
