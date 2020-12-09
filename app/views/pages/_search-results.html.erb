@@ -14,8 +14,13 @@
   <%html_doc = Nokogiri::HTML(html_file) %>
 
   <% element = html_doc.search('._2UpQX').first %>
-  <% element.text.strip %>
-  <% image_city = element.attribute('src').value %>
+  <% if element == nil  %>
+    <% image_city = "https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg" %>
+  <% else %>
+    <% element.text.strip %>
+    <% image_city = element.attribute('src').value %>
+  <% end %>
+    
 
   <div class="grande-card p-3">
     <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">
