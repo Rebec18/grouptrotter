@@ -1,6 +1,5 @@
 input[type="range"] {
   -webkit-appearance: none;
-  margin: 20px 0;
   width: 100%;
 }
 input[type="range"]:focus {
@@ -28,7 +27,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #f18230;
 }
 .range-wrap {
-  width: 500px;
+  width: 200px;
   position: relative;
 }
 .range-value {
