@@ -33,7 +33,7 @@ const initAutocomplete = () => {
     const resultsFrom = document.querySelector(".autocomplete");
     const container = document.querySelector(".container-autocomplete");
     const body = document.querySelector("body");
-    
+
   if (container) {
     resultsFrom.addEventListener("keyup", () => {
       container.innerHTML = "";
