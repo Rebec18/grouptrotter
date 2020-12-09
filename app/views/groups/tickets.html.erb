@@ -13,6 +13,7 @@
         <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= element.attribute('src').value %>')">
       <% end %>
   <%= params["city"] %>
+  <% console %>
 </div>
 <div class = "container">
   <% for i in (0..@group.travelers.count-1) %>
@@ -25,37 +26,37 @@
         <%# if mission.photo.attached?%>
            <div class="d-flex card-tickets p-3">
               <div>
-                <p> <%= @group.travelers[i].date_from %> </p>
+                <p> <%= Time.at(@trips[@group.travelers[i]][params[:city]][0][0][:dTime]).strftime("%A %d %B %G") %> </p>
                   <div class =" d-flex justify-content-around">
                     <div>
                       <h4><%= @group.travelers[i].fly_from %></h4>
-                      <h5>14 : 50</h5>
+                      <h5><%= Time.at(@trips[@group.travelers[i]][params[:city]][0][0][:dTime]).strftime("%H:%M") %></h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
                       <h4><%= params["city"] %></h4>
-                      <h5>16 : 45</h5>
+                      <h5><%= Time.at(@trips[@group.travelers[i]][params[:city]][0][0][:aTime]).strftime("%H:%M") %></h5>
                     </div>
                   </div>
-                  <p> <%= @group.travelers[i].date_to %> </p>
+                  <p> <%= Time.at(@trips[@group.travelers[i]][params[:city]][1][0][:dTime]).strftime("%A %d %B %G") %> </p>
                    <div class =" d-flex justify-content-around">
                     <div>
                       <h4><%= params["city"] %></h4>
-                      <h5>10 : 35</h5>
+                      <h5><%= Time.at(@trips[@group.travelers[i]][params[:city]][1][0][:dTime]).strftime("%H:%M") %></h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
                       <h4><%= @group.travelers[i].fly_from %></h4>
-                      <h5>12 : 45</h5>
+                      <h5><%= Time.at(@trips[@group.travelers[i]][params[:city]][1][0][:aTime]).strftime("%H:%M") %></h5>
                     </div>
                   </div>
               </div>
-              <div>
-                <img id="img-airline" src="https://images.kiwi.com/airlines/64x64/AF.png" alt="airline">
+              <div> 
+                <img id="img-airline" src="https://images.kiwi.com/airlines/64x64/<%= @trips[@group.travelers[i]][params[:city]][0][0][:airlines].first %>.png" alt="airline">
                 <h2 id="prix-tickets">145 €</h2>
                 <p id="lien-reserver" class= "btn btn-tickets"><a href="<%= @trips[@group.travelers[i]][params["city"]].first.first[:url] %>" target="_blank">Réserver</a></p>
               </div>
