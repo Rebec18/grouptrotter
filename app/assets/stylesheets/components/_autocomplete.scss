@@ -1,9 +1,12 @@
 .container-autocomplete {
   // display: flex;
   // flex-direction: column;
-  border-radius: 50px;
-  width: auto;
-  margin-bottom: 15px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    position: relative;
+    width: max-content;
+    left: 460px;
 }
 
 .proposition {
@@ -14,9 +17,9 @@
   // text-align: left;
   // padding: 10px;
   // color: white;
-  // vertical-align: center;
+  // width: auto;
   margin: 2px;
-  padding: 7px;
+  padding: 7px 12px 7px 12px;
   border-radius: 20px;
   color: #6C757D;
   opacity: 0.8;
