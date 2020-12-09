@@ -7,19 +7,18 @@
 }
 
 .form-control {
-    text-align: center;
-    color: #495057;
-    background-color: #F7F7F7;
-    border: none;
-    border-radius: 20px;
-    opacity: 0.9;
-    width: 270px !important;
-  }
+  text-align: center;
+  color: #495057;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 20px;
+  opacity: 0.9;
+}
 
 .form-control:hover {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   color: #495057;
-  }
+}
 
 @media (max-width: 830px) {
   .form-inline {
