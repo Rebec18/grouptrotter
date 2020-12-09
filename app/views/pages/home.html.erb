@@ -11,16 +11,16 @@
                       placeholder: "Sélectionne une destination",
                       as: :string,
                       input_html: { class: "autocomplete", autocomplete: 'off' }%>
-                      <div class="container-autocomplete">
-                      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-                      </div>
           <%= f.submit "Ajoute un voyageur", class: "btn btn-home"%>
         <% end %>
-         </form>
-          </div>
-        <div class="mongol1"><%= image_tag ("mongol1.png") %></div>
-        <div class="mongol2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
-        <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
+      </form>
+    </div>
+    <div class="container-autocomplete">
+          <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+    </div>
+    <div class="mongol1"><%= image_tag ("mongol1.png") %></div>
+    <div class="mongol2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
+    <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
 
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
