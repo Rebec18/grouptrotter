@@ -44,8 +44,8 @@
 
 .btn-tickets {
   color: white;
-  background: #F18230;
-  border: 1px solid #F18230;
+  background: #f18230;
+  border: 1px solid #f18230;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -64,17 +64,17 @@
   margin: 15px;
   padding: 7px;
   border-radius: 20px;
-  color: #6C757D;
+  color: #6c757d;
   opacity: 0.9;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: none;
   transition: opacity 0.5s ease;
 }
 
 .btn-home:hover {
-  background-color: #F18230;
+  background-color: #f18230;
   opacity: 0.9;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 
 // SEARCH
@@ -96,7 +96,19 @@
 }
 
 #btn-info:hover {
-  background-color: #F18230;
-  border-color: #F18230;
+  background-color: #f18230;
+  border-color: #f18230;
   opacity: 0.8 !important;
+}
+
+.btn-show {
+  width: 200px;
+  margin: 15px;
+  padding: 7px;
+  border-radius: 20px;
+  color: #6c757d;
+  opacity: 0.9;
+  background-color: #f7f7f7;
+  border: none;
+  transition: opacity 0.5s ease;
 }

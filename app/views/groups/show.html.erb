@@ -1,4 +1,114 @@
 <div class="beforeload">
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=3000&q=400&fit=crop)">
+  <div class= "titre_searchbar">
+      <h1>Nouvelle recherche</h1>
+      <p>Remplissez les champs ci-dessous pour chacun des voyageurs</p>
+    <div class="searchbar">
+       <%= simple_form_for [@group, @traveler]  do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :name,
+                      label: false,
+                      required: true,
+                      placeholder: "Inscrivez le nom du voyageur"%>
+      <%= f.input :fly_from,
+                      label: false,
+                      required: true,
+                      placeholder: "De quelle ville part-il?",
+                      as: :string,
+                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
+      <div class="container-autocomplete">
+      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+      </div>
+      <div class="range-wrap">
+      <% if @group.travelers.count > 0 %>
+
+          <%= f.input :price_to,
+                      as: :range,
+                      label: false,
+                      placeholder: "A t'il un budget maximum?",
+                      input_html: { value: @group.travelers.first.price_to,  min: "150", max: "1500", value: "150",step: "50", id: "range"}%>
+      <% else %>
+          <%= f.input :price_to,
+                      label: false,
+                      as: :range,
+                      input_html: { min: "150", max: "1500", value: "150",step: "50", id: "range"},
+                      placeholder: "A t'il un budget maximum?" %>
+      <% end %>
+            <div class="range-value" id="rangeV"></div>
+      </div>
+      <% if @group.travelers.count > 0 %>
+          <%= f.input :date_from,
+                      label: false,
+                      placeholder: "Inscrivez sa date d'aller",
+                      as: :string,
+                      input_html: { class: "datepicker", value: @group.travelers.first.date_from } %>
+          <%= f.input :date_to,
+                      label: false,
+                      placeholder: "Inscrivez sa date de retour",
+                      as: :string,
+                      input_html: { class: "datepicker", value: @group.travelers.first.date_to} %>
+      <% else %>
+          <%= f.input :date_from,
+                      label: false,
+                      placeholder: "Inscrivez sa date d'aller",
+                      as: :string,
+                      input_html: { class: "datepicker" } %>
+          <%= f.input :date_to,
+                      label: false,
+                      placeholder: "Inscrivez sa date de retour",
+                      as: :string,
+                      input_html: { class: "datepicker" } %>
+      <% end %>
+      <%= f.submit "Ajouter un participant", class: "btn btn-home" %>
+
+    <% end %>
+    </div>
+    <div class="autoto">
+      <div class="container-autocomplete">
+        <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+      </div>
+    </div>
+
+    <div class="mongol1"><%= image_tag ("mongol1.png") %></div>
+    <div class="mongol2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
+    <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
+    <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
+  </div>
+<!--   <div class="form-traveler"></div> -->
+</div>
+
+<div class="group-list justify-content-center d-flex">
+    <% count = 1 %>
+    <% @group.travelers.each do |traveler| %>
+      <div class="list-group-item m-4">
+        <h3>Voyageurs</h3>
+        <div class= "d-flex">
+        <p>Voyageur n° <%= count %></p>
+        <div>
+        <p>Nom :</p>
+        <p class="btn-show"><%= traveler.name %></p>
+        </div>
+        <div>
+        <p>Départ :</p>
+        <p class="btn-show"><%= traveler.fly_from %></p>
+        </div>
+        <div>
+        <p>Budget maximum :</p>
+        <p class="btn-show"><%= traveler.price_to %>€</p></p>
+        </div>
+         <div>
+        <p>Date d'aller :</p>
+        <p class="btn-show"><%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+        </div>
+        <div>
+        <p>Date de retour :</p>
+        <p class="btn-show"> <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
+        </div>
+              <% count += 1 %>
+         </div>
+    <% end %>
+     </div>
+  </div>
 
 <div class ='group-titre p-4' >
   <h1> Mon Groupe </h1>
@@ -8,7 +118,7 @@
 </div>
 
 <%# Autofill des budgets et dates %>
-  <div class = "group-form justify-content-center d-flex">
+  <div class = "container group-form justify-content-center d-flex p-5">
     <%= simple_form_for [@group, @traveler]  do |f| %>
       <%= f.error_notification %>
       <%= f.input :name,
@@ -70,19 +180,7 @@
 </div>
 
 
-  <div class="group-list justify-content-center d-flex">
-    <% count = 1 %>
-    <% @group.travelers.each do |traveler| %>
-      <li class="list-group-item m-4">
-        <h3>Voyageur n° <%= count %></h3>
-        <p>Nom : <%= traveler.name %></p>
-        <p>Départ : <%= traveler.fly_from %></p>
-        <p>Budget maximum : <%= traveler.price_to %>€</p>
-        <p>Souhaite voyager du <%= traveler.date_from.strftime("%d/%m")%> à partir de <%=traveler.date_from.strftime("%H:%M") %> au <%= traveler.date_to.strftime("%d/%m/%Y")%> à partir de <%=traveler.date_from.strftime("%H:%M") %></p>
-      </li>
-      <% count += 1 %>
-    <% end %>
-  </div>
+  
 
   <div class="group-btn float-right">
      <% if @group.travelers.size > 0 %>

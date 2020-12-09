@@ -28,16 +28,16 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initAutocomplete } from '../channels/autocomplete'
-import { flatpickr } from '../channels/datepicker'
-import { initSlider } from '../components/slider';
+import { initFlatpickr } from '../channels/datepicker'
+// import { initSlider } from '../components/slider';
 
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  // initSlider();
+  initSlider();
   initAutocomplete();
-  flatpickr();
+  initFlatpickr();
 });
 
 
@@ -49,9 +49,6 @@ document.addEventListener('turbolinks:load', () => {
 //   // altInput: true,
 //   enableTime: true
 // });
-let secondform = ""
-let secondformDiv = ""
-let button = ""
 
 
 
