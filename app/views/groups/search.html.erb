@@ -12,8 +12,10 @@ après faudra remplacer false par
       <% require 'nokogiri' %>
 
 <% if @semitraveler_count/2 != @group.travelers.count %>
-    <%= render "pages/search-noresults" %>
-<% else %>
+  # ça doit être le no-result ici, je change juste pour tester ma page no result
     <%= render "pages/search-results" %>
+<% else %>
+<%= render "pages/search-noresults" %>
+
 <% end %>
 
