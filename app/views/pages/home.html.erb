@@ -3,8 +3,7 @@
       <h1>Organiser un voyage à plusieurs</h1>
       <p>un vrai bonheur, avec Grouptrotter!</p>
     <div class="searchbar">
-      <form class="form-inline">
-        <%= simple_form_for(@group, remote: true) do |f| %>
+        <%= simple_form_for @group, html: { class: "form-inline" } do |f| %>
           <%= f.input :fly_to,
                       label: false,
                       placeholder: "Sélectionne une destination",
@@ -12,7 +11,6 @@
                       input_html: { class: "autocomplete", autocomplete: 'off' }%>
           <%= f.submit "Ajoute un voyageur", class: "btn btn-home"%>
         <% end %>
-      </form>
     </div>
     <div class="autoto">
       <div class="container-autocomplete">
@@ -25,7 +23,6 @@
     <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
-<!--   <div class="form-traveler"></div> -->
 </div>
 
 

@@ -10,6 +10,5 @@ export const initSlider = () => {
     };
   document.addEventListener("DOMContentLoaded", setValue);
   range.addEventListener('input', setValue);
-  }
-  
+  } 
 }

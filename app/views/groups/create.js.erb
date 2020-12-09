@@ -1,7 +1,0 @@
-<% if @group.errors.any? %>
-  # Handle errors
-<% else %>
-  const content = '<%= escape_javascript(render '/shared/formtraveler', layout: false ) %>'
-  let formDiv = document.querySelector(".form-traveler")
-  formDiv.innerHTML = content
-<% end %>
