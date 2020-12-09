@@ -29,13 +29,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import { initAutocomplete } from '../channels/autocomplete';
 import { initFlatpickr } from '../channels/datepicker';
-// import { initSlider } from '../components/slider';
-// import "../../assets/stylesheets/application"
+import { initSlider } from '../components/slider';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  // initSlider();
+  initSlider();
   initAutocomplete();
   initFlatpickr();
 });
