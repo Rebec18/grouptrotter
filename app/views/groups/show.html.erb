@@ -146,12 +146,14 @@
     <%# SCRIPT POUR LANCER LE LOADER %>
       <script type="text/javascript">
           const test = document.querySelector(".test");
-          test.addEventListener("click", function () {
-          const beforeload = document.querySelector(".beforeload");
-          beforeload.className += " hidden"
-          const loader = document.querySelector(".loader");
-          loader.className += "visible globe-text"
-          })
+          if (test) {
+              test.addEventListener("click", function () {
+            const beforeload = document.querySelector(".beforeload");
+            beforeload.className += " hidden"
+            const loader = document.querySelector(".loader");
+            loader.className += "visible globe-text"
+            })
+          }
       </script>
     <%# FIN DU SCRIPT %>
     <% end %>
