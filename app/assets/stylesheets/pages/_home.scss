@@ -19,6 +19,30 @@
 //   background-color: rgb(209, 207, 207);
 // }
 
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  height: 90vh;
+  text-align: center;
+  }
+
+.titre_searchbar{
+  margin-top: 10vh;
+  h1 {
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+  font-size: 25px;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  }
+}
+
 .image-home {
   height: 150px;
 }

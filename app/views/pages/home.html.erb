@@ -3,22 +3,24 @@
       <h1>Organiser un voyage à plusieurs</h1>
       <p>un vrai bonheur, avec Grouptrotter!</p>
     <div class="searchbar">
-        <%= simple_form_for(@group) do |f| %>
+        <%= simple_form_for @group, html: { class: "form-inline" } do |f| %>
           <%= f.input :fly_to,
                       label: false,
-
-                      placeholder: "Sélectionnez votre destination",
+                      placeholder: "Sélectionne une destination",
                       as: :string,
                       input_html: { class: "autocomplete", autocomplete: 'off' }%>
-                      <div class="container-autocomplete">
-                      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
-                      </div>
-          <%= f.submit "Ajoute un voyageur", class: "btn btn-search"%>
+          <%= f.submit "Ajoute un voyageur", class: "btn btn-home"%>
         <% end %>
-        <div class="mongol1"><%= image_tag ("mongol1.png") %></div>
-        <div class="mongol2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
-        <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
     </div>
+    <div class="autoto">
+      <div class="container-autocomplete">
+        <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+      </div>
+    </div>
+
+    <div class="mongol1"><%= image_tag ("mongol1.png") %></div>
+    <div class="mongol2"><%= image_tag ("mongol2.png"), style: 'height:50%;width:auto;' %></div>
+    <div class="mongol3"><%= image_tag ("mongol3.png"), style: 'height:50%;width:auto;' %></div>
     <%# <a class="btn btn-flat" href="/groups/new">Je voyage</a> %>
   </div>
 </div>
@@ -33,7 +35,7 @@
 
       <div class="card-concept">
         <h4></h4>
-        <p> Grouptrotter permet de trouver une <strong>destination commune </strong> pour des voyageurs partant de <strong>différentes villes</strong> . Fini les heures de recherches sur les sites comparateurs de vols, vous n’avez plus qu’à entrer le nom et la ville de tous les voyageurs, les dates du voyage & <strong> notre algorithme travaille pour vous</strong> . Détendez-vous en jouant à snake en attendant sa réponse & hop vous n’avez plus qu’à partager les résultats avec vos compagnons de voyage ! </p>
+        <p> Grouptrotter permet de trouver une <strong>destination commune </strong> pour des voyageurs partant de <strong>différentes villes</strong> . Fini les heures de recherches sur les sites comparateurs de vols, tu n’as plus qu’à entrer le nom et la ville de tous les voyageurs, les dates du voyage & <strong> notre algorithme travaille pour vous</strong> . Détends-toi en jouant à snake en attendant sa réponse & hop tu n’as plus qu’à partager les résultats à tes compagnons de voyage ! </p>
       </div>
     </div>
 </div>
@@ -46,7 +48,7 @@
 </div>
 <div class="card-white-home">
   <div class="super-box">
-    <div class="container">
+    <div class="container-card-home">
       <div class="box1">
         <div class="icon_bg"></div>
       </div>
@@ -83,7 +85,6 @@
       </div>
 
     </div>
-<br>
     <div class="text">
       <p class="title">
       Sélectionne ta destination
@@ -92,7 +93,7 @@
   </div>
 
 <div class="super-box">
-    <div class="container">
+    <div class="container-card-home">
       <div class="box2">
         <div class="icon_bg"></div>
       </div>
@@ -129,7 +130,6 @@
       </div>
 
     </div>
-<br>
     <div class="text">
       <p class="title">
       Sélectionne les dates de voyage
@@ -138,7 +138,7 @@
   </div>
 
 <div class="super-box">
-    <div class="container">
+    <div class="container-card-home">
       <div class="box3">
         <div class="icon_bg"></div>
       </div>
@@ -175,7 +175,6 @@
       </div>
 
     </div>
-<br>
     <div class="text">
       <p class="title">
       Inscris les informations des voyageurs
@@ -184,7 +183,7 @@
   </div>
 
   <div class="super-box">
-    <div class="container">
+    <div class="container-card-home">
       <div class="box4">
         <div class="icon_bg"></div>
       </div>
@@ -221,7 +220,6 @@
       </div>
 
     </div>
-<br>
     <div class="text">
       <p class="title">
       Choisis une destination commune
@@ -230,7 +228,7 @@
   </div>
 
   <div class="super-box">
-    <div class="container">
+    <div class="container-card-home">
       <div class="box5">
         <div class="icon_bg"></div>
       </div>
@@ -267,7 +265,6 @@
       </div>
 
     </div>
-<br>
     <div class="text">
       <p class="title">
       Réserve tes billets & prépare tes bagages!

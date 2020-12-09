@@ -49,18 +49,19 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
 .btn-tickets:hover {
-  opacity: 0.8;
-   color: white;
+  opacity: 0.6;
+  color: white;
 }
 
 // HOMEPAGE
-.btn-search {
+.btn-home {
   width: 200px;
+  margin: 15px;
   padding: 7px;
   border-radius: 20px;
   color: #6C757D;
@@ -70,8 +71,32 @@
   transition: opacity 0.5s ease;
 }
 
-.btn-search:hover {
+.btn-home:hover {
   background-color: #F18230;
   opacity: 0.9;
   color: #F7F7F7;
+}
+
+// SEARCH
+#btn-info {
+  margin: auto;
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  font-size: 14px;
+  width: 150px;
+  text-align: center;
+}
+
+#btn-info:hover {
+  background-color: #F18230;
+  border-color: #F18230;
+  opacity: 0.8 !important;
 }
