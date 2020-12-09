@@ -49,4 +49,5 @@ const initAutocomplete = () => {
     });
   }
 };
+
 export { initAutocomplete };
