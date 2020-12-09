@@ -1,14 +1,11 @@
-      <% require 'i18n'%>
+<% require 'i18n'%>
       <% require 'open-uri' %>
       <% require 'nokogiri' %>
       <% city_name = I18n.transliterate(params["city"])%>
       <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
 
-<% console %>
-
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
-
       <% element = html_doc.search('._2UpQX').first %>
       <% if element == nil %>
         <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg)">
@@ -22,7 +19,7 @@
      <div id="title-tickets" class ="mt-5">
         <h2>Voyage de <span class = 'color-name'> <%=@group.travelers[i].name%></span></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
      </div>
-  <div class="cards p-3 mt-3">
+    <div class="cards p-3 mt-3">
     <%# @missions.each do |mission| %>
       <%#= link_to  mission_path(mission) do %>
         <%# if mission.photo.attached?%>
@@ -67,5 +64,3 @@
   <% end %>
 </div>
 <!-- je récup ma ville d'arrivée !! -->
-
-

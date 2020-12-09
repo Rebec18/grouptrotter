@@ -4,6 +4,7 @@
   // width: auto;
   margin: auto;
   display: inline-flex;
+
 }
 
 .form-control {
@@ -13,6 +14,11 @@
   border: none;
   border-radius: 20px;
   opacity: 0.9;
+  width: 250px !important;
+}
+
+.input{
+  width: fit-content;
 }
 
 .form-control:hover {
