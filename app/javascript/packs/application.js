@@ -28,6 +28,7 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { initAutocomplete } from '../channels/autocomplete';
+import { initAutocompleteShow } from '../channels/autocomplete';
 import { initFlatpickr } from '../channels/datepicker';
 import { initSlider } from '../components/slider';
 import { initSnake } from '../components/snake';
@@ -38,6 +39,7 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   initSlider();
   initAutocomplete();
+  initAutocompleteShow();
   initFlatpickr();
   initSnake();
 

@@ -6,7 +6,20 @@
   vertical-align: middle;
   position: relative;
   width: 390px;
+  left: 408px;
 }
+
+.container-autocomplete-show {
+  // display: flex;
+  // flex-direction: column;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  position: relative;
+  left: 310px;
+  top: -70px;
+}
+
 
 .proposition {
   margin: 2px;
