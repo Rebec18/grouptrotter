@@ -59,8 +59,9 @@
 }
 
 // HOMEPAGE
-.btn-search {
+.btn-home {
   width: 200px;
+  margin: 15px;
   padding: 7px;
   border-radius: 20px;
   color: #6C757D;
@@ -70,7 +71,7 @@
   transition: opacity 0.5s ease;
 }
 
-.btn-search:hover {
+.btn-home:hover {
   background-color: #F18230;
   opacity: 0.9;
   color: #F7F7F7;

@@ -1,28 +1,35 @@
 .container-autocomplete {
-  display: flex;
-  flex-direction: column;
-  border-radius: 4px;
-  width: 50%;
+  // display: flex;
+  // flex-direction: column;
+  border-radius: 50px;
+  width: auto;
   margin-bottom: 15px;
 }
 
 .proposition {
-  border: 1px solid white;
-  width: 450px;
-  height: 40px;
-  border-radius: 6px;
-  text-align: left;
-  padding: 10px;
-  color: white;
-  vertical-align: center;
+  // border: 1px solid white;
+  // // width: 500px;
+  // height: 40px;
+  // border-radius: 50px;
+  // text-align: left;
+  // padding: 10px;
+  // color: white;
+  // vertical-align: center;
+  margin: 2px;
+  padding: 7px;
+  border-radius: 20px;
+  color: #6C757D;
+  opacity: 0.8;
+  background-color: #F7F7F7;
+  border: none;
+  transition: opacity 0.5s ease;
 }
 
 .proposition:hover {
-  background-color: rgb(238, 234, 234);
-  color: black;
+  // background-color: rgb(238, 234, 234);
+  // color: black;
+  // opacity: 0.9;
+  background-color: #F18230;
   opacity: 0.9;
+  color: #F7F7F7;
 }
-
-// .partout {
-//   background-color: white;
-// }
