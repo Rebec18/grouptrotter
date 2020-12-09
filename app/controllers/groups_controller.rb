@@ -13,19 +13,10 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
-    # if @group.save
-    #   redirect_to group_path(@group)
-    # else
-    #   render "new"
-    # end
-    respond_to do |format|
-      if @group.save
-        # format.html { redirect_to "/pages/home", notice: 'Group was successfully created.' }
-        format.js
-      else
-        format.html { render :new }
-        format.json { render json: @group.errors, status: :unprocessable_entity }
-      end
+    if @group.save
+      redirect_to group_path(@group)
+    else
+      render "new"
     end
   end
 
