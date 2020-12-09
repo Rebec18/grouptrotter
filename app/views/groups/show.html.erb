@@ -1,8 +1,38 @@
 <div class="beforeload">
   <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&w=3000&q=400&fit=crop)">
+
     <div class= "titre_searchbar">
         <h1>Organiser un voyage à plusieurs</h1>
-        <p>Remplissez les champs ci-dessous pour chacun des voyageurs</p>
+        <p>Remplis les champs ci-dessous pour chacun des voyageurs</p>
+  </div>
+  <div>
+     <% if true %>
+      <%= link_to "Lancer la recherche", :group_search, class: "bt btn-home serpent"  %>
+  </div> 
+  <div  class = "d-flex justify-content-center mb-3">
+    <% if @group.fly_to != "" %>
+    <p  class="btn-show"><%= @group.fly_to %></p>
+  <% end %>
+  </div>
+  <div class="searchbar d-flex justify-content-center">
+   <div class="mr-2">
+       <%= simple_form_for [@group, @traveler]  do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :name,
+                      label: false,
+                      required: true,
+                      placeholder: "Inscrivez le nom du voyageur"%>
+    </div>
+    <div class="mr-2">
+      <%= f.input :fly_from,
+                      label: false,
+                      required: true,
+                      placeholder: "De quelle ville part-il?",
+                      as: :string,
+                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
+      <div class="container-autocomplete">
+      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+      </div>
     </div>
 
       <div class = "d-flex justify-content-center mb-4">
@@ -144,17 +174,7 @@
 
 
     <%# SCRIPT POUR LANCER LE LOADER %>
-      <script type="text/javascript">
-          const test = document.querySelector(".test");
-          if (test) {
-              test.addEventListener("click", function () {
-            const beforeload = document.querySelector(".beforeload");
-            beforeload.className += " hidden"
-            const loader = document.querySelector(".loader");
-            loader.className += "visible globe-text"
-            })
-          }
-      </script>
+  <%# JE VIRE LE SNAKE D'ICI ON LE FOUT AILLEURS, SALETé DE SNAKE %>
     <%# FIN DU SCRIPT %>
     <% end %>
   </div>

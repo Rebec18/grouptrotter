@@ -31,6 +31,8 @@ import { initAutocomplete } from '../channels/autocomplete';
 import { initAutocompleteShow } from '../channels/autocomplete';
 import { initFlatpickr } from '../channels/datepicker';
 import { initSlider } from '../components/slider';
+import { initSnake } from '../components/snake';
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -39,6 +41,8 @@ document.addEventListener('turbolinks:load', () => {
   initAutocomplete();
   initAutocompleteShow();
   initFlatpickr();
+  initSnake();
+
 });
 
 
