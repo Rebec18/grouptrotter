@@ -1,38 +1,33 @@
 .container-autocomplete {
   // display: flex;
   // flex-direction: column;
-    border-radius: 50px;
-    margin-bottom: 15px;
-    vertical-align: middle;
-    position: relative;
-    width: max-content;
-    left: 460px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  position: relative;
+  width: 390px;
 }
 
 .proposition {
-  // border: 1px solid white;
-  // // width: 500px;
-  // height: 40px;
-  // border-radius: 50px;
-  // text-align: left;
-  // padding: 10px;
-  // color: white;
-  // width: auto;
   margin: 2px;
   padding: 7px 12px 7px 12px;
   border-radius: 20px;
-  color: #6C757D;
+  color: #6c757d;
   opacity: 0.8;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: none;
   transition: opacity 0.5s ease;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 390px;
+  white-space: nowrap;
 }
 
 .proposition:hover {
   // background-color: rgb(238, 234, 234);
   // color: black;
   // opacity: 0.9;
-  background-color: #F18230;
+  background-color: #f18230;
   opacity: 0.9;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
