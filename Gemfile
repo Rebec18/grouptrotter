@@ -35,7 +35,7 @@ gem 'rubysl-open-uri'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'airports', '~> 1.6.1'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

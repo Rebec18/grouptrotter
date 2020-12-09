@@ -19,7 +19,7 @@
 <div class = "container">
   <% for i in (0..@group.travelers.count-1) %>
      <div id="banner-ticket" class ="mt-5">
-        <h2>Voyage de <%=@group.travelers[i].name%></h2><p><em> au départ de <%= Airports.find_by_iata_code(@group.travelers[0].fly_from.gsub(/.+\((\w{3})\)$/, '\1')).city %></em></p>
+        <h2>Voyage de <%=@group.travelers[i].name%></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
      </div>
   <div class="cards p-3 mt-3">   
     <%# @missions.each do |mission| %>
@@ -30,7 +30,7 @@
                 <p>Samedi 12 décembre 2020</p>
                   <div class =" d-flex justify-content-around">
                     <div>
-                      <h4><%= Airports.find_by_iata_code(@group.travelers[0].fly_from.gsub(/.+\((\w{3})\)$/, '\1')).city %></h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>14 : 50</h5>
                     </div>
                     <div>
@@ -51,7 +51,7 @@
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4><%= Airports.find_by_iata_code(@group.travelers[0].fly_from.gsub(/.+\((\w{3})\)$/, '\1')).city %></h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>12 : 45</h5>
                     </div>
                   </div>
@@ -67,7 +67,7 @@
                 <p>Samedi 12 décembre 2020</p>
                   <div class =" d-flex justify-content-around">
                     <div>
-                      <h4><%= Airports.find_by_iata_code(@group.travelers[0].fly_from.gsub(/.+\((\w{3})\)$/, '\1')).city %></h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>14 : 50</h5>
                     </div>
                     <div>
@@ -88,7 +88,7 @@
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
-                      <h4><%= Airports.find_by_iata_code(@group.travelers[0].fly_from.gsub(/.+\((\w{3})\)$/, '\1')).city %></h4>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
                       <h5>12 : 45</h5>
                     </div>
                   </div>
