@@ -3,7 +3,7 @@
       <% require 'nokogiri' %>
       <% city_name = I18n.transliterate(params["city"])%>
       <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
-<% console %>
+
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
       <% element = html_doc.search('._2UpQX').first %>
