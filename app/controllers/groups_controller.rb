@@ -16,7 +16,7 @@ class GroupsController < ApplicationController
     if @group.save
       redirect_to group_path(@group)
     else
-      render "new"
+      redirect_to root_path
     end
   end
 

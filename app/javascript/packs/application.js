@@ -39,8 +39,6 @@ document.addEventListener('turbolinks:load', () => {
   initFlatpickr();
 });
 
-
-
 // import flatpickr from 'flatpickr';
 // import 'flatpickr/dist/flatpickr.min.css';
 
