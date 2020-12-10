@@ -24,7 +24,8 @@
 
   <div class="grande-card p-3">
     <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">
-      <%= link_to group_tickets_path(city: "#{city}"), class: "clickable-card", :target => "_blank" do %>
+      <% @city_code = @trips.values.first.values[0].first.first[:flyTo] %>
+      <%= link_to group_tickets_path(airport: "#{@city_code}", city_name: "#{@group.cities[0]}"), class: "clickable-card", :target => "_blank" do %>
         <h4><%= city.upcase %> </h4>
           <p><%= @trips.values.first[city][0].first[:country] %></p>
           <p id="destination"><i class="fas fa-star"></i> <em>Notre meilleure sélection</em></p>
@@ -73,8 +74,9 @@
       <% element = html_doc.search('._2UpQX').first %>
       <% element.text.strip %>
       <% image_city = element.attribute('src').value %>
+      <% @city_code = @trips.values.first.values[@group.cities[1..-1].index(@city)+1].first.first[:flyTo] %>
 
-      <%= link_to group_tickets_path(city: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
+      <%= link_to group_tickets_path(airport: "#{@city_code}", city_name: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
         <div class="card-category p-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=image_city%>');">
           <div class="card_recto">
             <h4><%= @city.upcase %></h4>
