@@ -23,9 +23,10 @@
       </div>
       <div class="cards p-3 mt-3 tickets-cards">
           <% for j in (0..@fat_hash[@group.travelers[i]].count-1) %>
-           <div class="d-flex card-tickets p-3 justify-content-between">
+           <div class="d-flex card-tickets p-3 justify-content-around align-items-center">
 
-                <div >
+                <div style="border-right: 2px solid rgba(100, 100, 100, 0.6); padding-right: 80px">
+                <p> <strong><i class="fas fa-plane-departure"></i>&nbsp &nbsp ALLER</strong> </p>
                 <p> <%= Time.at(@fat_hash[@group.travelers[i]][j][:dTime]).strftime("%A %d %B %G") %> </p>
                   <div class =" d-flex justify-content-around">
                     <div>
@@ -43,6 +44,7 @@
                   </div>
 
                   <div>
+                    <p> <strong><i class="fas fa-plane-arrival"></i>&nbsp &nbsp RETOUR</strong></p>
                     <p> <%= Time.at(@fat_hash[@group.travelers[i]][j][:dTimeReturn]).strftime("%A %d %B %G") %> </p>
                      <div class =" d-flex justify-content-around">
                       <div>
