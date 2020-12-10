@@ -154,7 +154,6 @@ class GroupsController < ApplicationController
       @final_hash[traveler] = full_user
       @semitraveler_count += 1
     end
-    console
     if @final_hash.keys.count == _group.travelers.count
       @common_cities = @final_hash[_group.travelers.last].keys
       @final_hash.each_value do |fulluser|
