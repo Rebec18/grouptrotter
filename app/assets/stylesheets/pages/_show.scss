@@ -34,6 +34,10 @@
   position: relative;
 }
 
+#ville_depart{
+  position: relative;
+}
+
 .fake-btn-show {
   min-width: 200px;
   padding: 7px;
@@ -47,6 +51,9 @@
   margin-right: 10px;
   height: 38px;
   margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
 
 .recap-infos-travelers-fly_from {
