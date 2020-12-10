@@ -15,29 +15,30 @@
       <div>
         <% if true %>
           <%= link_to "Lancer la recherche", :group_search, class: "btn btn-show-recherche"  %>
+        <% end %>
       </div>
     </div>
 
-  <div class="searchbar d-flex justify-content-center">
-   <div class="mr-2">
-       <%= simple_form_for [@group, @traveler]  do |f| %>
-      <%= f.error_notification %>
-      <%= f.input :name,
-                      label: false,
-                      required: true,
-                      placeholder: "Nom du voyageur"%>
-    </div>
-    <div class="mr-2">
-      <%= f.input :fly_from,
-                      label: false,
-                      required: true,
-                      placeholder: "Ville de départ",
-                      as: :string,
-                      input_html: { class: "autocomplete", autocomplete: 'off' }%>
-      <div class="container-autocomplete">
-      <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+    <div class="searchbar d-flex justify-content-center">
+      <div class="mr-2">
+        <%= simple_form_for [@group, @traveler]  do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :name,
+                        label: false,
+                        required: true,
+                        placeholder: "Nom du voyageur"%>
       </div>
-    </div>
+      <div class="mr-2">
+        <%= f.input :fly_from,
+                        label: false,
+                        required: true,
+                        placeholder: "Ville de départ",
+                        as: :string,
+                        input_html: { class: "autocomplete", autocomplete: 'off' }%>
+        <div class="container-autocomplete">
+        <%# <div class="proposition">Paris, Charles de Gaulle (CDG)</div> %>
+        </div>
+      </div>
 
       <div class = "d-flex justify-content-center mb-4">
         <div class = "d-flex justify-content-center ">
@@ -48,10 +49,11 @@
          <div>
            <% if true %>
             <%= link_to "Lancer la recherche", :group_search, class: "btn btn-show-recherche"  %>
+           <% end %>
         </div>
       </div>
 
-       <div class="searchbar d-flex justify-content-center">
+      <div class="searchbar d-flex justify-content-center">
         <div class="mr-2">
           <%= simple_form_for [@group, @traveler]  do |f| %>
             <%= f.error_notification %>
