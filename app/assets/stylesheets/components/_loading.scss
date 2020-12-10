@@ -22,13 +22,7 @@
 
 .globe-text {
   height: 75vh;
-  // margin: 3rem;
-  // background-image: url('https://www.iecd.org/iecd2/wp-content/uploads/2017/10/Globe-gris-2.jpg');
-  // background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/globe-512.png');
-  // background-image: url('https://assets.stickpng.com/images/5f4e7830481e190004044f82.png');
-  // background-image: url('earth.png');
-  // background-image: url('worldwide (1).png');
-  background-image: url('worldwide.png');
+  background: url(asset-path('worldwide.png'));
   background-repeat: no-repeat;
   background-size: 250px 250px;
   background-position: center ;
