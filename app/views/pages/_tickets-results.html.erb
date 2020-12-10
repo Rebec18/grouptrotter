@@ -31,14 +31,14 @@
                   <div class =" d-flex justify-content-around">
                     <div>
                       <h4><%= @fat_hash[@group.travelers[i]][j][:cityFrom] %></h4>
-                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTime]-3600).strftime("%H:%M") %></h5>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTime]).strftime("%H:%M") %></h5>
                     </div>
                     <div>
                     <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                     <div>
                       <h4><%= params[:city_name] %></h4>
-                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTime]-3600).strftime("%H:%M") %></h5>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTime]).strftime("%H:%M") %></h5>
                     </div>
                     </div>
                   </div>
@@ -49,14 +49,14 @@
                      <div class =" d-flex justify-content-around">
                       <div>
                         <h4><%= params[:city_name] %></h4>
-                        <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTimeReturn]-3600).strftime("%H:%M") %></h5>
+                        <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTimeReturn]).strftime("%H:%M") %></h5>
                       </div>
                       <div>
                       <i class="fas fa-long-arrow-alt-right"></i>
                       </div>
                       <div>
                         <h4><%= @fat_hash[@group.travelers[i]][j][:cityFrom] %></h4>
-                        <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTimeReturn]-3600).strftime("%H:%M") %></h5>
+                        <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTimeReturn]).strftime("%H:%M") %></h5>
                       </div>
                     </div>
                   </div>
