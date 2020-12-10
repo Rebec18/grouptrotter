@@ -4,9 +4,10 @@
   border-radius: 50px;
   margin-bottom: 15px;
   vertical-align: middle;
-  position: relative;
+  position: absolute;
   width: 390px;
-  left: 408px;
+  top: 53px;
+  left: -2px;
 }
 
 .container-autocomplete-show {
@@ -19,7 +20,6 @@
   left: 310px;
   top: -70px;
 }
-
 
 .proposition {
   margin: 2px;
@@ -34,6 +34,7 @@
   overflow: hidden;
   width: 390px;
   white-space: nowrap;
+  text-align: left;
 }
 
 .proposition:hover {

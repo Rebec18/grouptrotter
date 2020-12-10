@@ -4,7 +4,7 @@
   // width: auto;
   margin: auto;
   display: inline-flex;
-
+  position: relative;
 }
 
 .form-control {
@@ -27,7 +27,7 @@
   width: 200px !important;
 }
 
-.input{
+.input {
   width: fit-content;
 }
 
