@@ -62,21 +62,17 @@ class GroupsController < ApplicationController
     #       bertrand << subhash
     #     end
     #     fat_hash[traveler] = bertrand
-      # end
-      # On a rempli fat_hash avec tous les travelers pour une city
+    # end
+    # On a rempli fat_hash avec tous les travelers pour une city
     # end
     # On l'a rempli avec toutes les cities
   end
 
-  
   private
-
 
   def group_params
     params.require(:group).permit(:fly_to, :cities)
   end
-
-
 
   def fill_trips(_group)
     @final_hash = {}
@@ -92,6 +88,7 @@ class GroupsController < ApplicationController
       allerjson = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{destination_point}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR"
       big_bertrand = JSON.parse(allerjson)["data"]
       break if big_bertrand == []
+
       @semitraveler_count += 1
       big_bertrand.each do |hash|
         subhash = {}
@@ -142,14 +139,18 @@ class GroupsController < ApplicationController
           robert << subhash
         end
         next unless robert != []
+
         array_allers_for_city = []
         bertrand.each do |aller|
           array_allers_for_city << aller if aller[:cityTo] == city
         end
         noemie = [array_allers_for_city, robert]
+        calcul = noemie[0][0][:price] + noemie[1][0][:price]
+        noemie = nil if calcul > traveler.price_to
         full_user[city] = noemie unless noemie.nil?
       end
       break if full_user == {}
+
       @final_hash[traveler] = full_user
       @semitraveler_count += 1
     end
@@ -166,8 +167,6 @@ class GroupsController < ApplicationController
     _group.cities = @trips.values.first.keys
   end
 
-
-
   def fill_trips_tickets(_group)
     @fat_hash = {}
     @traveler_count = 0
@@ -178,6 +177,7 @@ class GroupsController < ApplicationController
       allerretour = RestClient.get "https://api.skypicker.com/flights?fly_from=#{traveler.fly_from.gsub(/.+\((\w{3})\)$/, '\1')}&fly_to=#{destination_point}&date_from=#{traveler.date_from.strftime('%d/%m/%Y')}&date_to=#{traveler.date_from.strftime('%d/%m/%Y')}&return_from=#{traveler.date_to.strftime('%d/%m/%Y')}&return_to=#{traveler.date_to.strftime('%d/%m/%Y')}&price_from=1&price_to=#{traveler.price_to}&direct_flights=1&partner=grouptrottergrouptrotter&v=3&curr=EUR&flight_type=return"
       big_bertrand = JSON.parse(allerretour)["data"]
       break if big_bertrand == []
+
       @traveler_count += 1
       big_bertrand.each do |hash|
         subhash = {}
@@ -203,6 +203,5 @@ class GroupsController < ApplicationController
       end
       @fat_hash[traveler] = bertrand
     end
-    
   end
 end
