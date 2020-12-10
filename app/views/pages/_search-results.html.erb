@@ -76,8 +76,12 @@
       <%html_doc = Nokogiri::HTML(html_file) %>
 
       <% element = html_doc.search('._2UpQX').first %>
-      <% element.text.strip %>
-      <% image_city = element.attribute('src').value %>
+      <% if element %>
+        <% element.text.strip %>
+        <% image_city = element.attribute('src').value %>
+      <% else %>
+        <% image_city = "https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg" %>
+      <% end %>
       <% @city_code = @trips.values.first.values[@group.cities[1..-1].index(@city)+1].first.first[:flyTo] %>
 
       <%= link_to group_tickets_path(airport: "#{@city_code}", city_name: "#{@city}"), class: "clickable-card", :target => "_blank" do %>
