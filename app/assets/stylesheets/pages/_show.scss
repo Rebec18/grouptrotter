@@ -1,8 +1,18 @@
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  height: auto;
+  min-height: 90vh;
+  text-align: center;
+}
+
 .group-form {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.titre_voyageur {
+.titre_searchbar_voyageur {
+  margin-top: 10vh;
   h1 {
     margin: 0px;
     color: white;
@@ -17,6 +27,56 @@
   }
 }
 
+.searchbar-show {
+  // background-color: rgba($color: white, $alpha: 0.6);
+  // border-radius: 10px;
+  // width: auto;
+  position: relative;
+}
+
+.fake-btn-show {
+  min-width: 200px;
+  padding: 7px;
+  border-radius: 20px;
+  color: #6c757d;
+  opacity: 0.9;
+  background-color: #f7f7f7;
+  border: none;
+  transition: opacity 0.5s ease;
+  width: 390px;
+  margin-right: 10px;
+  height: 38px;
+  margin-bottom: 0;
+}
+
+.recap-infos-travelers-fly_from {
+  min-width: 200px;
+  padding: 7px;
+  border-radius: 20px;
+  color: #6c757d;
+  opacity: 0.9;
+  background-color: #f7f7f7;
+  border: none;
+  transition: opacity 0.5s ease;
+  width: 390px;
+  margin-right: 10px;
+  height: 38px;
+  margin-bottom: 0;
+}
+
+.recap-infos-travelers {
+  margin-right: 10px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 20px;
+  color: #6c757d;
+  opacity: 0.9;
+  background-color: #f7f7f7;
+  border: none;
+  width: 200px !important;
+}
+
+
 .mongol-show1 {
   width: 100px;
   height: 100px;
@@ -26,7 +86,7 @@
 @keyframes anim1 {
   0% {
     left: 300px;
-    top: 0px;
+    top: -200px;
   }
   // 25%  {left:280px; top:-50px;}
   // 50%  {left:280px; top:200px;}
@@ -46,7 +106,7 @@
 @keyframes anim2 {
   0% {
     left: -190px;
-    top: 0px;
+    top: -250px;
   }
   100% {
     left: -190px;
@@ -63,7 +123,7 @@
 @keyframes anim3 {
   0% {
     left: 600px;
-    top: 0px;
+    top: -200px;
   }
   10% {
     left: 600px;

@@ -4,8 +4,21 @@
   border-radius: 50px;
   margin-bottom: 15px;
   vertical-align: middle;
-  position: relative;
+  position: absolute;
   width: 390px;
+  top: 53px;
+  left: -2px;
+}
+
+.container-autocomplete-show {
+  // display: flex;
+  // flex-direction: column;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  position: relative;
+  left: 310px;
+  top: -180px;
 }
 
 .proposition {
@@ -21,6 +34,7 @@
   overflow: hidden;
   width: 390px;
   white-space: nowrap;
+  text-align: left;
 }
 
 .proposition:hover {

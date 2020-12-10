@@ -4,7 +4,7 @@
   // width: auto;
   margin: auto;
   display: inline-flex;
-
+  position: relative;
 }
 
 .form-control {
@@ -14,10 +14,20 @@
   border: none;
   border-radius: 20px;
   opacity: 0.9;
-  width: 250px !important;
+  width: 390px !important;
 }
 
-.input{
+.form-control-show {
+  text-align: center;
+  color: #495057;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 20px;
+  opacity: 0.9;
+  width: 200px !important;
+}
+
+.input {
   width: fit-content;
 }
 

@@ -64,17 +64,16 @@
   margin: 15px;
   padding: 7px;
   border-radius: 20px;
-  color: #6c757d;
-  opacity: 0.9;
-  background-color: #f7f7f7;
+  color: white;
+  opacity: 0.8;
+  background-color: #f18230;
   border: none;
   transition: opacity 0.5s ease;
 }
 
 .btn-home:hover {
-  background-color: #f18230;
-  opacity: 0.9;
-  color: #f7f7f7;
+  opacity: 1;
+  color: white;
 }
 
 // SEARCH
@@ -101,15 +100,41 @@
   opacity: 0.8 !important;
 }
 
-.btn-show {
-  width: fit-content;
-  min-width: 200px;
+// SHOW
+
+.btn-show-travelers {
+  width: 200px;
   margin: 15px;
   padding: 7px;
   border-radius: 20px;
-  color: #6c757d;
-  opacity: 0.9;
-  background-color: #f7f7f7;
+  color: white;
+  opacity: 0.8;
+  background-color: #f18230;
   border: none;
   transition: opacity 0.5s ease;
+  position: relative;
+  right: -510px;
+  top: 0px;
+}
+
+.btn-show-travelers:hover {
+  opacity: 1;
+  color: white;
+}
+
+.btn-show-recherche {
+  width: 200px;
+  margin: 15px;
+  padding: 7px;
+  border-radius: 20px;
+  color: white;
+  opacity: 0.8;
+  background-color: #f18230;
+  border: none;
+  transition: opacity 0.5s ease;
+}
+
+.btn-show-recherche:hover {
+  opacity: 1;
+  color: white;
 }

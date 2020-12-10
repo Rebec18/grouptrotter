@@ -1,9 +1,11 @@
 <%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
-<div class= "container mt-5">
-  <div id="title-search">
+ <div id="title-search">
     <h1>Votre sélection de voyages </h1>
-    <h6>Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
+    <h6><i class="far fa-calendar-alt"></i> Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
   </div>
+<div class= "container">
+ 
+  
   <%# c'est la première card, plus grande que les autres : %>
   <%# ============================= %>
   <% city= @group.cities.first %>
@@ -14,7 +16,9 @@
   <%html_doc = Nokogiri::HTML(html_file) %>
 
   <% element = html_doc.search('._2UpQX').first %>
-  <% if element == nil  %>
+  <% if city_name == "Toulouse"  %>
+    <% image_city = "https://www.credit-municipal-toulouse.fr/wp-content/uploads/2018/08/Image-1920x670.jpg" %>
+  <% elsif element == nil  %>
     <% image_city = "https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg" %>
   <% else %>
     <% element.text.strip %>
