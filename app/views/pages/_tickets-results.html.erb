@@ -1,0 +1,66 @@
+<% require 'i18n'%>
+      <% require 'open-uri' %>
+      <% require 'nokogiri' %>
+      <% city_name = I18n.transliterate(params[:city_name])%>
+      <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
+
+      <% html_file = open(url).read %>
+      <%html_doc = Nokogiri::HTML(html_file) %>
+      <% element = html_doc.search('._2UpQX').first %>
+      <% if element == nil %>
+        <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg)">
+      <% else %>
+        <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= element.attribute('src').value %>')">
+      <% end %>
+  <%= params[:city_name] %>
+  <% console %>
+</div>
+<div class = "container">
+  <% for i in (0..@group.travelers.count-1) %>
+      <div id="title-tickets" class ="mt-5">
+        <h2>Voyage de <span class = 'color-name'> <%=@group.travelers[i].name%></span></h2><p><em> au départ de <%= @group.travelers[i].fly_from %></em></p>
+      </div>
+      <div class="cards p-3 mt-3 tickets-cards">
+          <% for j in (0..@fat_hash[@group.travelers[i]].count-1) %>
+           <div class="d-flex card-tickets p-3">
+              <div>
+                <p> <%= Time.at(@fat_hash[@group.travelers[i]][j][:dTime]).strftime("%A %d %B %G") %> </p>
+                  <div class =" d-flex justify-content-around">
+                    <div>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTime]).strftime("%H:%M") %></h5>
+                    </div>
+                    <div>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div>
+                      <h4><%= params[:city_name] %></h4>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTime]).strftime("%H:%M") %></h5>
+                    </div>
+                  </div>
+                  <p> <%= Time.at(@fat_hash[@group.travelers[i]][j][:dTimeReturn]).strftime("%A %d %B %G") %> </p>
+                   <div class =" d-flex justify-content-around">
+                    <div>
+                      <h4><%= params[:city_name] %></h4>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:dTimeReturn]).strftime("%H:%M") %></h5>
+                    </div>
+                    <div>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div>
+                      <h4><%= @group.travelers[i].fly_from %></h4>
+                      <h5><%= Time.at(@fat_hash[@group.travelers[i]][j][:aTimeReturn]).strftime("%H:%M") %></h5>
+                    </div>
+                  </div>
+              </div>
+              <div> 
+                <img id="img-airline" src="https://images.kiwi.com/airlines/64x64/<%= @fat_hash[@group.travelers[i]][j][:airlines].first %>.png" alt="airline">
+                <h2 id="prix-tickets"><%= @fat_hash[@group.travelers[i]][j][:price] %> €</h2>
+                <p id="lien-reserver" class= "btn btn-tickets"><a href="<%= @fat_hash[@group.travelers[i]][j][:url] %>" target="_blank">Réserver</a></p>
+              </div>
+          </div>
+          <% end %>
+      </div>
+      <button id="see-more">VOIR +</button>
+  <% end %>
+</div>
