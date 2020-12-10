@@ -7,7 +7,9 @@
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
       <% element = html_doc.search('._2UpQX').first %>
-      <% if element == nil %>
+      <% if city_name == "Toulouse"  %>
+      <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.credit-municipal-toulouse.fr/wp-content/uploads/2018/08/Image-1920x670.jpg)">
+      <% elsif element == nil %>
         <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.belambra.fr/les-echappees/wp-inside/uploads/2013/01/comment-bien-voyager-en-avion-suivez-nos-conseils-pour-un-vol-agreable.jpg)">
       <% else %>
         <div class="card-entete-tickets" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= element.attribute('src').value %>')">

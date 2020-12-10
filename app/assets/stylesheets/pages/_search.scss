@@ -2,19 +2,24 @@
   // display: flex;
   // justify-content: space-between;
   align-items: center;
-  color: #666666;
   font-size: 60px;
   // border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato";
+  background-color: #f18230;
 
- h1 {
-  // font-weight: bold;
-  font-size: 60px;
-  letter-spacing: -2px;
-
- }
+  h1 {
+    // font-weight: bold;
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
   h6 {
-  margin-left: 20px;
-  font-size: 18px;
+    margin-left: 20px;
+    font-size: 18px;
   }
 }
-
