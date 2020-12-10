@@ -69,7 +69,7 @@
   <%# on enleve la premiere ville de l'array qui est affichee plus haut %>
     <% for @city in @group.cities[1..-1] %>
       <% city_name = I18n.transliterate(@city) %>
-      <% url = "https://unsplash.com/s/photos/#{city_name}"%>
+      <% url = "https://unsplash.com/s/photos/#{city_name.delete(' ')}"%>
 
       <% html_file = open(url).read %>
       <%html_doc = Nokogiri::HTML(html_file) %>
