@@ -8,7 +8,7 @@
 
 .loader {
     width: 900px;
-    height: 500px;
+    height: 200px;
     display: none;
 }
 
@@ -21,10 +21,11 @@
 }
 
 .globe-text {
-  height: 75vh;
-  background: url(asset-path('worldwide.png'));
+  height: 74vh;
+  // margin: 3rem;
+  background:url(asset_path('worldwide.png'));
   background-repeat: no-repeat;
-  background-size: 250px 250px;
+  background-size: 200px 200px;
   background-position: center ;
 }
 
@@ -32,6 +33,6 @@
   width: 400px !important;
   height: 400px !important;
   position: relative;
-  top: 30px;
+  top: -10px;
   left: 400px;
 }
