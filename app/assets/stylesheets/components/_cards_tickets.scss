@@ -14,15 +14,16 @@
   overflow: hidden;
 }
 
-
 // TICKETS
 .card-tickets {
+  float: right !important;
   height: auto;
   color: rgba(100, 100, 100, 1);
   font-size: 18px;
   border-radius: 10px;
   position: relative;
   background: #f7f7f7;
+  margin:0;
   // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   h4 {
     font-size: 20px !important;
@@ -30,21 +31,24 @@
     margin: 0 !important;
   }
   #prix-tickets {
-    position: absolute;
-    bottom: 56px;
-    right: 34px;
-  }
-  #lien-reserver {
-    position: absolute;
-    font-size: 16px;
-    bottom: 0px;
-    right: 20px;
-  }
-  #img-airline {
-    position: absolute;
-    bottom: 167px;
-    height: 40px;
-    right: 20px;
+    margin-bottom: 10px
+  //   position: absolute;
+  //   bottom: 56px;
+  //   right: 34px;
+ //  }
+  // #lien-reserver {
+  //   position: absolute;
+  //   font-size: 16px;
+  //   bottom: 0px;
+  //   right: 20px;
+   }
+   #img-airline {
+     //position: absolute;
+     //bottom: 167px;
+     height: 40px;
+     width: 40px;
+     margin-bottom: 10px;
+     //right: 20px;
   }
 }
 
@@ -55,14 +59,13 @@
 .card-entete-tickets {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "Lato";
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }

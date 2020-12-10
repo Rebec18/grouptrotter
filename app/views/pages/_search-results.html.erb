@@ -1,11 +1,10 @@
 <%# PENDANT LE TEST AVEC LE SEED J'AI DU METTRE DES STRINGS AU LIEU DE SYMBOLES %>
  <div id="title-search">
     <h1>Votre sélection de voyages </h1>
-    <h6><i class="far fa-calendar-alt"></i> Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
+    <h6><i class="far fa-calendar-alt"></i> &nbsp &nbsp Du <%= @travelers.first[:date_from].strftime("%d/%m/%Y") %> au <%= @travelers.first[:date_to].strftime("%d/%m/%Y") %></h6>
   </div>
+
 <div class= "container">
- 
-  
   <%# c'est la première card, plus grande que les autres : %>
   <%# ============================= %>
   <% city= @group.cities.first %>
@@ -24,7 +23,7 @@
     <% element.text.strip %>
     <% image_city = element.attribute('src').value %>
   <% end %>
-    
+
 
   <div class="grande-card p-3">
     <div id="first-card" class ="p-3 mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url('<%=image_city%>');">

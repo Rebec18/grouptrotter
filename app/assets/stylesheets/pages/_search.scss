@@ -4,22 +4,22 @@
   align-items: center;
   font-size: 60px;
   // border-bottom: 1px solid rgba(150, 150, 150, 0.3);
-  height: 180px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
-  font-family: "Lato";
+  //font-family: "Lato";
   background-color: #f18230;
-
+  opacity: 0.8;
   h1 {
     // font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: -2px;
   }
   h6 {
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }

@@ -49,13 +49,21 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.3s ease;
+  text-decoration: none;
+  a{
+    color: white !important;
+  }
 }
 
 .btn-tickets:hover {
-  opacity: 0.6;
+  opacity: 0.8;
   color: white;
+  text-decoration: none;
+  a{
+    color: white !important;
+  }
 }
 
 // HOMEPAGE
@@ -107,18 +115,22 @@
   margin: 15px;
   padding: 7px;
   border-radius: 20px;
-  color: white;
   opacity: 0.8;
-  background-color: #f18230;
+  color: #6c757d;
+  background-color: white;
   border: none;
   transition: opacity 0.5s ease;
   position: relative;
   right: -510px;
   top: 0px;
+  h1{
+    color: #f18230;
+  }
 }
 
 .btn-show-travelers:hover {
-  opacity: 1;
+  opacity: 0.8;
+  background-color: #f18230 ;
   color: white;
 }
 
