@@ -4,7 +4,8 @@ import flatpickr from 'flatpickr';
 const initFlatpickr = () => {
   if (document.querySelector(".datepicker")) {
     flatpickr(".datepicker", {
-      // altInput: true,
+      altInput: true,
+      altFormat: "d/m/Y",
       // enableTime: true,
       minDate: "today",
       minuteIncrement: 15,

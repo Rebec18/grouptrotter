@@ -63,14 +63,14 @@
                           label: false,
                           placeholder: "Date d'aller",
                           as: :string,
-                            input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_from.strftime("%d/%m/%Y") } %>
+                            input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_from } %>
             </div>
             <div class="mr-2">
               <%= f.input :date_to,
                           label: false,
                           placeholder: "Date de retour",
                           as: :string,
-                          input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_to.strftime("%d/%m/%Y")} %>
+                          input_html: { class: "datepicker form-control-show", value: @group.travelers.first.date_to } %>
             </div>
           <% else %>
             <div class="mr-2">
