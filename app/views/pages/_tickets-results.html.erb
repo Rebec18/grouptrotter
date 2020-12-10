@@ -62,20 +62,7 @@
           </div>
           <% end %>
       </div>
-      <button id="see-more">VOIR +</button>
+      <button class="see-more">VOIR +</button>
   <% end %>
 </div>
 
-<script>
-let plus = document.querySelector("#see-more")
-let autreticket = plus.previousElementSibling
-plus.addEventListener("click", () => {
-  <%# while(nextSibling) {
-    count += 1
-    nextSibling = nextSibling.nextElementSibling;
-    console.log(nextSibling)
-  } %>
-  autreticket.style.height = `${250*<% @fat_hash[@group.travelers[0]].count %>}px`;
-  <% console %>
-});
-</script>
