@@ -4,16 +4,20 @@
     <div class= "titre_searchbar">
         <h1>Organiser un voyage à plusieurs</h1>
         <p>Remplis les champs ci-dessous pour chacun des voyageurs</p>
-  </div>
-  <div>
-     <% if true %>
-      <%= link_to "Lancer la recherche", :group_search, class: "bt btn-home serpent"  %>
-  </div> 
-  <div  class = "d-flex justify-content-center mb-3">
-    <% if @group.fly_to != "" %>
-    <p  class="btn-show"><%= @group.fly_to %></p>
-  <% end %>
-  </div>
+    </div>
+
+    <div class = "d-flex justify-content-center mb-4">
+      <div class = "d-flex justify-content-center ">
+        <% if @group.fly_to != "" %>
+          <p  class="btn-show"><%= @group.fly_to %></p>
+        <% end %>
+      </div>
+      <div>
+        <% if true %>
+          <%= link_to "Lancer la recherche", :group_search, class: "btn btn-show-recherche"  %>
+      </div>
+    </div>
+
   <div class="searchbar d-flex justify-content-center">
    <div class="mr-2">
        <%= simple_form_for [@group, @traveler]  do |f| %>
@@ -21,13 +25,13 @@
       <%= f.input :name,
                       label: false,
                       required: true,
-                      placeholder: "Inscrivez le nom du voyageur"%>
+                      placeholder: "Nom du voyageur"%>
     </div>
     <div class="mr-2">
       <%= f.input :fly_from,
                       label: false,
                       required: true,
-                      placeholder: "De quelle ville part-il?",
+                      placeholder: "Ville de départ",
                       as: :string,
                       input_html: { class: "autocomplete", autocomplete: 'off' }%>
       <div class="container-autocomplete">
@@ -47,7 +51,7 @@
         </div>
       </div>
 
-      <div class="searchbar d-flex justify-content-center">
+       <div class="searchbar d-flex justify-content-center">
         <div class="mr-2">
           <%= simple_form_for [@group, @traveler]  do |f| %>
             <%= f.error_notification %>
@@ -166,17 +170,11 @@
 <!--   <div class="form-traveler"></div> -->
 </div>
 
-
 <%# Autofill des budgets et dates %>
-
-
-
-
-
     <%# SCRIPT POUR LANCER LE LOADER %>
   <%# JE VIRE LE SNAKE D'ICI ON LE FOUT AILLEURS, SALETé DE SNAKE %>
     <%# FIN DU SCRIPT %>
-    <% end %>
+<% end %>
   </div>
 
 </div>

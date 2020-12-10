@@ -6,7 +6,7 @@
         <%= simple_form_for @group, html: { class: "form-inline" } do |f| %>
           <%= f.input :fly_to,
                       label: false,
-                      placeholder: "Sélectionne une destination",
+                      placeholder: "Sélectionner une destination",
                       as: :string,
                       input_html: { class: "autocomplete", autocomplete: 'off' }%>
           <%= f.submit "Ajouter un voyageur", class: "btn btn-home"%>
