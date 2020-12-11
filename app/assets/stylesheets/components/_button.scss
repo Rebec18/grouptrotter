@@ -157,22 +157,18 @@
   margin: 15px;
   padding: 7px;
   border-radius: 20px;
+  color: white;
   opacity: 0.8;
-  color: #6c757d;
-  background-color: white;
+  background-color: #f18230;
   border: none;
   transition: opacity 0.5s ease;
   position: relative;
   right: -510px;
   top: 0px;
-  h1{
-    color: #f18230;
-  }
 }
 
 .btn-show-travelers:hover {
-  opacity: 0.8;
-  background-color: #f18230 ;
+  opacity: 1;
   color: white;
 }
 
